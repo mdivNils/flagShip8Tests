@@ -1,0 +1,14 @@
+#FlagShip Debugger v1.0 status file
+Geometry:
+	window: 842,120,800,600
+	sl_Vspl: 100,250
+	sl_TopHSpl: 140,100
+	sl_LeftTopVSpl: 176,130
+	sl_BottHSpl: 400,400
+Sources:
+	C:/Users/admin/Documents/GitHub/flagShip8Tests/zeit/ZEIT.PRG;1
+Breakpoints:
+	ZEIT.PRG:12:2
+Selected:
+Source Path:
+	(null)
