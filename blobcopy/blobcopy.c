@@ -3092,6 +3092,918 @@ extern FSvar *_bb__fsget_ FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb__stdunitpi FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb___keyboard FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb___quit FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_abort_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_alias_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_alias_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_aliassym_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_append_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_appenddb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_appenddelimited_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_appendsdf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_asstring_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_average_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobdirectexport_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobdirectget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobdirectimport_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobdirectput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobexport_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobimport_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobrootget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobrootlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobrootput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blobrootunlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blockdone_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_blockeval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_bof_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_clearfilter_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_clearindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_clearlocate_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_clearrelation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_clearscope_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_close_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_commit_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_concurrenc_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_concurrenc_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_continue_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_copydb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_copydelimited_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_copysdf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_copystructure_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_count_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_createdb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_createindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_createorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_datafield_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_dbstruct_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_delete_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_deleteall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_deleted_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_deleteorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_driver_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_eof_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_errinfo_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_error_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_eval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fcount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_fieldget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldgetformatted_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldhyperlabel_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldname_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldpos_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldspec_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldstatus_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldsym_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_fieldvalidate_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_filespec_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_filter_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_filter_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_flock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_forblock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_forblock_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_found_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_getarray_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_getarrfields_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_getlocate_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_getlookuptable_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_gobottom_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_goto_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_gotop_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_header_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexcheck_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_indexcheck_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexcount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexext_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexkey_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_indexkey_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexlock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_indexord_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_info_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_init_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_isrelation_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_isrelation_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_join_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_lastrec_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_locate_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_lockcurrentrecord_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_lockselection_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_lupdate_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_name_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_noivarget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_noivarput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_nomethod_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_notify_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderbotto_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_orderbotto_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_orderdescend_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderisunique_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeyadd_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeycount_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeydel_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeygoto_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeyno_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_orderkeyno_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_orderkeyno_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderkeyva_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_orderscope_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_orderskipunique_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_ordertopsc_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_ordertopsc_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_pack_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_rddinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_rddname_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_readonly_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_recall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_recallall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_reccount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_recno_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_recno_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_recordinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_recsize_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_refresh_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_registerclient_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_reindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_relation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_relationobject_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_replace_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_resetnotification_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_rlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_rlocklist_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_rlockverify_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_rollback_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_scope_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_scope_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_seek_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_seekeval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setdatafield_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setfilter_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setfound_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_setindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setlocate_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_setorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setordercondition_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setrelation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_setselectiverelat_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_shared_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_skip_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_sort_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_status_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_sum_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_suspendnotification_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_task_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_total_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_unlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_unregisterclient_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_update_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_used_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_usersdbf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dataserver_whileblock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dataserver_whileblock_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dataserver_zap_me FGS_ANSI((FSint, FSvar *[]));
+# define DataserverAbortMethod 0
+# define DataserverAliasAccess 1
+# define DataserverAliasAssign 2
+# define DataserverAliassymAccess 3
+# define DataserverAppendMethod 4
+# define DataserverAppenddbMethod 5
+# define DataserverAppenddelimitedMethod 6
+# define DataserverAppendsdfMethod 7
+# define DataserverAsstringMethod 8
+# define DataserverAverageMethod 9
+# define DataserverBlobdirectexportMethod 10
+# define DataserverBlobdirectgetMethod 11
+# define DataserverBlobdirectimportMethod 12
+# define DataserverBlobdirectputMethod 13
+# define DataserverBlobexportMethod 14
+# define DataserverBlobgetMethod 15
+# define DataserverBlobimportMethod 16
+# define DataserverBlobrootgetMethod 17
+# define DataserverBlobrootlockMethod 18
+# define DataserverBlobrootputMethod 19
+# define DataserverBlobrootunlockMethod 20
+# define DataserverBlockdoneMethod 21
+# define DataserverBlockevalMethod 22
+# define DataserverBofAccess 23
+# define DataserverClearfilterMethod 24
+# define DataserverClearindexMethod 25
+# define DataserverClearlocateMethod 26
+# define DataserverClearrelationMethod 27
+# define DataserverClearscopeMethod 28
+# define DataserverCloseMethod 29
+# define DataserverCommitMethod 30
+# define DataserverConcurrencAccess 31
+# define DataserverConcurrencAssign 32
+# define DataserverContinueMethod 33
+# define DataserverCopydbMethod 34
+# define DataserverCopydelimitedMethod 35
+# define DataserverCopysdfMethod 36
+# define DataserverCopystructureMethod 37
+# define DataserverCountMethod 38
+# define DataserverCreatedbMethod 39
+# define DataserverCreateindexMethod 40
+# define DataserverCreateorderMethod 41
+# define DataserverDatafieldMethod 42
+# define DataserverDbstructMethod 43
+# define DataserverDeleteMethod 44
+# define DataserverDeleteallMethod 45
+# define DataserverDeletedAccess 46
+# define DataserverDeleteorderMethod 47
+# define DataserverDriverAccess 48
+# define DataserverEofAccess 49
+# define DataserverErrinfoAccess 50
+# define DataserverErrorMethod 51
+# define DataserverEvalMethod 52
+# define DataserverFcountAccess 53
+# define DataserverFieldgetMethod 54
+# define DataserverFieldgetformattedMethod 55
+# define DataserverFieldhyperlabelMethod 56
+# define DataserverFieldinfoMethod 57
+# define DataserverFieldnameMethod 58
+# define DataserverFieldposMethod 59
+# define DataserverFieldputMethod 60
+# define DataserverFieldspecMethod 61
+# define DataserverFieldstatusMethod 62
+# define DataserverFieldsymMethod 63
+# define DataserverFieldvalidateMethod 64
+# define DataserverFilespecAccess 65
+# define DataserverFilterAccess 66
+# define DataserverFilterAssign 67
+# define DataserverFlockMethod 68
+# define DataserverForblockAccess 69
+# define DataserverForblockAssign 70
+# define DataserverFoundAccess 71
+# define DataserverGetarrayMethod 72
+# define DataserverGetarrfieldsMethod 73
+# define DataserverGetlocateAccess 74
+# define DataserverGetlookuptableMethod 75
+# define DataserverGobottomMethod 76
+# define DataserverGotoMethod 77
+# define DataserverGotopMethod 78
+# define DataserverHeaderAccess 79
+# define DataserverIndexcheckMethod 80
+# define DataserverIndexcheckAccess 81
+# define DataserverIndexcountAccess 82
+# define DataserverIndexextAccess 83
+# define DataserverIndexkeyMethod 84
+# define DataserverIndexkeyAccess 85
+# define DataserverIndexlockAccess 86
+# define DataserverIndexordMethod 87
+# define DataserverInfoMethod 88
+# define DataserverInitMethod 89
+# define DataserverIsrelationAccess 90
+# define DataserverIsrelationAssign 91
+# define DataserverJoinMethod 92
+# define DataserverLastrecAccess 93
+# define DataserverLocateMethod 94
+# define DataserverLockcurrentrecordMethod 95
+# define DataserverLockselectionMethod 96
+# define DataserverLupdateAccess 97
+# define DataserverNameAccess 98
+# define DataserverNoivargetMethod 99
+# define DataserverNoivarputMethod 100
+# define DataserverNomethodMethod 101
+# define DataserverNotifyMethod 102
+# define DataserverOrderbottoAccess 103
+# define DataserverOrderbottoAssign 104
+# define DataserverOrderdescendMethod 105
+# define DataserverOrderinfoMethod 106
+# define DataserverOrderisuniqueMethod 107
+# define DataserverOrderkeyaddMethod 108
+# define DataserverOrderkeycountMethod 109
+# define DataserverOrderkeydelMethod 110
+# define DataserverOrderkeygotoMethod 111
+# define DataserverOrderkeynoAccess 112
+# define DataserverOrderkeynoAssign 113
+# define DataserverOrderkeynoMethod 114
+# define DataserverOrderkeyvaAccess 115
+# define DataserverOrderscopeMethod 116
+# define DataserverOrderskipuniqueMethod 117
+# define DataserverOrdertopscAccess 118
+# define DataserverOrdertopscAssign 119
+# define DataserverPackMethod 120
+# define DataserverRddinfoMethod 121
+# define DataserverRddnameAccess 122
+# define DataserverReadonlyAccess 123
+# define DataserverRecallMethod 124
+# define DataserverRecallallMethod 125
+# define DataserverReccountAccess 126
+# define DataserverRecnoAccess 127
+# define DataserverRecnoAssign 128
+# define DataserverRecordinfoMethod 129
+# define DataserverRecsizeAccess 130
+# define DataserverRefreshMethod 131
+# define DataserverRegisterclientMethod 132
+# define DataserverReindexMethod 133
+# define DataserverRelationMethod 134
+# define DataserverRelationobjectMethod 135
+# define DataserverReplaceMethod 136
+# define DataserverResetnotificationMethod 137
+# define DataserverRlockMethod 138
+# define DataserverRlocklistAccess 139
+# define DataserverRlockverifyMethod 140
+# define DataserverRollbackMethod 141
+# define DataserverScopeAccess 142
+# define DataserverScopeAssign 143
+# define DataserverSeekMethod 144
+# define DataserverSeekevalMethod 145
+# define DataserverSetdatafieldMethod 146
+# define DataserverSetfilterMethod 147
+# define DataserverSetfoundAssign 148
+# define DataserverSetindexMethod 149
+# define DataserverSetlocateAssign 150
+# define DataserverSetorderMethod 151
+# define DataserverSetorderconditionMethod 152
+# define DataserverSetrelationMethod 153
+# define DataserverSetselectiverelatMethod 154
+# define DataserverSharedAccess 155
+# define DataserverSkipMethod 156
+# define DataserverSortMethod 157
+# define DataserverStatusAccess 158
+# define DataserverSumMethod 159
+# define DataserverSuspendnotificationMethod 160
+# define DataserverTaskMethod 161
+# define DataserverTotalMethod 162
+# define DataserverUnlockMethod 163
+# define DataserverUnregisterclientMethod 164
+# define DataserverUpdateMethod 165
+# define DataserverUsedAccess 166
+# define DataserverUsersdbfMethod 167
+# define DataserverWhileblockAccess 168
+# define DataserverWhileblockAssign 169
+# define DataserverZapMethod 170
+# define DataserverAliasInstance 2
+# define DataserverAliassymInstance 3
+# define DataserverBofInstance 4
+# define DataserverCargoInstance 5
+# define DataserverConcurrencInstance 6
+# define DataserverDeletedInstance 7
+# define DataserverDriverInstance 8
+# define DataserverEofInstance 9
+# define DataserverErrinfoInstance 10
+# define DataserverFcountInstance 11
+# define DataserverFilespecInstance 12
+# define DataserverFilterInstance 13
+# define DataserverForblockInstance 14
+# define DataserverFoundInstance 15
+# define DataserverGetlocateInstance 16
+# define DataserverHeaderInstance 17
+# define DataserverIndexcheckInstance 18
+# define DataserverIndexcountInstance 19
+# define DataserverIndexextInstance 20
+# define DataserverIndexkeyInstance 21
+# define DataserverIndexlockInstance 22
+# define DataserverIsrelationInstance 23
+# define DataserverLastrecInstance 24
+# define DataserverLupdateInstance 25
+# define DataserverNameInstance 26
+# define DataserverOrderbottoInstance 27
+# define DataserverOrderkeynoInstance 28
+# define DataserverOrderkeyvaInstance 29
+# define DataserverOrdertopscInstance 30
+# define DataserverRddnameInstance 31
+# define DataserverReadonlyInstance 32
+# define DataserverReccountInstance 33
+# define DataserverRecnoInstance 34
+# define DataserverRecsizeInstance 35
+# define DataserverRlocklistInstance 36
+# define DataserverScopeInstance 37
+# define DataserverSetfoundInstance 38
+# define DataserverSetlocateInstance 39
+# define DataserverSharedInstance 40
+# define DataserverStatusInstance 41
+# define DataserverUsedInstance 42
+# define DataserverWhileblockInstance 43
+extern FSvar *_bb_dbfidx_abort_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_alias_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_alias_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_aliassym_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_append_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_appenddb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_appenddelimited_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_appendsdf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_asstring_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_average_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_axit_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_blockdone_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_blockeval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_blockstart_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_bof_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_clearfilter_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_clearindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_clearlocate_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_clearrelation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_clearscope_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_close_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_commit_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_concurrenc_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_concurrenc_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_continue_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_copydb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_copydelimited_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_copysdf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_copystructure_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_count_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_createdb_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_createindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_createorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_dbstruct_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_delete_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_deleteall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_deleted_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_deleteorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_driver_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_eof_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_errinfo_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_errinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_error_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_eval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_fcount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_fieldget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_fieldinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_fieldname_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_fieldpos_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_fieldput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_filespec_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_filter_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_filter_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_flock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_forblock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_forblock_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_found_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_getarray_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_getarrfields_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_getlocate_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_getlookuptable_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_gobottom_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_goto_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_gotop_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_header_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_ignorefilter_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_ignorerelation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexappend_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexcheck_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_indexcheck_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexcount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_indexext_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_indexgobottom_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexgotop_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexkey_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexkey_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_indexkeycompare_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexlock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_indexord_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexreplace_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexseek_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexseekeval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexskip_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_indexsynchronize_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_info_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_init_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_isrelation_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_isrelation_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_join_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_lastrec_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_locate_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_lockcurrentrecord_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_lupdate_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_name_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_noivarget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_noivarput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_orderbotto_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_orderinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_orderisunique_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_orderkeycount_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_orderkeyno_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_orderkeyno_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_orderkeyva_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_ordertopsc_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_pack_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_procname_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_quickfieldget_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_quickfieldput_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_rddinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_rddname_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_readonly_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_recall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_recallall_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_reccount_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_recno_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_recno_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_recordinfo_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_recsize_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_refresh_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_reindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_relation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_relationobject_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_replace_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_rlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_rlocklist_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_rlockverify_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_scope_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_scope_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_seek_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_seekeval_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_setfilter_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_setfound_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_setindex_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_setlocate_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_setorder_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_setordercondition_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_setrelation_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_shared_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_skip_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_sort_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_status_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_sum_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_task_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_total_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_unlock_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_update_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_used_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_usersdbf_me FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb_dbfidx_whileblock_ac FGS_ANSI((FSvar *));
+extern FSvar *_bb_dbfidx_whileblock_as FGS_ANSI((FSvar *, FSvar *));
+extern FSvar *_bb_dbfidx_zap_me FGS_ANSI((FSint, FSvar *[]));
+# define DbfidxAbortL0Method 171
+# define DbfidxAbortMethod 0
+# define DbfidxAliasL0Access 172
+# define DbfidxAliasL0Assign 173
+# define DbfidxAliasAccess 1
+# define DbfidxAliasAssign 2
+# define DbfidxAliassymL0Access 174
+# define DbfidxAliassymAccess 3
+# define DbfidxAppendL0Method 175
+# define DbfidxAppendMethod 4
+# define DbfidxAppenddbL0Method 176
+# define DbfidxAppenddbMethod 5
+# define DbfidxAppenddelimitedL0Method 177
+# define DbfidxAppenddelimitedMethod 6
+# define DbfidxAppendsdfL0Method 178
+# define DbfidxAppendsdfMethod 7
+# define DbfidxAsstringL0Method 179
+# define DbfidxAsstringMethod 8
+# define DbfidxAverageL0Method 180
+# define DbfidxAverageMethod 9
+# define DbfidxAxitMethod 181
+# define DbfidxBlobdirectexportMethod 10
+# define DbfidxBlobdirectgetMethod 11
+# define DbfidxBlobdirectimportMethod 12
+# define DbfidxBlobdirectputMethod 13
+# define DbfidxBlobexportMethod 14
+# define DbfidxBlobgetMethod 15
+# define DbfidxBlobimportMethod 16
+# define DbfidxBlobrootgetMethod 17
+# define DbfidxBlobrootlockMethod 18
+# define DbfidxBlobrootputMethod 19
+# define DbfidxBlobrootunlockMethod 20
+# define DbfidxBlockdoneL0Method 182
+# define DbfidxBlockdoneMethod 21
+# define DbfidxBlockevalL0Method 183
+# define DbfidxBlockevalMethod 22
+# define DbfidxBlockstartMethod 184
+# define DbfidxBofL0Access 185
+# define DbfidxBofAccess 23
+# define DbfidxClearfilterL0Method 186
+# define DbfidxClearfilterMethod 24
+# define DbfidxClearindexL0Method 187
+# define DbfidxClearindexMethod 25
+# define DbfidxClearlocateL0Method 188
+# define DbfidxClearlocateMethod 26
+# define DbfidxClearrelationL0Method 189
+# define DbfidxClearrelationMethod 27
+# define DbfidxClearscopeL0Method 190
+# define DbfidxClearscopeMethod 28
+# define DbfidxCloseL0Method 191
+# define DbfidxCloseMethod 29
+# define DbfidxCommitL0Method 192
+# define DbfidxCommitMethod 30
+# define DbfidxConcurrencL0Access 193
+# define DbfidxConcurrencL0Assign 194
+# define DbfidxConcurrencAccess 31
+# define DbfidxConcurrencAssign 32
+# define DbfidxContinueL0Method 195
+# define DbfidxContinueMethod 33
+# define DbfidxCopydbL0Method 196
+# define DbfidxCopydbMethod 34
+# define DbfidxCopydelimitedL0Method 197
+# define DbfidxCopydelimitedMethod 35
+# define DbfidxCopysdfL0Method 198
+# define DbfidxCopysdfMethod 36
+# define DbfidxCopystructureL0Method 199
+# define DbfidxCopystructureMethod 37
+# define DbfidxCountL0Method 200
+# define DbfidxCountMethod 38
+# define DbfidxCreatedbL0Method 201
+# define DbfidxCreatedbMethod 39
+# define DbfidxCreateindexL0Method 202
+# define DbfidxCreateindexMethod 40
+# define DbfidxCreateorderL0Method 203
+# define DbfidxCreateorderMethod 41
+# define DbfidxDatafieldMethod 42
+# define DbfidxDbstructL0Method 204
+# define DbfidxDbstructMethod 43
+# define DbfidxDeleteL0Method 205
+# define DbfidxDeleteMethod 44
+# define DbfidxDeleteallL0Method 206
+# define DbfidxDeleteallMethod 45
+# define DbfidxDeletedL0Access 207
+# define DbfidxDeletedAccess 46
+# define DbfidxDeleteorderL0Method 208
+# define DbfidxDeleteorderMethod 47
+# define DbfidxDriverL0Access 209
+# define DbfidxDriverAccess 48
+# define DbfidxEofL0Access 210
+# define DbfidxEofAccess 49
+# define DbfidxErrinfoL0Access 211
+# define DbfidxErrinfoAccess 50
+# define DbfidxErrinfoMethod 212
+# define DbfidxErrorL0Method 213
+# define DbfidxErrorMethod 51
+# define DbfidxEvalL0Method 214
+# define DbfidxEvalMethod 52
+# define DbfidxFcountL0Access 215
+# define DbfidxFcountAccess 53
+# define DbfidxFieldgetL0Method 216
+# define DbfidxFieldgetMethod 54
+# define DbfidxFieldgetformattedMethod 55
+# define DbfidxFieldhyperlabelMethod 56
+# define DbfidxFieldinfoL0Method 217
+# define DbfidxFieldinfoMethod 57
+# define DbfidxFieldnameL0Method 218
+# define DbfidxFieldnameMethod 58
+# define DbfidxFieldposL0Method 219
+# define DbfidxFieldposMethod 59
+# define DbfidxFieldputL0Method 220
+# define DbfidxFieldputMethod 60
+# define DbfidxFieldspecMethod 61
+# define DbfidxFieldstatusMethod 62
+# define DbfidxFieldsymMethod 63
+# define DbfidxFieldvalidateMethod 64
+# define DbfidxFilespecL0Access 221
+# define DbfidxFilespecAccess 65
+# define DbfidxFilterL0Access 222
+# define DbfidxFilterL0Assign 223
+# define DbfidxFilterAccess 66
+# define DbfidxFilterAssign 67
+# define DbfidxFlockL0Method 224
+# define DbfidxFlockMethod 68
+# define DbfidxForblockL0Access 225
+# define DbfidxForblockL0Assign 226
+# define DbfidxForblockAccess 69
+# define DbfidxForblockAssign 70
+# define DbfidxFoundL0Access 227
+# define DbfidxFoundAccess 71
+# define DbfidxGetarrayL0Method 228
+# define DbfidxGetarrayMethod 72
+# define DbfidxGetarrfieldsL0Method 229
+# define DbfidxGetarrfieldsMethod 73
+# define DbfidxGetlocateL0Access 230
+# define DbfidxGetlocateAccess 74
+# define DbfidxGetlookuptableL0Method 231
+# define DbfidxGetlookuptableMethod 75
+# define DbfidxGobottomL0Method 232
+# define DbfidxGobottomMethod 76
+# define DbfidxGotoL0Method 233
+# define DbfidxGotoMethod 77
+# define DbfidxGotopL0Method 234
+# define DbfidxGotopMethod 78
+# define DbfidxHeaderL0Access 235
+# define DbfidxHeaderAccess 79
+# define DbfidxIgnorefilterMethod 236
+# define DbfidxIgnorerelationMethod 237
+# define DbfidxIndexappendMethod 238
+# define DbfidxIndexcheckL0Method 240
+# define DbfidxIndexcheckL0Access 239
+# define DbfidxIndexcheckAccess 81
+# define DbfidxIndexcheckMethod 80
+# define DbfidxIndexcountL0Access 241
+# define DbfidxIndexcountAccess 82
+# define DbfidxIndexextL0Access 242
+# define DbfidxIndexextAccess 83
+# define DbfidxIndexgobottomMethod 243
+# define DbfidxIndexgotopMethod 244
+# define DbfidxIndexkeyL0Method 245
+# define DbfidxIndexkeyL0Access 246
+# define DbfidxIndexkeyMethod 84
+# define DbfidxIndexkeyAccess 85
+# define DbfidxIndexkeycompareMethod 247
+# define DbfidxIndexlockL0Access 248
+# define DbfidxIndexlockAccess 86
+# define DbfidxIndexordL0Method 249
+# define DbfidxIndexordMethod 87
+# define DbfidxIndexreplaceMethod 250
+# define DbfidxIndexseekMethod 251
+# define DbfidxIndexseekevalMethod 252
+# define DbfidxIndexskipMethod 253
+# define DbfidxIndexsynchronizeMethod 254
+# define DbfidxInfoL0Method 255
+# define DbfidxInfoMethod 88
+# define DbfidxInitL0Method 256
+# define DbfidxInitMethod 89
+# define DbfidxIsrelationL0Access 257
+# define DbfidxIsrelationL0Assign 258
+# define DbfidxIsrelationAccess 90
+# define DbfidxIsrelationAssign 91
+# define DbfidxJoinL0Method 259
+# define DbfidxJoinMethod 92
+# define DbfidxLastrecL0Access 260
+# define DbfidxLastrecAccess 93
+# define DbfidxLocateL0Method 261
+# define DbfidxLocateMethod 94
+# define DbfidxLockcurrentrecordL0Method 262
+# define DbfidxLockcurrentrecordMethod 95
+# define DbfidxLockselectionMethod 96
+# define DbfidxLupdateL0Access 263
+# define DbfidxLupdateAccess 97
+# define DbfidxNameL0Access 264
+# define DbfidxNameAccess 98
+# define DbfidxNoivargetL0Method 265
+# define DbfidxNoivargetMethod 99
+# define DbfidxNoivarputL0Method 266
+# define DbfidxNoivarputMethod 100
+# define DbfidxNomethodMethod 101
+# define DbfidxNotifyMethod 102
+# define DbfidxOrderbottoL0Access 267
+# define DbfidxOrderbottoAssign 104
+# define DbfidxOrderbottoAccess 103
+# define DbfidxOrderdescendMethod 105
+# define DbfidxOrderinfoL0Method 268
+# define DbfidxOrderinfoMethod 106
+# define DbfidxOrderisuniqueL0Method 269
+# define DbfidxOrderisuniqueMethod 107
+# define DbfidxOrderkeyaddMethod 108
+# define DbfidxOrderkeycountL0Method 270
+# define DbfidxOrderkeycountMethod 109
+# define DbfidxOrderkeydelMethod 110
+# define DbfidxOrderkeygotoMethod 111
+# define DbfidxOrderkeynoL0Access 272
+# define DbfidxOrderkeynoAssign 113
+# define DbfidxOrderkeynoL0Method 271
+# define DbfidxOrderkeynoMethod 114
+# define DbfidxOrderkeynoAccess 112
+# define DbfidxOrderkeyvaL0Access 273
+# define DbfidxOrderkeyvaAccess 115
+# define DbfidxOrderscopeMethod 116
+# define DbfidxOrderskipuniqueMethod 117
+# define DbfidxOrdertopscL0Access 274
+# define DbfidxOrdertopscAssign 119
+# define DbfidxOrdertopscAccess 118
+# define DbfidxPackL0Method 275
+# define DbfidxPackMethod 120
+# define DbfidxProcnameMethod 276
+# define DbfidxQuickfieldgetMethod 277
+# define DbfidxQuickfieldputMethod 278
+# define DbfidxRddinfoL0Method 279
+# define DbfidxRddinfoMethod 121
+# define DbfidxRddnameL0Access 280
+# define DbfidxRddnameAccess 122
+# define DbfidxReadonlyL0Access 281
+# define DbfidxReadonlyAccess 123
+# define DbfidxRecallL0Method 282
+# define DbfidxRecallMethod 124
+# define DbfidxRecallallL0Method 283
+# define DbfidxRecallallMethod 125
+# define DbfidxReccountL0Access 284
+# define DbfidxReccountAccess 126
+# define DbfidxRecnoL0Access 285
+# define DbfidxRecnoL0Assign 286
+# define DbfidxRecnoAccess 127
+# define DbfidxRecnoAssign 128
+# define DbfidxRecordinfoL0Method 287
+# define DbfidxRecordinfoMethod 129
+# define DbfidxRecsizeL0Access 288
+# define DbfidxRecsizeAccess 130
+# define DbfidxRefreshL0Method 289
+# define DbfidxRefreshMethod 131
+# define DbfidxRegisterclientMethod 132
+# define DbfidxReindexL0Method 290
+# define DbfidxReindexMethod 133
+# define DbfidxRelationL0Method 291
+# define DbfidxRelationMethod 134
+# define DbfidxRelationobjectL0Method 292
+# define DbfidxRelationobjectMethod 135
+# define DbfidxReplaceL0Method 293
+# define DbfidxReplaceMethod 136
+# define DbfidxResetnotificationMethod 137
+# define DbfidxRlockL0Method 294
+# define DbfidxRlockMethod 138
+# define DbfidxRlocklistL0Access 295
+# define DbfidxRlocklistAccess 139
+# define DbfidxRlockverifyL0Method 296
+# define DbfidxRlockverifyMethod 140
+# define DbfidxRollbackMethod 141
+# define DbfidxScopeL0Access 297
+# define DbfidxScopeL0Assign 298
+# define DbfidxScopeAccess 142
+# define DbfidxScopeAssign 143
+# define DbfidxSeekL0Method 299
+# define DbfidxSeekMethod 144
+# define DbfidxSeekevalL0Method 300
+# define DbfidxSeekevalMethod 145
+# define DbfidxSetdatafieldMethod 146
+# define DbfidxSetfilterL0Method 301
+# define DbfidxSetfilterMethod 147
+# define DbfidxSetfoundL0Assign 302
+# define DbfidxSetfoundAssign 148
+# define DbfidxSetindexL0Method 303
+# define DbfidxSetindexMethod 149
+# define DbfidxSetlocateL0Assign 304
+# define DbfidxSetlocateAssign 150
+# define DbfidxSetorderL0Method 305
+# define DbfidxSetorderMethod 151
+# define DbfidxSetorderconditionL0Method 306
+# define DbfidxSetorderconditionMethod 152
+# define DbfidxSetrelationL0Method 307
+# define DbfidxSetrelationMethod 153
+# define DbfidxSetselectiverelatMethod 154
+# define DbfidxSharedL0Access 308
+# define DbfidxSharedAccess 155
+# define DbfidxSkipL0Method 309
+# define DbfidxSkipMethod 156
+# define DbfidxSortL0Method 310
+# define DbfidxSortMethod 157
+# define DbfidxStatusL0Access 311
+# define DbfidxStatusAccess 158
+# define DbfidxSumL0Method 312
+# define DbfidxSumMethod 159
+# define DbfidxSuspendnotificationMethod 160
+# define DbfidxTaskL0Method 313
+# define DbfidxTaskMethod 161
+# define DbfidxTotalL0Method 314
+# define DbfidxTotalMethod 162
+# define DbfidxUnlockL0Method 315
+# define DbfidxUnlockMethod 163
+# define DbfidxUnregisterclientMethod 164
+# define DbfidxUpdateL0Method 316
+# define DbfidxUpdateMethod 165
+# define DbfidxUsedL0Access 317
+# define DbfidxUsedAccess 166
+# define DbfidxUsersdbfL0Method 318
+# define DbfidxUsersdbfMethod 167
+# define DbfidxWhileblockL0Access 319
+# define DbfidxWhileblockL0Assign 320
+# define DbfidxWhileblockAccess 168
+# define DbfidxWhileblockAssign 169
+# define DbfidxZapL0Method 321
+# define DbfidxZapMethod 170
+# define DbfidxActaskProtect 44
+# define DbfidxAliasInstance 2
+# define DbfidxAliassymInstance 3
+# define DbfidxBdoneProtect 45
+# define DbfidxBevalProtect 46
+# define DbfidxBofProtect 47
+# define DbfidxBofInstance 4
+# define DbfidxBstartProtect 48
+# define DbfidxCargoInstance 5
+# define DbfidxConcurrencInstance 6
+# define DbfidxDeletedInstance 7
+# define DbfidxDriverInstance 8
+# define DbfidxEofProtect 49
+# define DbfidxEofInstance 9
+# define DbfidxErrinfoInstance 10
+# define DbfidxErrorProtect 50
+# define DbfidxFcountInstance 11
+# define DbfidxFilespecInstance 12
+# define DbfidxFilterInstance 13
+# define DbfidxForblockInstance 14
+# define DbfidxFoundInstance 15
+# define DbfidxGetlocateInstance 16
+# define DbfidxHeaderInstance 17
+# define DbfidxIndexcheckInstance 18
+# define DbfidxIndexcountProtect 51
+# define DbfidxIndexcountInstance 19
+# define DbfidxIndexextInstance 20
+# define DbfidxIndexkeyInstance 21
+# define DbfidxIndexlockInstance 22
+# define DbfidxIsrelationInstance 23
+# define DbfidxLastrecProtect 52
+# define DbfidxLastrecInstance 24
+# define DbfidxLupdateInstance 25
+# define DbfidxNameInstance 26
+# define DbfidxOrderbottoInstance 27
+# define DbfidxOrderkeynoInstance 28
+# define DbfidxOrderkeyvaInstance 29
+# define DbfidxOrdernumProtect 53
+# define DbfidxOrdertopscInstance 30
+# define DbfidxRddnameInstance 31
+# define DbfidxReadonlyInstance 32
+# define DbfidxReccountInstance 33
+# define DbfidxRecnoProtect 54
+# define DbfidxRecnoInstance 34
+# define DbfidxRecsizeInstance 35
+# define DbfidxReservedHidden 55
+# define DbfidxRlocklistInstance 36
+# define DbfidxScopeInstance 37
+# define DbfidxSetfoundInstance 38
+# define DbfidxSetlocateInstance 39
+# define DbfidxSharedInstance 40
+# define DbfidxStatusInstance 41
+# define DbfidxUsedInstance 42
+# define DbfidxUserabortProtect 56
+# define DbfidxWhileblockInstance 43
 extern FSvar *_bb_start FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_readclearg FGS_ANSI((FSint, FSvar *[]));
 static FSaddrval _fsali_kartneu;
@@ -3110,13 +4022,13 @@ static FSaddrval _bbvar_gesperrt;
 static FSaddrval _bbvar_getlist;
 static FSaddrval _bbvar_ckrit;
 
-static FSvar *_bb_cb_1_18_27(parno, parptr, argref)
+static FSvar *_bb_cb_1_19_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_18_27",18,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_19_31",19,parno,parptr);
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
@@ -3141,13 +4053,13 @@ _adios:
 }
 
 
-static FSvar *_bb_cb_1_30_27(parno, parptr, argref)
+static FSvar *_bb_cb_1_31_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_30_27",30,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_31_31",31,parno,parptr);
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
@@ -3172,13 +4084,13 @@ _adios:
 }
 
 
-static FSvar *_bb_cb_1_31_27(parno, parptr, argref)
+static FSvar *_bb_cb_1_32_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_31_27",31,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_32_31",32,parno,parptr);
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
@@ -3199,13 +4111,13 @@ _adios:
 }
 
 
-static FSvar *_bb_cb_2_31_27(parno, parptr, argref)
+static FSvar *_bb_cb_2_32_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_31_27",31,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_32_31",32,parno,parptr);
 
 	FSvar *_fgspvar__1 = 0;
 	if(fgsDonotenter) init_ref_data();
@@ -3216,13 +4128,13 @@ _adios:
 }
 
 
-static FSvar *_bb_cb_1_65_27(parno, parptr, argref)
+static FSvar *_bb_cb_1_66_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_65_27",65,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_66_31",66,parno,parptr);
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
@@ -3261,7 +4173,7 @@ FSint   parno;
 FSvar * parptr[];
 {
 	fn_stack fn_stk;
-	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"start",10,parno,parptr);
+	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"start",11,parno,parptr);
 
 	FSvar *par0[28], *par1[16], *par2[30];
 	FSvar *_fgspvar_bnodeleted = 0;
@@ -3273,99 +4185,99 @@ FSvar * parptr[];
 	FSvar *_fgslvar_i = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_bnodeleted = fgs_local_param(parno, 0, parptr, 'U', "");
-	_fgs_check_event(12,1,100);
-#line 12 "blobcopy.prg"
+	_fgs_check_event(13,1,100);
+#line 13 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_akartei, par0[1]);
-	_fgs_check_event(13,1,100);
-#line 13 "blobcopy.prg"
-	cpy_var(_fgslvar_nhandle, set_Iv((int) 0));
 	_fgs_check_event(14,1,100);
 #line 14 "blobcopy.prg"
-	cpy_var(_fgslvar_cbuffer, set_cv(""));
+	cpy_var(_fgslvar_nhandle, set_Iv((int) 0));
 	_fgs_check_event(15,1,100);
 #line 15 "blobcopy.prg"
+	cpy_var(_fgslvar_cbuffer, set_cv(""));
+	_fgs_check_event(16,1,100);
+#line 16 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_aneukartei, par0[1]);
-	_fgs_check_event(16,1,100);
-#line 16 "blobcopy.prg"
+	_fgs_check_event(17,1,100);
+#line 17 "blobcopy.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = _bb_chr(1, &par0[0]);
 	par0[2] = set_Iv((int) 13);
 	par0[3] = _bb_chr(1, &par0[2]);
 	par0[4] = u_add_u(par0[1], par0[3], 0);
 	cpy_var(_fgslvar_crlf, par0[4]);
-	_fgs_check_event(18,1,100);
-#line 18 "blobcopy.prg"
+	_fgs_check_event(19,1,100);
+#line 19 "blobcopy.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
-	_fgs_check_event(18,1,100);
-#line 18 "blobcopy.prg"
+	_fgs_check_event(19,1,100);
+#line 19 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
-	_fgs_check_event(18,1,100);
-#line 18 "blobcopy.prg"
+	_fgs_check_event(19,1,100);
+#line 19 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
-	_fgs_check_event(18,1,100);
-#line 18 "blobcopy.prg"
+	_fgs_check_event(19,1,100);
+#line 19 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
-	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_18_27, 0, (FSvar *)0);
+	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_19_31, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
-	_fgs_check_event(18,1,100);
-#line 18 "blobcopy.prg"
+	_fgs_check_event(19,1,100);
+#line 19 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
-	_fgs_check_event(23,1,100);
-#line 23 "blobcopy.prg"
+	_fgs_check_event(24,1,100);
+#line 24 "blobcopy.prg"
 	par0[0] = u_equ_u(_fgspvar_bnodeleted, fgsGetVar(_bbvar_nil));
 	if(!if_u(par0[0])) 
 		goto lbelse0;
-	_fgs_check_event(24,1,100);
-#line 24 "blobcopy.prg"
+	_fgs_check_event(25,1,100);
+#line 25 "blobcopy.prg"
 	par0[0] = set_lvar (_fgspvar_bnodeleted, 0);
 
 	goto lbendif0;
 lbelse0: ;
-	_fgs_check_event(26,1,100);
-#line 26 "blobcopy.prg"
+	_fgs_check_event(27,1,100);
+#line 27 "blobcopy.prg"
 	par0[0] = set_lvar (_fgspvar_bnodeleted, 1);
 
 lbendif0: ;
-	_fgs_check_event(29,1,100);
-#line 29 "blobcopy.prg"
+	_fgs_check_event(30,1,100);
+#line 30 "blobcopy.prg"
 	par0[0] = set_Iv((int) 200);
 	par0[1] = _bb_space(1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_ckrit].v, par0[1]);
-	_fgs_check_event(30,1,100);
-#line 30 "blobcopy.prg"
+	_fgs_check_event(31,1,100);
+#line 31 "blobcopy.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
-	_fgs_check_event(30,1,100);
-#line 30 "blobcopy.prg"
+	_fgs_check_event(31,1,100);
+#line 31 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
-	_fgs_check_event(30,1,100);
-#line 30 "blobcopy.prg"
+	_fgs_check_event(31,1,100);
+#line 31 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
-	_fgs_check_event(30,1,100);
-#line 30 "blobcopy.prg"
+	_fgs_check_event(31,1,100);
+#line 31 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
-	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_30_27, 0, (FSvar *)0);
+	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_31_31, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
-	_fgs_check_event(30,1,100);
-#line 30 "blobcopy.prg"
+	_fgs_check_event(31,1,100);
+#line 31 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
-	_fgs_check_event(31,1,100);
-#line 31 "blobcopy.prg"
+	_fgs_check_event(32,1,100);
+#line 32 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3374,16 +4286,16 @@ lbendif0: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(31,1,100);
-#line 31 "blobcopy.prg"
+	_fgs_check_event(32,1,100);
+#line 32 "blobcopy.prg"
 	par0[0] = set_cv("Kriterien: ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(31,1,100);
-#line 31 "blobcopy.prg"
+	_fgs_check_event(32,1,100);
+#line 32 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par2[0] = _bb_row(0, (FSvar**)0);
 	par1[0] = par2[0];
@@ -3391,10 +4303,10 @@ lbendif0: ;
 	par2[2] = n_add_u(1.0, 0, par2[1], 0);
 	par1[1] = par2[2];
 	par1[2] = set_cv("cKrit");
-	par2[3] = set_bvar(cre_tmpvar(), _bb_cb_1_31_27, 0, (FSvar *)0);
+	par2[3] = set_bvar(cre_tmpvar(), _bb_cb_1_32_31, 0, (FSvar *)0);
 	par1[3] = par2[3];
 	par1[4] = cre_tmpvar();
-	par2[4] = set_bvar(cre_tmpvar(), _bb_cb_2_31_27, 0, (FSvar *)0);
+	par2[4] = set_bvar(cre_tmpvar(), _bb_cb_2_32_31, 0, (FSvar *)0);
 	par1[5] = par2[4];
 	par1[6] = cre_tmpvar();
 	par1[7] = cre_tmpvar();
@@ -3412,14 +4324,14 @@ lbendif0: ;
 	par1[15] = _bb__fsget_(15, &par1[0]);
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
-	_fgs_check_event(31,1,100);
-#line 31 "blobcopy.prg"
+	_fgs_check_event(32,1,100);
+#line 32 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
-	_fgs_check_event(32,1,100);
-#line 32 "blobcopy.prg"
+	_fgs_check_event(33,1,100);
+#line 33 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = cre_tmpvar();
@@ -3429,13 +4341,13 @@ par0[2] = par0[1];
 	par0[6] = cre_tmpvar();
 	par0[7] = cre_tmpvar();
 	par0[8] = _bb_readmodal(8, &par0[0]);
-	_fgs_check_event(32,1,100);
-#line 32 "blobcopy.prg"
+	_fgs_check_event(33,1,100);
+#line 33 "blobcopy.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_getlist));
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb_readclearg(2, &par0[0]);
-	_fgs_check_event(32,1,100);
-#line 32 "blobcopy.prg"
+	_fgs_check_event(33,1,100);
+#line 33 "blobcopy.prg"
 	par1[0] = _bb_readsave(0, (FSvar**)0);
 	par1[1] = par1[0];
 	if(!if_u(par1[1])) goto lband1;
@@ -3450,8 +4362,8 @@ lband1:;
 	par0[2] = par1[4];
 	par0[0] = par0[2];
  }
-	_fgs_check_event(35,1,100);
-#line 35 "blobcopy.prg"
+	_fgs_check_event(36,1,100);
+#line 36 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3460,16 +4372,16 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(35,1,100);
-#line 35 "blobcopy.prg"
+	_fgs_check_event(36,1,100);
+#line 36 "blobcopy.prg"
 	par0[0] = set_cv("Sicherungsdatei f\357\277\275r Karteikartei wird neu erzeugt ...");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(36,1,100);
-#line 36 "blobcopy.prg"
+	_fgs_check_event(37,1,100);
+#line 37 "blobcopy.prg"
 	par0[0] = set_cv("kartneu");
 	par2[0] = set_cv("pnr");
 	par2[1] = set_cv("n");
@@ -3511,8 +4423,8 @@ lband1:;
 	par0[1] = par1[6];
 	par0[2] = set_cv("DBFMEMO");
 	par0[3] = _bb_dbcreate(3, &par0[0]);
-	_fgs_check_event(45,1,100);
-#line 45 "blobcopy.prg"
+	_fgs_check_event(46,1,100);
+#line 46 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3521,16 +4433,16 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(45,1,100);
-#line 45 "blobcopy.prg"
+	_fgs_check_event(46,1,100);
+#line 46 "blobcopy.prg"
 	par0[0] = set_cv("Fehlerprotokoll in KARTEI.ERR!");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(46,1,100);
-#line 46 "blobcopy.prg"
+	_fgs_check_event(47,1,100);
+#line 47 "blobcopy.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3539,24 +4451,24 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(46,1,100);
-#line 46 "blobcopy.prg"
+	_fgs_check_event(47,1,100);
+#line 47 "blobcopy.prg"
 	par0[0] = set_cv("Datenbank KARTNEU f\357\277\275r Karteikartei wurde neu erzeugt, weiter mit <RETURN>");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(47,1,100);
-#line 47 "blobcopy.prg"
+	_fgs_check_event(48,1,100);
+#line 48 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = _bb_inkey(1, &par0[0]);
-	_fgs_check_event(49,1,100);
-#line 49 "blobcopy.prg"
-	if(!if_u(_fgspvar_bnodeleted)) 
-		goto lbelse2;
 	_fgs_check_event(50,1,100);
 #line 50 "blobcopy.prg"
+	if(!if_u(_fgspvar_bnodeleted)) 
+		goto lbelse2;
+	_fgs_check_event(51,1,100);
+#line 51 "blobcopy.prg"
 	par0[0] = set_Iv((int) 5);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3565,16 +4477,16 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(50,1,100);
-#line 50 "blobcopy.prg"
+	_fgs_check_event(51,1,100);
+#line 51 "blobcopy.prg"
 	par0[0] = set_cv("Gel\357\277\275schte werden eleminiert!");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(51,1,100);
-#line 51 "blobcopy.prg"
+	_fgs_check_event(52,1,100);
+#line 52 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = _bb_inkey(1, &par0[0]);
 
@@ -3583,19 +4495,19 @@ lbelse2: ;
 
 
 lbendif2: ;
-	_fgs_check_event(54,1,100);
-#line 54 "blobcopy.prg"
+	_fgs_check_event(55,1,100);
+#line 55 "blobcopy.prg"
 	par0[0] = set_cv("kartei.err");
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_fcreate(2, &par0[0]);
 	par0[3] = cpy_var  (_fgslvar_nhandle, par0[2]);
-	_fgs_check_event(56,1,100);
-#line 56 "blobcopy.prg"
+	_fgs_check_event(57,1,100);
+#line 57 "blobcopy.prg"
 	par0[0] = ni_geq_u((int) 0, _fgslvar_nhandle);
 	if(!if_u(par0[0])) 
 		goto lbelse3;
-	_fgs_check_event(57,1,100);
-#line 57 "blobcopy.prg"
+	_fgs_check_event(58,1,100);
+#line 58 "blobcopy.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -3604,8 +4516,8 @@ lbendif2: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(57,1,100);
-#line 57 "blobcopy.prg"
+	_fgs_check_event(58,1,100);
+#line 58 "blobcopy.prg"
 	par2[0] = _bb_ferror(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = set_Iv((int) 2);
@@ -3618,8 +4530,8 @@ lbendif2: ;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(58,1,100);
-#line 58 "blobcopy.prg"
+	_fgs_check_event(59,1,100);
+#line 59 "blobcopy.prg"
 	par0[0] = _bb___quit(0, (FSvar**)0);
 
 	goto lbendif3;
@@ -3627,8 +4539,8 @@ lbelse3: ;
 
 
 lbendif3: ;
-	_fgs_check_event(61,1,100);
-#line 61 "blobcopy.prg"
+	_fgs_check_event(62,1,100);
+#line 62 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = set_cv("DBFMEMO");
 	par0[2] = set_cv("kartneu");
@@ -3636,13 +4548,13 @@ lbendif3: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = mk_var_cp(FALSE_VAR);
 	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(61,1,100);
-#line 61 "blobcopy.prg"
+	_fgs_check_event(62,1,100);
+#line 62 "blobcopy.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = cre_tmpvar();
 	par0[2] = _bb_dbsetindex(2, &par0[0]);
-	_fgs_check_event(61,1,100);
-#line 61 "blobcopy.prg"
+	_fgs_check_event(62,1,100);
+#line 62 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband4;
@@ -3652,8 +4564,8 @@ lbendif3: ;
 lband4:;
 	if(!if_u(par0[1])) 
 		goto lbelse5;
-	_fgs_check_event(61,1,100);
-#line 61 "blobcopy.prg"
+	_fgs_check_event(62,1,100);
+#line 62 "blobcopy.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif5;
@@ -3661,11 +4573,11 @@ lbelse5: ;
 
 
 lbendif5: ;
-	_fgs_check_event(61,1,100);
-#line 61 "blobcopy.prg"
+	_fgs_check_event(62,1,100);
+#line 62 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
-	_fgs_check_event(63,1,100);
-#line 63 "blobcopy.prg"
+	_fgs_check_event(64,1,100);
+#line 64 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = set_cv("DBFMEMO");
 	par0[2] = set_cv("kartei");
@@ -3673,13 +4585,13 @@ lbendif5: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = mk_var_cp(FALSE_VAR);
 	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(63,1,100);
-#line 63 "blobcopy.prg"
+	_fgs_check_event(64,1,100);
+#line 64 "blobcopy.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = cre_tmpvar();
 	par0[2] = _bb_dbsetindex(2, &par0[0]);
-	_fgs_check_event(63,1,100);
-#line 63 "blobcopy.prg"
+	_fgs_check_event(64,1,100);
+#line 64 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband6;
@@ -3689,8 +4601,8 @@ lbendif5: ;
 lband6:;
 	if(!if_u(par0[1])) 
 		goto lbelse7;
-	_fgs_check_event(63,1,100);
-#line 63 "blobcopy.prg"
+	_fgs_check_event(64,1,100);
+#line 64 "blobcopy.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif7;
@@ -3698,37 +4610,37 @@ lbelse7: ;
 
 
 lbendif7: ;
-	_fgs_check_event(63,1,100);
-#line 63 "blobcopy.prg"
-	par0[0] = _bb_used(0, (FSvar**)0);
 	_fgs_check_event(64,1,100);
 #line 64 "blobcopy.prg"
+	par0[0] = _bb_used(0, (FSvar**)0);
+	_fgs_check_event(65,1,100);
+#line 65 "blobcopy.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
-	_fgs_check_event(65,1,100);
-#line 65 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
-	_fgs_check_event(65,1,100);
-#line 65 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
-	_fgs_check_event(65,1,100);
-#line 65 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
-	_fgs_check_event(65,1,100);
-#line 65 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
-	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_65_27, 0, (FSvar *)0);
+	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_66_31, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
-	_fgs_check_event(65,1,100);
-#line 65 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(67,1,100);
+#line 67 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3737,8 +4649,8 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(67,1,100);
+#line 67 "blobcopy.prg"
 	par2[0] = _bb_lastrec(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = _bb_str(1, &par1[0]);
@@ -3749,8 +4661,8 @@ lbendif7: ;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(67,1,100);
-#line 67 "blobcopy.prg"
+	_fgs_check_event(68,1,100);
+#line 68 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3759,25 +4671,25 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(67,1,100);
-#line 67 "blobcopy.prg"
+	_fgs_check_event(68,1,100);
+#line 68 "blobcopy.prg"
 	par0[0] = set_cv("akt. Datensatz ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(68,1,100);
-#line 68 "blobcopy.prg"
+	_fgs_check_event(69,1,100);
+#line 69 "blobcopy.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	par0[0] = _bb_eof(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
-	_fgs_check_event(68,1,100);
-#line 68 "blobcopy.prg"
+	_fgs_check_event(69,1,100);
+#line 69 "blobcopy.prg"
 	if(!if_u(par0[1])) break;
-	_fgs_check_event(70,1,100);
-#line 70 "blobcopy.prg"
+	_fgs_check_event(71,1,100);
+#line 71 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 16);
 	par1[0] = cre_tmpvar();
@@ -3786,8 +4698,8 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(70,1,100);
-#line 70 "blobcopy.prg"
+	_fgs_check_event(71,1,100);
+#line 71 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -3795,8 +4707,8 @@ lbendif7: ;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(71,1,100);
-#line 71 "blobcopy.prg"
+	_fgs_check_event(72,1,100);
+#line 72 "blobcopy.prg"
 	par0[0] = _bb_deleted(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband8;
@@ -3804,8 +4716,8 @@ lbendif7: ;
 lband8:;
 	if(!if_u(par0[1])) 
 		goto lbelse9;
-	_fgs_check_event(72,1,100);
-#line 72 "blobcopy.prg"
+	_fgs_check_event(73,1,100);
+#line 73 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 30);
 	par1[0] = cre_tmpvar();
@@ -3814,8 +4726,8 @@ lband8:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(72,1,100);
-#line 72 "blobcopy.prg"
+	_fgs_check_event(73,1,100);
+#line 73 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -3823,11 +4735,11 @@ lband8:;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(73,1,100);
-#line 73 "blobcopy.prg"
-	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(74,1,100);
 #line 74 "blobcopy.prg"
+	par0[0] = _bb_dbskip(0, (FSvar**)0);
+	_fgs_check_event(75,1,100);
+#line 75 "blobcopy.prg"
 continue;
 lbloop10: ;
 
@@ -3836,23 +4748,23 @@ lbelse9: ;
 
 
 lbendif9: ;
-	_fgs_check_event(76,1,100);
-#line 76 "blobcopy.prg"
+	_fgs_check_event(77,1,100);
+#line 77 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_ckrit);
 	par0[1] = _bb_empty(1, &par0[0]);
 	par0[2] = not_u(par0[1]);
 	if(!if_u(par0[2])) 
 		goto lbelse11;
-	_fgs_check_event(77,1,100);
-#line 77 "blobcopy.prg"
+	_fgs_check_event(78,1,100);
+#line 78 "blobcopy.prg"
 	par0[0] = not_u(exp_eval(fgs_chararg(mv_names[_bbvar_ckrit].v, "&ckrit")));
 	if(!if_u(par0[0])) 
 		goto lbelse12;
-	_fgs_check_event(78,1,100);
-#line 78 "blobcopy.prg"
-	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(79,1,100);
 #line 79 "blobcopy.prg"
+	par0[0] = _bb_dbskip(0, (FSvar**)0);
+	_fgs_check_event(80,1,100);
+#line 80 "blobcopy.prg"
 continue;
 lbloop13: ;
 
@@ -3867,19 +4779,19 @@ lbelse11: ;
 
 
 lbendif11: ;
-	_fgs_check_event(82,1,100);
-#line 82 "blobcopy.prg"
+	_fgs_check_event(83,1,100);
+#line 83 "blobcopy.prg"
 	par0[0] = (FSvar *)fgsPushIArea(_fsali_kartneu);
 	par0[1] = _bb_dbappend(0, (FSvar**)0);
 	par0[2] = par0[1];
 fgsPopArea((fgsWorkArea *) par0[0]);
-	_fgs_check_event(83,1,100);
-#line 83 "blobcopy.prg"
+	_fgs_check_event(84,1,100);
+#line 84 "blobcopy.prg"
 	par0[0] = mk_var_cp(fgsGetIAliasField(_fsali_kartei, _bbvar_pointer));
 	par0[1] = _bb_memodecode(1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_akartei, par0[1]);
-	_fgs_check_event(84,1,100);
-#line 84 "blobcopy.prg"
+	_fgs_check_event(85,1,100);
+#line 85 "blobcopy.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3888,8 +4800,8 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(84,1,100);
-#line 84 "blobcopy.prg"
+	_fgs_check_event(85,1,100);
+#line 85 "blobcopy.prg"
 	par1[0] = _fgslvar_akartei;
 	par1[1] = _bb_valtype(1, &par1[0]);
 	par0[0] = par1[1];
@@ -3898,15 +4810,15 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(85,1,100);
-#line 85 "blobcopy.prg"
+	_fgs_check_event(86,1,100);
+#line 86 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = u_in_c(par0[1], "AC");
 	if(!if_u(par0[2])) 
 		goto lbelse14;
-	_fgs_check_event(86,1,100);
-#line 86 "blobcopy.prg"
+	_fgs_check_event(87,1,100);
+#line 87 "blobcopy.prg"
 	par0[0] = set_Iv((int) 4);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -3915,8 +4827,8 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(86,1,100);
-#line 86 "blobcopy.prg"
+	_fgs_check_event(87,1,100);
+#line 87 "blobcopy.prg"
 	par1[0] = _fgslvar_akartei;
 	par1[1] = _bb_len(1, &par1[0]);
 	par0[0] = par1[1];
@@ -3931,8 +4843,8 @@ lbelse14: ;
 
 
 lbendif14: ;
-	_fgs_check_event(90,1,100);
-#line 90 "blobcopy.prg"
+	_fgs_check_event(91,1,100);
+#line 91 "blobcopy.prg"
 	par2[0] = _bb_lastkey(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = _bb_chr(1, &par1[0]);
@@ -3949,18 +4861,18 @@ lbendif14: ;
 lbor15:;
 	if(!if_u(par0[3])) 
 		goto lbelse16;
-	_fgs_check_event(92,1,100);
-#line 92 "blobcopy.prg"
+	_fgs_check_event(93,1,100);
+#line 93 "blobcopy.prg"
 	par1[0] = set_Iv((int) 1);
 	par1[1] = _bb_chr(1, &par1[0]);
 	par0[0] = par1[1];
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb___keyboard(2, &par0[0]);
-	_fgs_check_event(93,1,100);
-#line 93 "blobcopy.prg"
+	_fgs_check_event(94,1,100);
+#line 94 "blobcopy.prg"
 	par0[0] = _bb_inkey(0, (FSvar**)0);
-	_fgs_check_event(95,1,100);
-#line 95 "blobcopy.prg"
+	_fgs_check_event(96,1,100);
+#line 96 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 5);
@@ -4003,8 +4915,8 @@ lbor15:;
  }
 	par0[26] = u_add_u(par0[22], par0[23], 0);
 	par0[27] = cpy_var  (_fgslvar_cbuffer, par0[26]);
-	_fgs_check_event(102,1,100);
-#line 102 "blobcopy.prg"
+	_fgs_check_event(103,1,100);
+#line 103 "blobcopy.prg"
 	par0[0] = _fgslvar_nhandle;
 	par1[0] = u_add_u(_fgslvar_cbuffer, _fgslvar_crlf, 0);
 	par0[1] = mk_var_cp(par1[0]);
@@ -4013,35 +4925,35 @@ lbor15:;
 	par1[3] = n_add_u(2.0, 0, par1[2], 0);
 	par0[2] = par1[3];
 	par0[3] = _bb_fwrite(3, &par0[0]);
-	_fgs_check_event(104,1,100);
-#line 104 "blobcopy.prg"
+	_fgs_check_event(105,1,100);
+#line 105 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = u_equ_c(par0[1], "A");
 	if(!if_u(par0[2])) 
 		goto lbelse17;
-	_fgs_check_event(105,1,100);
-#line 105 "blobcopy.prg"
+	_fgs_check_event(106,1,100);
+#line 106 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_aneukartei, par0[1]);
-	_fgs_check_event(106,1,100);
-#line 106 "blobcopy.prg"
+	_fgs_check_event(107,1,100);
+#line 107 "blobcopy.prg"
 	par0[0] = set_Ivar (_fgslvar_i, (int) 1);
 	goto lbfor18;
 lbinfor18:
  while(1) {
 	par0[0] = u_autoinc(_fgslvar_i);
-	_fgs_check_event(106,1,100);
-#line 106 "blobcopy.prg"
+	_fgs_check_event(107,1,100);
+#line 107 "blobcopy.prg"
 	del_tmpvars(fn_stk.tmv_now);
 lbfor18:
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_len(1, &par0[0]);
 	par0[2] = u_leq_u(_fgslvar_i, par0[1]);
 	if(!if_u(par0[2])) break;
-	_fgs_check_event(107,1,100);
-#line 107 "blobcopy.prg"
+	_fgs_check_event(108,1,100);
+#line 108 "blobcopy.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par1[0] = dget_arrv(_fgslvar_akartei, _fgslvar_i);
@@ -4060,8 +4972,8 @@ lbfor18:
 lband19:;
 	if(!if_u(par0[3])) 
 		goto lbelse20;
-	_fgs_check_event(108,1,100);
-#line 108 "blobcopy.prg"
+	_fgs_check_event(109,1,100);
+#line 109 "blobcopy.prg"
 	par0[0] = _fgslvar_aneukartei;
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
@@ -4079,11 +4991,11 @@ lbendif20: ;
 
 	del_tmpvars(fn_stk.tmv_now);
 
-	_fgs_check_event(111,1,100);
-#line 111 "blobcopy.prg"
-	par0[0] = cpy_var  (_fgslvar_akartei, _fgslvar_aneukartei);
 	_fgs_check_event(112,1,100);
 #line 112 "blobcopy.prg"
+	par0[0] = cpy_var  (_fgslvar_akartei, _fgslvar_aneukartei);
+	_fgs_check_event(113,1,100);
+#line 113 "blobcopy.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = _bb_space(1, &par0[0]);
 	par0[2] = u_add_c(par0[1], " : ", 0);
@@ -4099,8 +5011,8 @@ lbendif20: ;
 	par0[10] = _bb_str(3, &par0[7]);
 	par0[11] = u_add_u(par0[6], par0[10], 0);
 	par0[12] = cpy_var  (_fgslvar_cbuffer, par0[11]);
-	_fgs_check_event(115,1,100);
-#line 115 "blobcopy.prg"
+	_fgs_check_event(116,1,100);
+#line 116 "blobcopy.prg"
 	par0[0] = set_Iv((int) 5);
 	par0[1] = _bb_space(1, &par0[0]);
 	par0[2] = u_add_c(par0[1], " : ", 0);
@@ -4136,8 +5048,8 @@ lbendif20: ;
  }
 	par0[20] = u_add_u(par0[16], par0[17], 0);
 	par0[21] = cpy_var  (_fgslvar_cbuffer, par0[20]);
-	_fgs_check_event(122,1,100);
-#line 122 "blobcopy.prg"
+	_fgs_check_event(123,1,100);
+#line 123 "blobcopy.prg"
 	par0[0] = _fgslvar_nhandle;
 	par1[0] = u_add_u(_fgslvar_cbuffer, _fgslvar_crlf, 0);
 	par0[1] = mk_var_cp(par1[0]);
@@ -4149,8 +5061,8 @@ lbendif20: ;
 
 	goto lbendif17;
 lbelse17: ;
-	_fgs_check_event(124,1,100);
-#line 124 "blobcopy.prg"
+	_fgs_check_event(125,1,100);
+#line 125 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_akartei, par0[1]);
@@ -4162,17 +5074,17 @@ lbelse16: ;
 
 
 lbendif16: ;
-	_fgs_check_event(131,1,100);
-#line 131 "blobcopy.prg"
+	_fgs_check_event(132,1,100);
+#line 132 "blobcopy.prg"
 	par0[0] = u_neq_u(_fgslvar_akartei, fgsGetVar(_bbvar_nil));
 	if(!if_u(par0[0])) 
 		goto lbelse21;
-	_fgs_check_event(132,1,100);
-#line 132 "blobcopy.prg"
-	par0[0] = set_cv("kartneu");
-	par0[1] = _bb_dbselectar(1, &par0[0]);
 	_fgs_check_event(133,1,100);
 #line 133 "blobcopy.prg"
+	par0[0] = set_cv("kartneu");
+	par0[1] = _bb_dbselectar(1, &par0[0]);
+	_fgs_check_event(134,1,100);
+#line 134 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = c_eequ_u("A", par0[1]);
@@ -4185,33 +5097,33 @@ lbendif16: ;
 lband22:;
 	if(!if_u(par0[3])) 
 		goto lbelse23;
-	_fgs_check_event(134,1,100);
-#line 134 "blobcopy.prg"
+	_fgs_check_event(135,1,100);
+#line 135 "blobcopy.prg"
 	par0[0] = mk_var_cp(_fgslvar_akartei);
 	par0[1] = _bb_memoencode(1, &par0[0]);
 	par0[2] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pointer), par0[1]);
 
 	goto lbendif23;
 lbelse23: ;
-	_fgs_check_event(136,1,100);
-#line 136 "blobcopy.prg"
+	_fgs_check_event(137,1,100);
+#line 137 "blobcopy.prg"
 	par0[0] = set_Ivar (fgsGetIAliasField(_fsali_kartneu, _bbvar_pointer), (int) 0);
 
 lbendif23: ;
-	_fgs_check_event(138,1,100);
-#line 138 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pnr), fgsGetIAliasField(_fsali_kartei, _bbvar_pnr));
 	_fgs_check_event(139,1,100);
 #line 139 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_datetime), fgsGetIAliasField(_fsali_kartei, _bbvar_datetime));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pnr), fgsGetIAliasField(_fsali_kartei, _bbvar_pnr));
 	_fgs_check_event(140,1,100);
 #line 140 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_gesperrt), fgsGetIAliasField(_fsali_kartei, _bbvar_gesperrt));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_datetime), fgsGetIAliasField(_fsali_kartei, _bbvar_datetime));
 	_fgs_check_event(141,1,100);
 #line 141 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_elemente), fgsGetIAliasField(_fsali_kartei, _bbvar_elemente));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_gesperrt), fgsGetIAliasField(_fsali_kartei, _bbvar_gesperrt));
 	_fgs_check_event(142,1,100);
 #line 142 "blobcopy.prg"
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_elemente), fgsGetIAliasField(_fsali_kartei, _bbvar_elemente));
+	_fgs_check_event(143,1,100);
+#line 143 "blobcopy.prg"
 	par0[0] = set_cv("kartei");
 	par0[1] = _bb_dbselectar(1, &par0[0]);
 
@@ -4220,22 +5132,22 @@ lbelse21: ;
 
 
 lbendif21: ;
-	_fgs_check_event(144,1,100);
-#line 144 "blobcopy.prg"
+	_fgs_check_event(145,1,100);
+#line 145 "blobcopy.prg"
 	par0[0] = _bb_dbskip(0, (FSvar**)0);
  }
 
 	del_tmpvars(fn_stk.tmv_now);
 
-	_fgs_check_event(147,1,100);
-#line 147 "blobcopy.prg"
-	par0[0] = _fgslvar_nhandle;
-	par0[1] = _bb_fclose(1, &par0[0]);
 	_fgs_check_event(148,1,100);
 #line 148 "blobcopy.prg"
+	par0[0] = _fgslvar_nhandle;
+	par0[1] = _bb_fclose(1, &par0[0]);
+	_fgs_check_event(149,1,100);
+#line 149 "blobcopy.prg"
 	par0[0] = _bb_dbcloseall(0, (FSvar**)0);
-	_fgs_check_event(150,1,100);
-#line 150 "blobcopy.prg"
+	_fgs_check_event(151,1,100);
+#line 151 "blobcopy.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }

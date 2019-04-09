@@ -3,6 +3,7 @@
 #INCLUDE "box.CH"
 //#INCLUDE "blob.CH"
 #INCLUDE "dbstruct.CH"
+#include "dbfidx.fh"
 
 
 
