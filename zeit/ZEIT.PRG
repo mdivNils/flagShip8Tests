@@ -7,7 +7,6 @@
 //#INCLUDE "dbinfo.CH"
 //#INCLUDE "llibbtoo.CH"
 
-
 STATIC bGrafik := .T.
 
 
@@ -17,7 +16,6 @@ SET DATE GERMAN
 SET SCOR OFF
 SET EXCL OFF
 SET CENTURY ON
-
 
 
 SET EVENTMASK TO INKEY_ALL
@@ -209,10 +207,10 @@ DO WHILE .T.
 	@  6, 22 GET aerzte->passwort ;
 							CAPTION "&Passwort             "
 	@  7, 22 GET aerzte->datum ;
-							CAPTION "Datum letzte énderung" ;
+							CAPTION "Datum letzte aenderung" ;
 							WHEN .F.
 	@ 08, 22 GET aerzte->pwablauf ;
-							CAPTION "Passwort lÑuft ab am "
+							CAPTION "Passwort laeuft ab am "
 
 AADD( GetList, CHECKBOX( 11, 21, "Zeitkontenmodell     " ) )
 oCB1 := ATAIL( GetList )
@@ -228,7 +226,7 @@ ATAIL( GetList ):Display()
 							STATE {|| DBCOMMIT() }
 */
 	@ 12, 22 GET aerzte->zk_von ;
-							CAPTION "Erîffnung Zeitkonto  " ;
+							CAPTION "Eroeffnung Zeitkonto  " ;
 							WHEN aerzte->zeitkonto
 	@ 13, 22 GET aerzte->zk_bis ;
 							CAPTION "Laufzeit Zeitkonto   " ;
@@ -244,7 +242,7 @@ ATAIL( GetList ):Display()
 							CAPTION "Feierabend um        "
 */
 	@ 17, 22 GET aerzte->faktor_ue ;
-							CAPTION "öberstunden-Faktor   "
+							CAPTION "Ueberstunden-Faktor   "
 
 	@ 19, 22 GET bVar2 PUSHBUTTON CAPTION "Arbeitszeiten-Tabelle" ;
 											COLOR farb_attPB
@@ -256,7 +254,7 @@ ATAIL( GetList ):Display()
 	@ 21,  0 SAY "Gespeicherte KVK-Daten"
 	@ 22,  0 SAY "Patientenname"
 	@ 23,  0 SAY "Mitglieds-Nr."
-	@ 24,  0 SAY "Stra·e"
+	@ 24,  0 SAY "Strasse"
 	@ 25,  0 SAY "PLZ, Ort"
 
 	@ 22, 22 SAY TRIM( aerzte->kvk_name ) + ", " + TRIM( aerzte->kvk_vor ) COLOR "R/N*"
@@ -334,7 +332,7 @@ IF _anab = "1"										// anmelden
 ELSE                                      // abmelden
    @ 2,1 SAY "Abgemeldet um: "+mtime
 ENDIF
-@ 3,1 SAY "BestÑtigen mit RETURN, Abbruch mit ESC!"
+@ 3,1 SAY "Bestaetigen mit RETURN, Abbruch mit ESC!"
 INKEY(0)
 wclose()
 IF LASTKEY() = K_RETURN
@@ -356,7 +354,7 @@ RETURN(NIL)
 FUNC Zeit_List
 ***********************************************************
 /*
-			Liste Zeiten fÅr User
+			Liste Zeiten fÔøΩr User
 */
 mdatum  = DATE()
 mdatum2 = DATE()
@@ -371,7 +369,7 @@ IF EMPTY(mdatum) .OR. LASTKEY() = 27
 	RETURN(.T.)
 ENDIF
 IF mdatum2 < mdatum
-   Alert("Datum 1 mu· <= Datum 2!")
+   Alert("Datum 1 muss <= Datum 2!")
 	RETURN(.T.)
 ENDIF
 
@@ -425,8 +423,8 @@ DO WHILE buchstabe = m_buch .AND. DTOS(datum) <= DTOS(mdatum2)
 
 ENDDO
 GesamtSekunden = gzeit
-GesamtStunden  = FLOOR(GesamtSekunden / (60*60))			// Floor() gibt nÑchste
-                                                        	// kleinere ganze Zahl zurÅck
+GesamtStunden  = FLOOR(GesamtSekunden / (60*60))			// Floor() gibt nÔøΩchste
+                                                        	// kleinere ganze Zahl zurÔøΩck
 GesamtSekunden = GesamtSekunden - (GesamtStunden*60*60)
 GesamtMinuten  = Floor(GesamtSekunden/60)
 GesamtSekunden = GesamtSekunden - (GesamtMinuten*60)
@@ -458,7 +456,7 @@ FUNC kopf
 IF m_bs = "B"
 	CLEA
 ENDIF
-@ 1,10 SAY "Zeiten fÅr USER: " + muser
+@ 1,10 SAY "Zeiten fuer USER: " + muser
 @ 2,10 SAY "Zeitraum vom: "+DTOC(mdatum)+"  bis zum: "+DTOC(mdatum2)
 @ 3,10 SAY "Datum"
 @ 3,30 SAY "Zeit AN"

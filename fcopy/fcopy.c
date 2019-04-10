@@ -3059,7 +3059,6 @@ extern FSvar *_bb_dbappend FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbcloseall FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbgotop FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbselectar FGS_ANSI((FSint, FSvar *[]));
-extern FSvar *_bb_dbsetindex FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbskip FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbusearea FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_devout FGS_ANSI((FSint, FSvar *[]));
@@ -3414,9 +3413,6 @@ FSvar * parptr[];
 	_fgs_check_event(15,1,100);
 #line 15 "fcopy.prg"
 	cpy_var(_fgslvar_nfanz, set_Iv((int) 0));
-	_fgs_check_event(17,1,100);
-#line 17 "fcopy.prg"
-	cpy_var(_fgslvar_nwahl, set_Iv((int) 0));
 	_fgs_check_event(18,1,100);
 #line 18 "fcopy.prg"
 	_tmp_2_ = fgs_declare(_bbvar_ckrit);
@@ -3500,7 +3496,7 @@ lbendif0: ;
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(32,1,100);
 #line 32 "fcopy.prg"
-	par0[0] = set_cv("     1. Abrechnungsf\357\277\275lle");
+	par0[0] = set_cv("     1. Abrechnungsfaelle");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
@@ -3994,17 +3990,10 @@ lbendif5: ;
 	_fgs_check_event(69,1,100);
 #line 69 "fcopy.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = set_cv("DBFMEMO");
+	par0[1] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par0[2] = mk_var_cp(_fgslvar_cfilename);
 	par0[3] = cre_tmpvar();
-	par0[4] = cre_tmpvar();
-	par0[5] = mk_var_cp(FALSE_VAR);
-	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(69,1,100);
-#line 69 "fcopy.prg"
-	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = cre_tmpvar();
-	par0[2] = _bb_dbsetindex(2, &par0[0]);
+	par0[4] = _bb_dbusearea(4, &par0[0]);
 	_fgs_check_event(69,1,100);
 #line 69 "fcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
@@ -4036,7 +4025,7 @@ lbendif11: ;
 #line 71 "fcopy.prg"
 	par0[0] = set_cv("dbftemp");
 	par0[1] = set_cv("__temp");
-	par0[2] = set_cv("DBFMEMO");
+	par0[2] = cre_tmpvar();
 	par0[3] = mk_var_cp(TRUE_VAR);
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb___dbcreate(5, &par0[0]);
@@ -4144,17 +4133,10 @@ lbendif15: ;
 	_fgs_check_event(91,1,100);
 #line 91 "fcopy.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = set_cv("DBFMEMO");
+	par0[1] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par0[2] = set_cv("dbftemp");
 	par0[3] = cre_tmpvar();
-	par0[4] = cre_tmpvar();
-	par0[5] = mk_var_cp(FALSE_VAR);
-	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(91,1,100);
-#line 91 "fcopy.prg"
-	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = cre_tmpvar();
-	par0[2] = _bb_dbsetindex(2, &par0[0]);
+	par0[4] = _bb_dbusearea(4, &par0[0]);
 	_fgs_check_event(91,1,100);
 #line 91 "fcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);

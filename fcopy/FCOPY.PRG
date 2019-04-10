@@ -29,7 +29,7 @@ ENDIF
 CLEAR
 IF nWahl = 0
 	@ 1,1 SAY "Welche Datei reorganisieren?"
-	@ 2,1 SAY "     1. Abrechnungsf�lle"
+	@ 2,1 SAY "     1. Abrechnungsfaelle"
 	@ 3,1 SAY "     2. andere Datei"
 	@ 4,1 GET nWahl
 	READ
@@ -66,9 +66,9 @@ ELSE
 
 ENDIF
 
-USE ( cFileName ) VIA "DBFMEMO"
-COPY STRU EXTENDED TO __temp
-CREATE dbftemp FROM __temp NEW VIA "DBFMEMO"
+USE (cFileName)
+COPY STRUCTURE EXTENDED TO __temp
+CREATE dbftemp FROM __temp NEW
 
 USE __temp
 DBGOTOP()
@@ -88,7 +88,7 @@ ELSE
 	xKrit := &("{|| " + cKrit + " }")
 ENDIF
 
-USE dbftemp VIA "DBFMEMO"
+USE dbftemp 
 
 DBSELECTAREA( cFileName )
 DBGOTOP()

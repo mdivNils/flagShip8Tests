@@ -3057,7 +3057,6 @@ extern FSvar *_bb_dbcloseall FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbcreate FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbgotop FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbselectar FGS_ANSI((FSint, FSvar *[]));
-extern FSvar *_bb_dbsetindex FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbskip FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_dbusearea FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_deleted FGS_ANSI((FSint, FSvar *[]));
@@ -4007,9 +4006,7 @@ extern FSvar *_bb_dbfidx_zap_me FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_start FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_readclearg FGS_ANSI((FSint, FSvar *[]));
 static FSaddrval _fsali_kartneu;
-extern FSvar *_bb_memodecode FGS_ANSI((FSint, FSvar *[]));
 static FSaddrval _fsali_kartei;
-extern FSvar *_bb_memoencode FGS_ANSI((FSint, FSvar *[]));
 
 
 static FSaddrval _bbvar_nil;
@@ -4128,13 +4125,13 @@ _adios:
 }
 
 
-static FSvar *_bb_cb_1_66_31(parno, parptr, argref)
+static FSvar *_bb_cb_1_65_31(parno, parptr, argref)
 FSint parno;
 FSvar *parptr[];
 FSvar *argref[];
 {
 	fn_stack   fn_stk;
-	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_66_31",66,parno,parptr);
+	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_65_31",65,parno,parptr);
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
@@ -4374,7 +4371,7 @@ lband1:;
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(36,1,100);
 #line 36 "blobcopy.prg"
-	par0[0] = set_cv("Sicherungsdatei f\357\277\275r Karteikartei wird neu erzeugt ...");
+	par0[0] = set_cv("Sicherungsdatei f\303\274r Karteikartei wird neu erzeugt ...");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
@@ -4421,10 +4418,9 @@ lband1:;
 	par1[5] = par2[29];
 	par1[6] = cre_arra(cre_tmpvar(), 6, 1, &par1[0]);
 	par0[1] = par1[6];
-	par0[2] = set_cv("DBFMEMO");
-	par0[3] = _bb_dbcreate(3, &par0[0]);
-	_fgs_check_event(46,1,100);
-#line 46 "blobcopy.prg"
+	par0[2] = _bb_dbcreate(2, &par0[0]);
+	_fgs_check_event(45,1,100);
+#line 45 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4433,16 +4429,16 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(46,1,100);
-#line 46 "blobcopy.prg"
+	_fgs_check_event(45,1,100);
+#line 45 "blobcopy.prg"
 	par0[0] = set_cv("Fehlerprotokoll in KARTEI.ERR!");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(47,1,100);
-#line 47 "blobcopy.prg"
+	_fgs_check_event(46,1,100);
+#line 46 "blobcopy.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4451,24 +4447,24 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(47,1,100);
-#line 47 "blobcopy.prg"
-	par0[0] = set_cv("Datenbank KARTNEU f\357\277\275r Karteikartei wurde neu erzeugt, weiter mit <RETURN>");
+	_fgs_check_event(46,1,100);
+#line 46 "blobcopy.prg"
+	par0[0] = set_cv("Datenbank KARTNEU fuer Karteikartei wurde neu erzeugt, weiter mit <RETURN>");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(48,1,100);
-#line 48 "blobcopy.prg"
+	_fgs_check_event(47,1,100);
+#line 47 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = _bb_inkey(1, &par0[0]);
-	_fgs_check_event(50,1,100);
-#line 50 "blobcopy.prg"
+	_fgs_check_event(49,1,100);
+#line 49 "blobcopy.prg"
 	if(!if_u(_fgspvar_bnodeleted)) 
 		goto lbelse2;
-	_fgs_check_event(51,1,100);
-#line 51 "blobcopy.prg"
+	_fgs_check_event(50,1,100);
+#line 50 "blobcopy.prg"
 	par0[0] = set_Iv((int) 5);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4477,16 +4473,16 @@ lband1:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(51,1,100);
-#line 51 "blobcopy.prg"
-	par0[0] = set_cv("Gel\357\277\275schte werden eleminiert!");
+	_fgs_check_event(50,1,100);
+#line 50 "blobcopy.prg"
+	par0[0] = set_cv("Geloeschte werden eleminiert!");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(52,1,100);
-#line 52 "blobcopy.prg"
+	_fgs_check_event(51,1,100);
+#line 51 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = _bb_inkey(1, &par0[0]);
 
@@ -4495,19 +4491,19 @@ lbelse2: ;
 
 
 lbendif2: ;
-	_fgs_check_event(55,1,100);
-#line 55 "blobcopy.prg"
+	_fgs_check_event(54,1,100);
+#line 54 "blobcopy.prg"
 	par0[0] = set_cv("kartei.err");
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_fcreate(2, &par0[0]);
 	par0[3] = cpy_var  (_fgslvar_nhandle, par0[2]);
-	_fgs_check_event(57,1,100);
-#line 57 "blobcopy.prg"
+	_fgs_check_event(56,1,100);
+#line 56 "blobcopy.prg"
 	par0[0] = ni_geq_u((int) 0, _fgslvar_nhandle);
 	if(!if_u(par0[0])) 
 		goto lbelse3;
-	_fgs_check_event(58,1,100);
-#line 58 "blobcopy.prg"
+	_fgs_check_event(57,1,100);
+#line 57 "blobcopy.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -4516,8 +4512,8 @@ lbendif2: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(58,1,100);
-#line 58 "blobcopy.prg"
+	_fgs_check_event(57,1,100);
+#line 57 "blobcopy.prg"
 	par2[0] = _bb_ferror(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = set_Iv((int) 2);
@@ -4530,8 +4526,8 @@ lbendif2: ;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(59,1,100);
-#line 59 "blobcopy.prg"
+	_fgs_check_event(58,1,100);
+#line 58 "blobcopy.prg"
 	par0[0] = _bb___quit(0, (FSvar**)0);
 
 	goto lbendif3;
@@ -4539,22 +4535,15 @@ lbelse3: ;
 
 
 lbendif3: ;
-	_fgs_check_event(62,1,100);
-#line 62 "blobcopy.prg"
+	_fgs_check_event(61,1,100);
+#line 61 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
-	par0[1] = set_cv("DBFMEMO");
+	par0[1] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par0[2] = set_cv("kartneu");
 	par0[3] = cre_tmpvar();
-	par0[4] = cre_tmpvar();
-	par0[5] = mk_var_cp(FALSE_VAR);
-	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(62,1,100);
-#line 62 "blobcopy.prg"
-	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = cre_tmpvar();
-	par0[2] = _bb_dbsetindex(2, &par0[0]);
-	_fgs_check_event(62,1,100);
-#line 62 "blobcopy.prg"
+	par0[4] = _bb_dbusearea(4, &par0[0]);
+	_fgs_check_event(61,1,100);
+#line 61 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband4;
@@ -4564,8 +4553,8 @@ lbendif3: ;
 lband4:;
 	if(!if_u(par0[1])) 
 		goto lbelse5;
-	_fgs_check_event(62,1,100);
-#line 62 "blobcopy.prg"
+	_fgs_check_event(61,1,100);
+#line 61 "blobcopy.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif5;
@@ -4573,25 +4562,18 @@ lbelse5: ;
 
 
 lbendif5: ;
-	_fgs_check_event(62,1,100);
-#line 62 "blobcopy.prg"
+	_fgs_check_event(61,1,100);
+#line 61 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
-	_fgs_check_event(64,1,100);
-#line 64 "blobcopy.prg"
+	_fgs_check_event(63,1,100);
+#line 63 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
-	par0[1] = set_cv("DBFMEMO");
+	par0[1] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par0[2] = set_cv("kartei");
 	par0[3] = cre_tmpvar();
-	par0[4] = cre_tmpvar();
-	par0[5] = mk_var_cp(FALSE_VAR);
-	par0[6] = _bb_dbusearea(6, &par0[0]);
-	_fgs_check_event(64,1,100);
-#line 64 "blobcopy.prg"
-	par0[0] = mk_var_cp(FALSE_VAR);
-	par0[1] = cre_tmpvar();
-	par0[2] = _bb_dbsetindex(2, &par0[0]);
-	_fgs_check_event(64,1,100);
-#line 64 "blobcopy.prg"
+	par0[4] = _bb_dbusearea(4, &par0[0]);
+	_fgs_check_event(63,1,100);
+#line 63 "blobcopy.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband6;
@@ -4601,8 +4583,8 @@ lbendif5: ;
 lband6:;
 	if(!if_u(par0[1])) 
 		goto lbelse7;
-	_fgs_check_event(64,1,100);
-#line 64 "blobcopy.prg"
+	_fgs_check_event(63,1,100);
+#line 63 "blobcopy.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif7;
@@ -4610,37 +4592,37 @@ lbelse7: ;
 
 
 lbendif7: ;
+	_fgs_check_event(63,1,100);
+#line 63 "blobcopy.prg"
+	par0[0] = _bb_used(0, (FSvar**)0);
 	_fgs_check_event(64,1,100);
 #line 64 "blobcopy.prg"
-	par0[0] = _bb_used(0, (FSvar**)0);
+	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 	_fgs_check_event(65,1,100);
 #line 65 "blobcopy.prg"
-	par0[0] = _bb_dbgotop(0, (FSvar**)0);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(65,1,100);
+#line 65 "blobcopy.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(65,1,100);
+#line 65 "blobcopy.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(65,1,100);
+#line 65 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
-	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_66_31, 0, (FSvar *)0);
+	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_65_31, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
-	_fgs_check_event(66,1,100);
-#line 66 "blobcopy.prg"
+	_fgs_check_event(65,1,100);
+#line 65 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
-	_fgs_check_event(67,1,100);
-#line 67 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4649,20 +4631,20 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(67,1,100);
-#line 67 "blobcopy.prg"
+	_fgs_check_event(66,1,100);
+#line 66 "blobcopy.prg"
 	par2[0] = _bb_lastrec(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = _bb_str(1, &par1[0]);
-	par1[2] = c_add_u("Anzahl S\357\277\275tze   ", par1[1]);
+	par1[2] = c_add_u("Anzahl Saetze   ", par1[1]);
 	par0[0] = par1[2];
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(68,1,100);
-#line 68 "blobcopy.prg"
+	_fgs_check_event(67,1,100);
+#line 67 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4671,25 +4653,25 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(68,1,100);
-#line 68 "blobcopy.prg"
+	_fgs_check_event(67,1,100);
+#line 67 "blobcopy.prg"
 	par0[0] = set_cv("akt. Datensatz ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(69,1,100);
-#line 69 "blobcopy.prg"
+	_fgs_check_event(68,1,100);
+#line 68 "blobcopy.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	par0[0] = _bb_eof(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
-	_fgs_check_event(69,1,100);
-#line 69 "blobcopy.prg"
+	_fgs_check_event(68,1,100);
+#line 68 "blobcopy.prg"
 	if(!if_u(par0[1])) break;
-	_fgs_check_event(71,1,100);
-#line 71 "blobcopy.prg"
+	_fgs_check_event(70,1,100);
+#line 70 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 16);
 	par1[0] = cre_tmpvar();
@@ -4698,8 +4680,8 @@ lbendif7: ;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(71,1,100);
-#line 71 "blobcopy.prg"
+	_fgs_check_event(70,1,100);
+#line 70 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -4707,8 +4689,8 @@ lbendif7: ;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(72,1,100);
-#line 72 "blobcopy.prg"
+	_fgs_check_event(71,1,100);
+#line 71 "blobcopy.prg"
 	par0[0] = _bb_deleted(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband8;
@@ -4716,8 +4698,8 @@ lbendif7: ;
 lband8:;
 	if(!if_u(par0[1])) 
 		goto lbelse9;
-	_fgs_check_event(73,1,100);
-#line 73 "blobcopy.prg"
+	_fgs_check_event(72,1,100);
+#line 72 "blobcopy.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 30);
 	par1[0] = cre_tmpvar();
@@ -4726,8 +4708,8 @@ lband8:;
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(73,1,100);
-#line 73 "blobcopy.prg"
+	_fgs_check_event(72,1,100);
+#line 72 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -4735,11 +4717,11 @@ lband8:;
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
+	_fgs_check_event(73,1,100);
+#line 73 "blobcopy.prg"
+	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(74,1,100);
 #line 74 "blobcopy.prg"
-	par0[0] = _bb_dbskip(0, (FSvar**)0);
-	_fgs_check_event(75,1,100);
-#line 75 "blobcopy.prg"
 continue;
 lbloop10: ;
 
@@ -4748,23 +4730,23 @@ lbelse9: ;
 
 
 lbendif9: ;
-	_fgs_check_event(77,1,100);
-#line 77 "blobcopy.prg"
+	_fgs_check_event(76,1,100);
+#line 76 "blobcopy.prg"
 	par0[0] = fgsGetVar(_bbvar_ckrit);
 	par0[1] = _bb_empty(1, &par0[0]);
 	par0[2] = not_u(par0[1]);
 	if(!if_u(par0[2])) 
 		goto lbelse11;
-	_fgs_check_event(78,1,100);
-#line 78 "blobcopy.prg"
+	_fgs_check_event(77,1,100);
+#line 77 "blobcopy.prg"
 	par0[0] = not_u(exp_eval(fgs_chararg(mv_names[_bbvar_ckrit].v, "&ckrit")));
 	if(!if_u(par0[0])) 
 		goto lbelse12;
+	_fgs_check_event(78,1,100);
+#line 78 "blobcopy.prg"
+	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(79,1,100);
 #line 79 "blobcopy.prg"
-	par0[0] = _bb_dbskip(0, (FSvar**)0);
-	_fgs_check_event(80,1,100);
-#line 80 "blobcopy.prg"
 continue;
 lbloop13: ;
 
@@ -4779,19 +4761,17 @@ lbelse11: ;
 
 
 lbendif11: ;
-	_fgs_check_event(83,1,100);
-#line 83 "blobcopy.prg"
+	_fgs_check_event(82,1,100);
+#line 82 "blobcopy.prg"
 	par0[0] = (FSvar *)fgsPushIArea(_fsali_kartneu);
 	par0[1] = _bb_dbappend(0, (FSvar**)0);
 	par0[2] = par0[1];
 fgsPopArea((fgsWorkArea *) par0[0]);
+	_fgs_check_event(83,1,100);
+#line 83 "blobcopy.prg"
+	par0[0] = cpy_var  (_fgslvar_akartei, fgsGetIAliasField(_fsali_kartei, _bbvar_pointer));
 	_fgs_check_event(84,1,100);
 #line 84 "blobcopy.prg"
-	par0[0] = mk_var_cp(fgsGetIAliasField(_fsali_kartei, _bbvar_pointer));
-	par0[1] = _bb_memodecode(1, &par0[0]);
-	par0[2] = cpy_var  (_fgslvar_akartei, par0[1]);
-	_fgs_check_event(85,1,100);
-#line 85 "blobcopy.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4800,8 +4780,8 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(85,1,100);
-#line 85 "blobcopy.prg"
+	_fgs_check_event(84,1,100);
+#line 84 "blobcopy.prg"
 	par1[0] = _fgslvar_akartei;
 	par1[1] = _bb_valtype(1, &par1[0]);
 	par0[0] = par1[1];
@@ -4810,15 +4790,15 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
-	_fgs_check_event(86,1,100);
-#line 86 "blobcopy.prg"
+	_fgs_check_event(85,1,100);
+#line 85 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = u_in_c(par0[1], "AC");
 	if(!if_u(par0[2])) 
 		goto lbelse14;
-	_fgs_check_event(87,1,100);
-#line 87 "blobcopy.prg"
+	_fgs_check_event(86,1,100);
+#line 86 "blobcopy.prg"
 	par0[0] = set_Iv((int) 4);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -4827,8 +4807,8 @@ fgsPopArea((fgsWorkArea *) par0[0]);
 	par1[3] = _bb__stdunitpi(3, &par1[0]);
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
-	_fgs_check_event(87,1,100);
-#line 87 "blobcopy.prg"
+	_fgs_check_event(86,1,100);
+#line 86 "blobcopy.prg"
 	par1[0] = _fgslvar_akartei;
 	par1[1] = _bb_len(1, &par1[0]);
 	par0[0] = par1[1];
@@ -4843,8 +4823,8 @@ lbelse14: ;
 
 
 lbendif14: ;
-	_fgs_check_event(91,1,100);
-#line 91 "blobcopy.prg"
+	_fgs_check_event(90,1,100);
+#line 90 "blobcopy.prg"
 	par2[0] = _bb_lastkey(0, (FSvar**)0);
 	par1[0] = par2[0];
 	par1[1] = _bb_chr(1, &par1[0]);
@@ -4861,18 +4841,18 @@ lbendif14: ;
 lbor15:;
 	if(!if_u(par0[3])) 
 		goto lbelse16;
-	_fgs_check_event(93,1,100);
-#line 93 "blobcopy.prg"
+	_fgs_check_event(92,1,100);
+#line 92 "blobcopy.prg"
 	par1[0] = set_Iv((int) 1);
 	par1[1] = _bb_chr(1, &par1[0]);
 	par0[0] = par1[1];
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb___keyboard(2, &par0[0]);
-	_fgs_check_event(94,1,100);
-#line 94 "blobcopy.prg"
+	_fgs_check_event(93,1,100);
+#line 93 "blobcopy.prg"
 	par0[0] = _bb_inkey(0, (FSvar**)0);
-	_fgs_check_event(96,1,100);
-#line 96 "blobcopy.prg"
+	_fgs_check_event(95,1,100);
+#line 95 "blobcopy.prg"
 	par1[0] = _bb_recno(0, (FSvar**)0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 5);
@@ -4915,8 +4895,8 @@ lbor15:;
  }
 	par0[26] = u_add_u(par0[22], par0[23], 0);
 	par0[27] = cpy_var  (_fgslvar_cbuffer, par0[26]);
-	_fgs_check_event(103,1,100);
-#line 103 "blobcopy.prg"
+	_fgs_check_event(102,1,100);
+#line 102 "blobcopy.prg"
 	par0[0] = _fgslvar_nhandle;
 	par1[0] = u_add_u(_fgslvar_cbuffer, _fgslvar_crlf, 0);
 	par0[1] = mk_var_cp(par1[0]);
@@ -4925,35 +4905,35 @@ lbor15:;
 	par1[3] = n_add_u(2.0, 0, par1[2], 0);
 	par0[2] = par1[3];
 	par0[3] = _bb_fwrite(3, &par0[0]);
-	_fgs_check_event(105,1,100);
-#line 105 "blobcopy.prg"
+	_fgs_check_event(104,1,100);
+#line 104 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = u_equ_c(par0[1], "A");
 	if(!if_u(par0[2])) 
 		goto lbelse17;
-	_fgs_check_event(106,1,100);
-#line 106 "blobcopy.prg"
+	_fgs_check_event(105,1,100);
+#line 105 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_aneukartei, par0[1]);
-	_fgs_check_event(107,1,100);
-#line 107 "blobcopy.prg"
+	_fgs_check_event(106,1,100);
+#line 106 "blobcopy.prg"
 	par0[0] = set_Ivar (_fgslvar_i, (int) 1);
 	goto lbfor18;
 lbinfor18:
  while(1) {
 	par0[0] = u_autoinc(_fgslvar_i);
-	_fgs_check_event(107,1,100);
-#line 107 "blobcopy.prg"
+	_fgs_check_event(106,1,100);
+#line 106 "blobcopy.prg"
 	del_tmpvars(fn_stk.tmv_now);
 lbfor18:
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_len(1, &par0[0]);
 	par0[2] = u_leq_u(_fgslvar_i, par0[1]);
 	if(!if_u(par0[2])) break;
-	_fgs_check_event(108,1,100);
-#line 108 "blobcopy.prg"
+	_fgs_check_event(107,1,100);
+#line 107 "blobcopy.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par1[0] = dget_arrv(_fgslvar_akartei, _fgslvar_i);
@@ -4972,8 +4952,8 @@ lbfor18:
 lband19:;
 	if(!if_u(par0[3])) 
 		goto lbelse20;
-	_fgs_check_event(109,1,100);
-#line 109 "blobcopy.prg"
+	_fgs_check_event(108,1,100);
+#line 108 "blobcopy.prg"
 	par0[0] = _fgslvar_aneukartei;
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
@@ -4991,11 +4971,11 @@ lbendif20: ;
 
 	del_tmpvars(fn_stk.tmv_now);
 
+	_fgs_check_event(111,1,100);
+#line 111 "blobcopy.prg"
+	par0[0] = cpy_var  (_fgslvar_akartei, _fgslvar_aneukartei);
 	_fgs_check_event(112,1,100);
 #line 112 "blobcopy.prg"
-	par0[0] = cpy_var  (_fgslvar_akartei, _fgslvar_aneukartei);
-	_fgs_check_event(113,1,100);
-#line 113 "blobcopy.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = _bb_space(1, &par0[0]);
 	par0[2] = u_add_c(par0[1], " : ", 0);
@@ -5011,8 +4991,8 @@ lbendif20: ;
 	par0[10] = _bb_str(3, &par0[7]);
 	par0[11] = u_add_u(par0[6], par0[10], 0);
 	par0[12] = cpy_var  (_fgslvar_cbuffer, par0[11]);
-	_fgs_check_event(116,1,100);
-#line 116 "blobcopy.prg"
+	_fgs_check_event(115,1,100);
+#line 115 "blobcopy.prg"
 	par0[0] = set_Iv((int) 5);
 	par0[1] = _bb_space(1, &par0[0]);
 	par0[2] = u_add_c(par0[1], " : ", 0);
@@ -5048,8 +5028,8 @@ lbendif20: ;
  }
 	par0[20] = u_add_u(par0[16], par0[17], 0);
 	par0[21] = cpy_var  (_fgslvar_cbuffer, par0[20]);
-	_fgs_check_event(123,1,100);
-#line 123 "blobcopy.prg"
+	_fgs_check_event(122,1,100);
+#line 122 "blobcopy.prg"
 	par0[0] = _fgslvar_nhandle;
 	par1[0] = u_add_u(_fgslvar_cbuffer, _fgslvar_crlf, 0);
 	par0[1] = mk_var_cp(par1[0]);
@@ -5061,8 +5041,8 @@ lbendif20: ;
 
 	goto lbendif17;
 lbelse17: ;
-	_fgs_check_event(125,1,100);
-#line 125 "blobcopy.prg"
+	_fgs_check_event(124,1,100);
+#line 124 "blobcopy.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_akartei, par0[1]);
@@ -5074,17 +5054,17 @@ lbelse16: ;
 
 
 lbendif16: ;
-	_fgs_check_event(132,1,100);
-#line 132 "blobcopy.prg"
+	_fgs_check_event(131,1,100);
+#line 131 "blobcopy.prg"
 	par0[0] = u_neq_u(_fgslvar_akartei, fgsGetVar(_bbvar_nil));
 	if(!if_u(par0[0])) 
 		goto lbelse21;
-	_fgs_check_event(133,1,100);
-#line 133 "blobcopy.prg"
+	_fgs_check_event(132,1,100);
+#line 132 "blobcopy.prg"
 	par0[0] = set_cv("kartneu");
 	par0[1] = _bb_dbselectar(1, &par0[0]);
-	_fgs_check_event(134,1,100);
-#line 134 "blobcopy.prg"
+	_fgs_check_event(133,1,100);
+#line 133 "blobcopy.prg"
 	par0[0] = _fgslvar_akartei;
 	par0[1] = _bb_valtype(1, &par0[0]);
 	par0[2] = c_eequ_u("A", par0[1]);
@@ -5097,33 +5077,31 @@ lbendif16: ;
 lband22:;
 	if(!if_u(par0[3])) 
 		goto lbelse23;
-	_fgs_check_event(135,1,100);
-#line 135 "blobcopy.prg"
-	par0[0] = mk_var_cp(_fgslvar_akartei);
-	par0[1] = _bb_memoencode(1, &par0[0]);
-	par0[2] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pointer), par0[1]);
+	_fgs_check_event(134,1,100);
+#line 134 "blobcopy.prg"
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pointer), _fgslvar_akartei);
 
 	goto lbendif23;
 lbelse23: ;
-	_fgs_check_event(137,1,100);
-#line 137 "blobcopy.prg"
+	_fgs_check_event(136,1,100);
+#line 136 "blobcopy.prg"
 	par0[0] = set_Ivar (fgsGetIAliasField(_fsali_kartneu, _bbvar_pointer), (int) 0);
 
 lbendif23: ;
+	_fgs_check_event(138,1,100);
+#line 138 "blobcopy.prg"
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pnr), fgsGetIAliasField(_fsali_kartei, _bbvar_pnr));
 	_fgs_check_event(139,1,100);
 #line 139 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_pnr), fgsGetIAliasField(_fsali_kartei, _bbvar_pnr));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_datetime), fgsGetIAliasField(_fsali_kartei, _bbvar_datetime));
 	_fgs_check_event(140,1,100);
 #line 140 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_datetime), fgsGetIAliasField(_fsali_kartei, _bbvar_datetime));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_gesperrt), fgsGetIAliasField(_fsali_kartei, _bbvar_gesperrt));
 	_fgs_check_event(141,1,100);
 #line 141 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_gesperrt), fgsGetIAliasField(_fsali_kartei, _bbvar_gesperrt));
+	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_elemente), fgsGetIAliasField(_fsali_kartei, _bbvar_elemente));
 	_fgs_check_event(142,1,100);
 #line 142 "blobcopy.prg"
-	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_kartneu, _bbvar_elemente), fgsGetIAliasField(_fsali_kartei, _bbvar_elemente));
-	_fgs_check_event(143,1,100);
-#line 143 "blobcopy.prg"
 	par0[0] = set_cv("kartei");
 	par0[1] = _bb_dbselectar(1, &par0[0]);
 
@@ -5132,22 +5110,22 @@ lbelse21: ;
 
 
 lbendif21: ;
-	_fgs_check_event(145,1,100);
-#line 145 "blobcopy.prg"
+	_fgs_check_event(144,1,100);
+#line 144 "blobcopy.prg"
 	par0[0] = _bb_dbskip(0, (FSvar**)0);
  }
 
 	del_tmpvars(fn_stk.tmv_now);
 
-	_fgs_check_event(148,1,100);
-#line 148 "blobcopy.prg"
+	_fgs_check_event(147,1,100);
+#line 147 "blobcopy.prg"
 	par0[0] = _fgslvar_nhandle;
 	par0[1] = _bb_fclose(1, &par0[0]);
-	_fgs_check_event(149,1,100);
-#line 149 "blobcopy.prg"
+	_fgs_check_event(148,1,100);
+#line 148 "blobcopy.prg"
 	par0[0] = _bb_dbcloseall(0, (FSvar**)0);
-	_fgs_check_event(151,1,100);
-#line 151 "blobcopy.prg"
+	_fgs_check_event(150,1,100);
+#line 150 "blobcopy.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }

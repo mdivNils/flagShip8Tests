@@ -33,7 +33,7 @@ CLEAR
 READ
 
 
-@ 1,1 SAY "Sicherungsdatei f�r Karteikartei wird neu erzeugt ..."
+@ 1,1 SAY "Sicherungsdatei für Karteikartei wird neu erzeugt ..."
 DBCREATE( "kartneu", { 	;
 									{ "pnr", "n", 10, 0 },;
 									{ "datetime", "c", 15, 0 },;
@@ -41,14 +41,13 @@ DBCREATE( "kartneu", { 	;
 									{ "elemente", "n", 6, 0 },;
 									{ "pointer", "n", 10, 0 },;
 									{ "memodummy", "m", 10, 0 };
-								},;
-				"DBFMEMO" )
+								})
 @ 1,1 SAY "Fehlerprotokoll in KARTEI.ERR!"
-@ 3,1 SAY "Datenbank KARTNEU f�r Karteikartei wurde neu erzeugt, weiter mit <RETURN>"
+@ 3,1 SAY "Datenbank KARTNEU fuer Karteikartei wurde neu erzeugt, weiter mit <RETURN>"
 INKEY( 0 )
 
 IF bNoDeleted
-	@ 5, 1 SAY "Gel�schte werden eleminiert!"
+	@ 5, 1 SAY "Geloeschte werden eleminiert!"
 	INKEY( 0 )
 ENDIF
 
@@ -59,12 +58,12 @@ IF nHandle <= 0
 	QUIT
 ENDIF
 
-USE kartneu NEW VIA "DBFMEMO"
+USE kartneu NEW //VIA "DBFMEMO"
 
-USE kartei NEW VIA "DBFMEMO"
+USE kartei NEW //VIA "DBFMEMO"
 DBGOTOP()
 CLEAR
-@ 1, 1 SAY "Anzahl S�tze   " + STR( LASTREC())
+@ 1, 1 SAY "Anzahl Saetze   " + STR( LASTREC())
 @ 2, 1 SAY "akt. Datensatz "
 DO WHILE !EOF()
 
@@ -81,7 +80,7 @@ DO WHILE !EOF()
 		ENDIF
 	ENDIF
 	kartneu->( DBAPPEND() )
-	aKartei := MemoDecode(kartei->pointer)//BLOBDIRECTGET( kartei->pointer )
+	aKartei := kartei->pointer
 	@ 3,1 SAY VALTYPE( aKartei )
 	IF VALTYPE( aKartei ) $ "AC"
 		@ 4,1 SAY LEN( aKartei )
@@ -132,7 +131,7 @@ DO WHILE !EOF()
 	IF aKartei != NIL
 		DBSELECTAREA("kartneu")
 		IF VALTYPE( aKartei ) == "A" .AND. LEN( aKartei ) > 0
-			kartneu->pointer 	:= MemoEncode(aKartei)//BLOBDIRECTPUT( 0, aKartei )
+			kartneu->pointer 	:= aKartei
 		ELSE
 			kartneu->pointer 	:= 0
 		ENDIF
