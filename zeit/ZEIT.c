@@ -1,6 +1,6 @@
 # include "FlagShip.h"
 
-static FSchar *fgs_file_name = "ZEIT";
+static FSchar *fgs_file_name = "zeit";
 
 static FSvoid init_ref_data();
 extern int    fgsDonotenter;
@@ -3121,6 +3121,7 @@ extern FSvar *_bb_wclose FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb_year FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb__fsget_ FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb__guiget_ FGS_ANSI((FSint, FSvar *[]));
+extern FSvar *_bb__setdeffon FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb__stdunitpi FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb___atpromp2 FGS_ANSI((FSint, FSvar *[]));
 extern FSvar *_bb___dblocate FGS_ANSI((FSint, FSvar *[]));
@@ -3209,12 +3210,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Pget";
-	fgs_deb_tab[0].idx  = &_fgspvar_get;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_get = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = _fgspvar_get;
@@ -3246,12 +3241,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[3];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = _bb_pcount(0, (FSvar**)0);
@@ -3279,10 +3268,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_93_27",93,parno,parptr);
 
 	FSvar *par0[3], *par1[3], *par2[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = argref[0];
 	par1[0] = fgsGetIAliasField(_fsali_aerzte, _bbvar_username);
@@ -3309,10 +3294,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_93_27",93,parno,parptr);
 
 	FSvar *par0[6];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = _bb_deleted(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
@@ -3339,12 +3320,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3372,12 +3347,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3405,12 +3374,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3438,12 +3401,6 @@ FSvar *argref[];
 
 	FSvar *par0[2];
 	FSvar *_fgspvar_aele = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Paele";
-	fgs_deb_tab[0].idx  = &_fgspvar_aele;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_aele = fgs_local_param(parno, 0, parptr, 'U', "");
 	if(fgs_subscarr)
@@ -3467,14 +3424,6 @@ FSvar *argref[];
 	FSvar *par0[3];
 	FSvar *_fgspvar_aele1 = 0;
 	FSvar *_fgspvar_aele2 = 0;
-	struct f_deb_tab fgs_deb_tab[3];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Paele1";
-	fgs_deb_tab[0].idx  = &_fgspvar_aele1;
-	fgs_deb_tab[1].name = "Paele2";
-	fgs_deb_tab[1].idx  = &_fgspvar_aele2;
-	fgs_deb_tab[2].name = "";
-	fgs_deb_tab[2].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_aele1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	_fgspvar_aele2 = fgs_local_param(parno, 1, parptr, 'U', "");
@@ -3501,12 +3450,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Pget";
-	fgs_deb_tab[0].idx  = &_fgspvar_get;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_get = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = _fgspvar_get;
@@ -3537,10 +3480,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_199_27",199,parno,parptr);
 
 	FSvar *par0[3], *par1[3], *par2[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = argref[0];
 	par1[0] = fgsGetIAliasField(_fsali_aerzte, _bbvar_username);
@@ -3564,10 +3503,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_199_27",199,parno,parptr);
 
 	FSvar *par0[6];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = _bb_deleted(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
@@ -3594,12 +3529,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3626,10 +3555,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_208_27",208,parno,parptr);
 
 	FSvar *par0[2], *par1[2];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
@@ -3656,12 +3581,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3689,12 +3608,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3720,10 +3633,6 @@ FSvar *argref[];
 	fn_stack   fn_stk;
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_213_27",213,parno,parptr);
 
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	fn_stk.rvalptr = FALSE_VAR;
 _adios:
@@ -3741,12 +3650,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3773,10 +3676,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_221_27",221,parno,parptr);
 
 	FSvar *par0[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto), fgsNoIVar(argref[0], "buffer", 0, (FSvar*)0));
 	fn_stk.rvalptr = par0[0];
@@ -3794,10 +3693,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_222_27",222,parno,parptr);
 
 	FSvar *par0[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto), fgsNoIVar(argref[0], "buffer", 0, (FSvar*)0));
 	fn_stk.rvalptr = par0[0];
@@ -3816,12 +3711,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3847,10 +3736,6 @@ FSvar *argref[];
 	fn_stack   fn_stk;
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_232_27",232,parno,parptr);
 
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	fn_stk.rvalptr = fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto);
 _adios:
@@ -3868,12 +3753,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3899,10 +3778,6 @@ FSvar *argref[];
 	fn_stack   fn_stk;
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_235_27",235,parno,parptr);
 
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	fn_stk.rvalptr = fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto);
 _adios:
@@ -3920,12 +3795,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -3951,10 +3820,6 @@ FSvar *argref[];
 	fn_stack   fn_stk;
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_238_27",238,parno,parptr);
 
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	fn_stk.rvalptr = fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto);
 _adios:
@@ -3972,12 +3837,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4005,12 +3864,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4038,12 +3891,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4070,10 +3917,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_270_27",270,parno,parptr);
 
 	FSvar *par0[2];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
@@ -4093,12 +3936,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4125,10 +3962,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_274_27",274,parno,parptr);
 
 	FSvar *par0[2];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
@@ -4148,12 +3981,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4180,10 +4007,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_278_27",278,parno,parptr);
 
 	FSvar *par0[2];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
@@ -4203,12 +4026,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4235,12 +4052,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_299_27",299,parno,parptr);
 
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	fn_stk.rvalptr = TRUE_VAR;
@@ -4258,10 +4069,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_307_27",307,parno,parptr);
 
 	FSvar *par0[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = u_equ_u(fgsGetVar(_bbvar_buchstabe), fgsGetVar(_bbvar_m_buch));
 	fn_stk.rvalptr = par0[0];
@@ -4280,12 +4087,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4312,12 +4113,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_365_27",365,parno,parptr);
 
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	fn_stk.rvalptr = TRUE_VAR;
@@ -4336,12 +4131,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4368,12 +4157,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_2_366_27",366,parno,parptr);
 
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	fn_stk.rvalptr = TRUE_VAR;
@@ -4392,12 +4175,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = u_eequ_u(_fgspvar__1, fgsGetVar(_bbvar_nil));
@@ -4425,12 +4202,6 @@ FSvar *argref[];
 
 	FSvar *par0[2];
 	FSvar *_fgspvar__1 = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_1";
-	fgs_deb_tab[0].idx  = &_fgspvar__1;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__1 = fgs_local_param(parno, 0, parptr, 'U', "");
 	par0[1] = u_in_c(fgsGetVar(_bbvar_m_bs), "BD");
@@ -4452,12 +4223,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Pget";
-	fgs_deb_tab[0].idx  = &_fgspvar_get;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_get = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = _fgspvar_get;
@@ -4489,12 +4254,6 @@ FSvar *argref[];
 
 	FSvar *par0[3], *par1[6];
 	FSvar *_fgspvar_get = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Pget";
-	fgs_deb_tab[0].idx  = &_fgspvar_get;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar_get = fgs_local_param(parno, 0, parptr, 'U', "");
 	par1[0] = _fgspvar_get;
@@ -4525,10 +4284,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_482_27",482,parno,parptr);
 
 	FSvar *par0[3];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par0[0] = fgsGetVar(_bbvar_datum);
 	par0[1] = _bb_dtos(1, &par0[0]);
@@ -4548,10 +4303,6 @@ FSvar *argref[];
 	FSchar   * __who_me=fgs_fn_start(&fn_stk,fgs_file_name,"cb_1_490_27",490,parno,parptr);
 
 	FSvar *par0[3], *par1[3];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	par1[0] = fgsGetVar(_bbvar_datum);
 	par1[1] = _bb_dtos(1, &par1[0]);
@@ -4577,18 +4328,25 @@ FSint   parno;
 FSvar * parptr[];
 {
 	fn_stack fn_stk;
-	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"zeit",11,parno,parptr);
+	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"zeit",10,parno,parptr);
 
+	FSvar *par0[9];
 	static FSvar *_fgssvar_bgrafik = 0;
 	static FSaddrval _fgsstatics_init = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Sbgrafik";	fgs_deb_tab[0].idx  = &_fgssvar_bgrafik;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
+	_fgs_check_event(10,1,100);
+#line 10 "zeit.prg"
+	par0[0] = set_cv("Courier New");
+	par0[1] = set_Iv((int) 15);
+	par0[2] = mk_var_cp(FALSE_VAR);
+	par0[3] = mk_var_cp(FALSE_VAR);
+	par0[4] = mk_var_cp(FALSE_VAR);
+	par0[5] = mk_var_cp(FALSE_VAR);
+	par0[6] = mk_var_cp(fgsGetVar(_bbvar_nil));
+	par0[7] = mk_var_cp(FALSE_VAR);
+	par0[8] = _bb__setdeffon(8, &par0[0]);
 	_fgs_check_event(11,1,100);
-#line 11 "ZEIT.PRG"
+#line 11 "zeit.prg"
 	if(_fgsstatics_init < 1)
 	{
 	_fgssvar_bgrafik = mak_var('N', 'U');
@@ -4596,7 +4354,7 @@ FSvar * parptr[];
 		_fgsstatics_init++;
 	}
 	_fgs_check_event(14,1,100);
-#line 14 "ZEIT.PRG"
+#line 14 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -4610,18 +4368,14 @@ FSvar * parptr[];
 	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"main",14,parno,parptr);
 
 	FSvar *par0[17], *par1[4], *par2[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(15,1,100);
-#line 15 "ZEIT.PRG"
+#line 15 "zeit.prg"
 	_tmp_2_ = fgs_public(_bbvar_caz);
 
 	cpy_varv(_bbvar_caz, set_cv("\134praxis\134"));
 	_fgs_check_event(16,1,100);
-#line 16 "ZEIT.PRG"
+#line 16 "zeit.prg"
 	par0[0] = set_Iv((int) 4);
 	par2[0] = _bb___setcentu(0, (FSvar**)0);
  if(if_u(par2[0])) {
@@ -4634,36 +4388,36 @@ FSvar * parptr[];
 	par0[1] = mk_var_cp(par1[0]);
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(17,1,100);
-#line 17 "ZEIT.PRG"
+#line 17 "zeit.prg"
 	par0[0] = set_Iv((int) 32);
 	par0[1] = set_cv("OFF");
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(18,1,100);
-#line 18 "ZEIT.PRG"
+#line 18 "zeit.prg"
 	par0[0] = set_Iv((int) 8);
 	par0[1] = set_cv("OFF");
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(19,1,100);
-#line 19 "ZEIT.PRG"
+#line 19 "zeit.prg"
 	par0[0] = set_cv("ON");
 	par0[1] = _bb___setcentu(1, &par0[0]);
 	_fgs_check_event(23,1,100);
-#line 23 "ZEIT.PRG"
+#line 23 "zeit.prg"
 	par0[0] = set_Iv((int) 53);
 	par0[1] = set_Iv((int) 511);
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(25,1,100);
-#line 25 "ZEIT.PRG"
+#line 25 "zeit.prg"
 	par0[0] = set_Iv((int) 300);
 	par0[1] = set_Iv((int) 2);
 	par0[2] = _bb_tone(2, &par0[0]);
 	_fgs_check_event(27,1,100);
-#line 27 "ZEIT.PRG"
+#line 27 "zeit.prg"
 	par0[0] = _bb_mpresent(0, (FSvar**)0);
 	if(!if_u(par0[0])) 
 		goto lbelse0;
 	_fgs_check_event(28,1,100);
-#line 28 "ZEIT.PRG"
+#line 28 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_msetcursor(1, &par0[0]);
 
@@ -4673,40 +4427,40 @@ lbelse0: ;
 
 lbendif0: ;
 	_fgs_check_event(34,1,100);
-#line 34 "ZEIT.PRG"
+#line 34 "zeit.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
 	_fgs_check_event(34,1,100);
-#line 34 "ZEIT.PRG"
+#line 34 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
 	_fgs_check_event(34,1,100);
-#line 34 "ZEIT.PRG"
+#line 34 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
 	_fgs_check_event(34,1,100);
-#line 34 "ZEIT.PRG"
+#line 34 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_34_27, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
 	_fgs_check_event(34,1,100);
-#line 34 "ZEIT.PRG"
+#line 34 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
 	_fgs_check_event(35,1,100);
-#line 35 "ZEIT.PRG"
+#line 35 "zeit.prg"
 	par0[0] = _bb_aku_logo(0, (FSvar**)0);
 	_fgs_check_event(37,1,100);
-#line 37 "ZEIT.PRG"
+#line 37 "zeit.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	_fgs_check_event(37,1,100);
-#line 37 "ZEIT.PRG"
+#line 37 "zeit.prg"
 	if(!if_u(TRUE_VAR)) break;
 	_fgs_check_event(39,1,100);
-#line 39 "ZEIT.PRG"
+#line 39 "zeit.prg"
 	par0[0] = mv_names[_bbvar__oprompt].v;
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 10);
@@ -4729,7 +4483,7 @@ lbendif0: ;
 	par0[15] = cre_tmpvar();
 	par0[16] = _bb___atpromp2(16, &par0[0]);
 	_fgs_check_event(40,1,100);
-#line 40 "ZEIT.PRG"
+#line 40 "zeit.prg"
 	par0[0] = mv_names[_bbvar__oprompt].v;
 	par0[1] = set_Iv((int) 11);
 	par0[2] = set_Iv((int) 10);
@@ -4752,7 +4506,7 @@ lbendif0: ;
 	par0[15] = cre_tmpvar();
 	par0[16] = _bb___atpromp2(16, &par0[0]);
 	_fgs_check_event(41,1,100);
-#line 41 "ZEIT.PRG"
+#line 41 "zeit.prg"
 	par0[0] = mv_names[_bbvar__oprompt].v;
 	par0[1] = set_Iv((int) 12);
 	par0[2] = set_Iv((int) 10);
@@ -4775,7 +4529,7 @@ lbendif0: ;
 	par0[15] = cre_tmpvar();
 	par0[16] = _bb___atpromp2(16, &par0[0]);
 	_fgs_check_event(46,1,100);
-#line 46 "ZEIT.PRG"
+#line 46 "zeit.prg"
 	par0[0] = mv_names[_bbvar__oprompt].v;
 	par0[1] = set_Iv((int) 17);
 	par0[2] = set_Iv((int) 10);
@@ -4798,7 +4552,7 @@ lbendif0: ;
 	par0[15] = cre_tmpvar();
 	par0[16] = _bb___atpromp2(16, &par0[0]);
 	_fgs_check_event(48,1,100);
-#line 48 "ZEIT.PRG"
+#line 48 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_zeitmen);
 	par1[1] = _bb_valtype(1, &par1[0]);
 	par1[2] = u_in_c(par1[1], "NIF");
@@ -4811,7 +4565,7 @@ lbendif0: ;
  }
 	par0[3] = cpy_var  (mv_names[_bbvar_zeitmen].v, par0[0]);
 	_fgs_check_event(48,1,100);
-#line 48 "ZEIT.PRG"
+#line 48 "zeit.prg"
 	par0[0] = mv_names[_bbvar__oprompt].v;
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_48_27, 0, (FSvar *)0);
 	par0[1] = par1[0];
@@ -4819,12 +4573,12 @@ lbendif0: ;
 	par0[3] = _bb___menuto2(3, &par0[0]);
 	par0[4] = cpy_var  (mv_names[_bbvar_zeitmen].v, par0[3]);
 	_fgs_check_event(52,1,100);
-#line 52 "ZEIT.PRG"
+#line 52 "zeit.prg"
 	par0[0] = ni_equ_u((int) 1, fgsGetVar(_bbvar_zeitmen));
 	if(!if_u(par0[0]))
 		goto lbnextcase2;
 	_fgs_check_event(53,1,100);
-#line 53 "ZEIT.PRG"
+#line 53 "zeit.prg"
 	par0[0] = set_cv("1");
 	par0[1] = _bb_zeit_anab(1, &par0[0]);
 
@@ -4834,7 +4588,7 @@ lbnextcase2:;
 	if(!if_u(par0[0]))
 		goto lbnextcase3;
 	_fgs_check_event(56,1,100);
-#line 56 "ZEIT.PRG"
+#line 56 "zeit.prg"
 	par0[0] = set_cv("0");
 	par0[1] = _bb_zeit_anab(1, &par0[0]);
 
@@ -4844,7 +4598,7 @@ lbnextcase3:;
 	if(!if_u(par0[0]))
 		goto lbnextcase4;
 	_fgs_check_event(59,1,100);
-#line 59 "ZEIT.PRG"
+#line 59 "zeit.prg"
 	par0[0] = set_cv("2");
 	par0[1] = _bb_zeit_anab(1, &par0[0]);
 
@@ -4860,7 +4614,7 @@ lbor5:;
 	if(!if_u(par0[1]))
 		goto lbnextcase6;
 	_fgs_check_event(62,1,100);
-#line 62 "ZEIT.PRG"
+#line 62 "zeit.prg"
 break;
 lbbreak7: ;
 
@@ -4870,7 +4624,7 @@ lbnextcase6:;
 	if(!if_u(par0[0]))
 		goto lbnextcase8;
 	_fgs_check_event(65,1,100);
-#line 65 "ZEIT.PRG"
+#line 65 "zeit.prg"
 	par0[0] = _bb_pstammdata(0, (FSvar**)0);
 
 	goto lbendcase1;
@@ -4879,7 +4633,7 @@ lbnextcase8:;
 	if(!if_u(par0[0]))
 		goto lbnextcase9;
 	_fgs_check_event(68,1,100);
-#line 68 "ZEIT.PRG"
+#line 68 "zeit.prg"
 	par0[0] = _bb_azkonto(0, (FSvar**)0);
 
 	goto lbendcase1;
@@ -4891,13 +4645,13 @@ lbnextcase9:;
 	del_tmpvars(fn_stk.tmv_now);
 
 	_fgs_check_event(73,1,100);
-#line 73 "ZEIT.PRG"
+#line 73 "zeit.prg"
 	par0[0] = _bb_dbcloseall(0, (FSvar**)0);
 	_fgs_check_event(74,1,100);
-#line 74 "ZEIT.PRG"
+#line 74 "zeit.prg"
 	par0[0] = _bb___quit(0, (FSvar**)0);
 	_fgs_check_event(78,1,100);
-#line 78 "ZEIT.PRG"
+#line 78 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -4925,41 +4679,9 @@ FSvar * parptr[];
 	FSvar *_fgslvar_nsekunden = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
 	FSvar *_fgslvar_cbuch = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
 	FSvar *_fgslvar_dvon = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
-	struct f_deb_tab fgs_deb_tab[15];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Lxscreen";
-	fgs_deb_tab[0].idx  = &_fgslvar_xscreen;
-	fgs_deb_tab[1].name = "Li";
-	fgs_deb_tab[1].idx  = &_fgslvar_i;
-	fgs_deb_tab[2].name = "Lj";
-	fgs_deb_tab[2].idx  = &_fgslvar_j;
-	fgs_deb_tab[3].name = "Lnwahl";
-	fgs_deb_tab[3].idx  = &_fgslvar_nwahl;
-	fgs_deb_tab[4].name = "Lapersonen";
-	fgs_deb_tab[4].idx  = &_fgslvar_apersonen;
-	fgs_deb_tab[5].name = "Lauser";
-	fgs_deb_tab[5].idx  = &_fgslvar_auser;
-	fgs_deb_tab[6].name = "Latage";
-	fgs_deb_tab[6].idx  = &_fgslvar_atage;
-	fgs_deb_tab[7].name = "Lamonate";
-	fgs_deb_tab[7].idx  = &_fgslvar_amonate;
-	fgs_deb_tab[8].name = "Lawochen";
-	fgs_deb_tab[8].idx  = &_fgslvar_awochen;
-	fgs_deb_tab[9].name = "Lddatum";
-	fgs_deb_tab[9].idx  = &_fgslvar_ddatum;
-	fgs_deb_tab[10].name = "Lcanab";
-	fgs_deb_tab[10].idx  = &_fgslvar_canab;
-	fgs_deb_tab[11].name = "Lnsekunden";
-	fgs_deb_tab[11].idx  = &_fgslvar_nsekunden;
-	fgs_deb_tab[12].name = "Lcbuch";
-	fgs_deb_tab[12].idx  = &_fgslvar_cbuch;
-	fgs_deb_tab[13].name = "Ldvon";
-	fgs_deb_tab[13].idx  = &_fgslvar_dvon;
-	fgs_deb_tab[14].name = "";
-	fgs_deb_tab[14].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(80,1,100);
-#line 80 "ZEIT.PRG"
+#line 80 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = _bb_maxrow(0, (FSvar**)0);
@@ -4969,70 +4691,70 @@ FSvar * parptr[];
 	par0[4] = _bb_savescreen(4, &par0[0]);
 	cpy_var(_fgslvar_xscreen, par0[4]);
 	_fgs_check_event(81,1,100);
-#line 81 "ZEIT.PRG"
+#line 81 "zeit.prg"
 	cpy_var(_fgslvar_j, set_Iv((int) 0));
 	_fgs_check_event(82,1,100);
-#line 82 "ZEIT.PRG"
+#line 82 "zeit.prg"
 	cpy_var(_fgslvar_nwahl, set_Iv((int) 0));
 	_fgs_check_event(83,1,100);
-#line 83 "ZEIT.PRG"
+#line 83 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_apersonen, par0[1]);
 	_fgs_check_event(84,1,100);
-#line 84 "ZEIT.PRG"
+#line 84 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_auser, par0[1]);
 	_fgs_check_event(85,1,100);
-#line 85 "ZEIT.PRG"
+#line 85 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_atage, par0[1]);
 	_fgs_check_event(86,1,100);
-#line 86 "ZEIT.PRG"
+#line 86 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_amonate, par0[1]);
 	_fgs_check_event(87,1,100);
-#line 87 "ZEIT.PRG"
+#line 87 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_awochen, par0[1]);
 	_fgs_check_event(89,1,100);
-#line 89 "ZEIT.PRG"
+#line 89 "zeit.prg"
 	cpy_var(_fgslvar_cbuch, set_cv(" "));
 	_fgs_check_event(90,1,100);
-#line 90 "ZEIT.PRG"
+#line 90 "zeit.prg"
 	par0[0] = _bb_date(0, (FSvar**)0);
 	par0[1] = cpy_var  (mv_names[_bbvar_dbis].v, par0[0]);
 	cpy_var(_fgslvar_dvon, par0[1]);
 	_fgs_check_event(92,1,100);
-#line 92 "ZEIT.PRG"
+#line 92 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = set_cv("DBFNTX");
 	par0[2] = set_cv("aerzte");
 	par0[3] = _bb_dbusearea(3, &par0[0]);
 	_fgs_check_event(93,1,100);
-#line 93 "ZEIT.PRG"
+#line 93 "zeit.prg"
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_93_27, 0, _fgslvar_apersonen, _fgslvar_auser, (FSvar *)0);
 	par0[0] = par1[0];
 	par1[1] = set_bvar(cre_tmpvar(), _bb_cb_2_93_27, 0, (FSvar *)0);
 	par0[1] = par1[1];
 	par0[2] = _bb_dbeval(2, &par0[0]);
 	_fgs_check_event(97,1,100);
-#line 97 "ZEIT.PRG"
+#line 97 "zeit.prg"
 	par0[0] = set_Ivar (_fgslvar_nwahl, (int) 1);
 	_fgs_check_event(98,1,100);
-#line 98 "ZEIT.PRG"
+#line 98 "zeit.prg"
 	par0[0] = ni_equ_u((int) 0, _fgslvar_nwahl);
 	if(!if_u(par0[0])) 
 		goto lbelse11;
 	_fgs_check_event(99,1,100);
-#line 99 "ZEIT.PRG"
+#line 99 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(100,1,100);
-#line 100 "ZEIT.PRG"
+#line 100 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn12: ;
@@ -5043,7 +4765,7 @@ lbelse11: ;
 
 lbendif11: ;
 	_fgs_check_event(102,1,100);
-#line 102 "ZEIT.PRG"
+#line 102 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par1[0] = dget_arrv(_fgslvar_apersonen, _fgslvar_nwahl);
@@ -5051,7 +4773,7 @@ lbendif11: ;
 	par0[0] = par1[1];
 	par0[1] = _bb_dbgoto(1, &par0[0]);
 	_fgs_check_event(104,1,100);
-#line 104 "ZEIT.PRG"
+#line 104 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 14);
@@ -5059,7 +4781,7 @@ lbendif11: ;
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(105,1,100);
-#line 105 "ZEIT.PRG"
+#line 105 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_Iv((int) 1);
 	par1[1] = set_Iv((int) 1);
@@ -5085,13 +4807,13 @@ lbendif11: ;
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(105,1,100);
-#line 105 "ZEIT.PRG"
+#line 105 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(106,1,100);
-#line 106 "ZEIT.PRG"
+#line 106 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_Iv((int) 2);
 	par1[1] = set_Iv((int) 1);
@@ -5117,13 +4839,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(106,1,100);
-#line 106 "ZEIT.PRG"
+#line 106 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(107,1,100);
-#line 107 "ZEIT.PRG"
+#line 107 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_Iv((int) 3);
 	par1[1] = set_Iv((int) 1);
@@ -5149,13 +4871,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(107,1,100);
-#line 107 "ZEIT.PRG"
+#line 107 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(108,1,100);
-#line 108 "ZEIT.PRG"
+#line 108 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = cre_tmpvar();
@@ -5166,12 +4888,12 @@ par0[2] = par0[1];
 	par0[7] = cre_tmpvar();
 	par0[8] = _bb_readmodal(8, &par0[0]);
 	_fgs_check_event(108,1,100);
-#line 108 "ZEIT.PRG"
+#line 108 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_getlist));
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb_readclearg(2, &par0[0]);
 	_fgs_check_event(108,1,100);
-#line 108 "ZEIT.PRG"
+#line 108 "zeit.prg"
 	par1[0] = _bb_readsave(0, (FSvar**)0);
 	par1[1] = par1[0];
 	if(!if_u(par1[1])) goto lband13;
@@ -5187,20 +4909,20 @@ lband13:;
 	par0[0] = par0[2];
  }
 	_fgs_check_event(109,1,100);
-#line 109 "ZEIT.PRG"
+#line 109 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 	_fgs_check_event(111,1,100);
-#line 111 "ZEIT.PRG"
+#line 111 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = set_cv("DBFNTX");
 	par0[2] = set_cv("zeiten");
 	par0[3] = _bb_dbusearea(3, &par0[0]);
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	if(!1) 
 		goto lbelse14;
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = _bb_ordlistcle(0, (FSvar**)0);
 
 	goto lbendif14;
@@ -5209,15 +4931,15 @@ lbelse14: ;
 
 lbendif14: ;
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = _bb_neterr(1, &par0[0]);
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = set_cv("zeiten");
 	par0[1] = _bb_dbsetindex(1, &par0[0]);
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband15;
@@ -5234,7 +4956,7 @@ lband16:;
 	if(!if_u(par0[4])) 
 		goto lbelse17;
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif17;
@@ -5243,26 +4965,26 @@ lbelse17: ;
 
 lbendif17: ;
 	_fgs_check_event(112,1,100);
-#line 112 "ZEIT.PRG"
+#line 112 "zeit.prg"
 	par0[0] = _bb_neterr(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
 	_fgs_check_event(113,1,100);
-#line 113 "ZEIT.PRG"
+#line 113 "zeit.prg"
 	par0[0] = mk_var_cp(_fgslvar_cbuch);
 	par0[1] = _bb_dbseek(1, &par0[0]);
 	_fgs_check_event(114,1,100);
-#line 114 "ZEIT.PRG"
+#line 114 "zeit.prg"
 	par0[0] = set_Ivar (_fgslvar_i, (int) 0);
 	_fgs_check_event(115,1,100);
-#line 115 "ZEIT.PRG"
+#line 115 "zeit.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	par0[0] = u_equ_u(fgsGetIAliasField(_fsali_zeiten, _bbvar_buchstabe), _fgslvar_cbuch);
 	_fgs_check_event(115,1,100);
-#line 115 "ZEIT.PRG"
+#line 115 "zeit.prg"
 	if(!if_u(par0[0])) break;
 	_fgs_check_event(116,1,100);
-#line 116 "ZEIT.PRG"
+#line 116 "zeit.prg"
 	par0[0] = u_lt_u(fgsGetIAliasField(_fsali_zeiten, _bbvar_datum), _fgslvar_dvon);
 	par0[1] = par0[0];
 	if(if_u(par0[1])) goto lbor18;
@@ -5272,10 +4994,10 @@ lbor18:;
 	if(!if_u(par0[1])) 
 		goto lbelse19;
 	_fgs_check_event(117,1,100);
-#line 117 "ZEIT.PRG"
+#line 117 "zeit.prg"
 	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(118,1,100);
-#line 118 "ZEIT.PRG"
+#line 118 "zeit.prg"
 continue;
 lbloop20: ;
 
@@ -5285,24 +5007,24 @@ lbelse19: ;
 
 lbendif19: ;
 	_fgs_check_event(120,1,100);
-#line 120 "ZEIT.PRG"
+#line 120 "zeit.prg"
 	par0[0] = cpy_var  (_fgslvar_ddatum, fgsGetIAliasField(_fsali_zeiten, _bbvar_datum));
 	_fgs_check_event(121,1,100);
-#line 121 "ZEIT.PRG"
+#line 121 "zeit.prg"
 	par0[0] = cpy_var  (_fgslvar_canab, fgsGetIAliasField(_fsali_zeiten, _bbvar_anab));
 	_fgs_check_event(122,1,100);
-#line 122 "ZEIT.PRG"
+#line 122 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetIAliasField(_fsali_zeiten, _bbvar_zeit));
 	par0[1] = _bb_timetosec(1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_nsekunden, par0[1]);
 	_fgs_check_event(123,1,100);
-#line 123 "ZEIT.PRG"
+#line 123 "zeit.prg"
 	par0[0] = _bb_dbskip(0, (FSvar**)0);
 	_fgs_check_event(124,1,100);
-#line 124 "ZEIT.PRG"
+#line 124 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_ngesh].v, (int) 0);
 	_fgs_check_event(125,1,100);
-#line 125 "ZEIT.PRG"
+#line 125 "zeit.prg"
 	par0[0] = u_equ_u(fgsGetIAliasField(_fsali_zeiten, _bbvar_datum), _fgslvar_ddatum);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband21;
@@ -5317,7 +5039,7 @@ lband22:;
 	if(!if_u(par0[3])) 
 		goto lbelse23;
 	_fgs_check_event(126,1,100);
-#line 126 "ZEIT.PRG"
+#line 126 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetIAliasField(_fsali_zeiten, _bbvar_zeit));
 	par0[1] = _bb_timetosec(1, &par0[0]);
 	par0[2] = u_sub_u(par0[1], _fgslvar_nsekunden, 0);
@@ -5325,11 +5047,11 @@ lband22:;
 	par0[4] = u_div_n(par0[3], 60.0, 0);
 	par0[5] = cpy_var  (mv_names[_bbvar_nstunden].v, par0[4]);
 	_fgs_check_event(127,1,100);
-#line 127 "ZEIT.PRG"
+#line 127 "zeit.prg"
 	par0[0] = u_add_u(fgsGetVar(_bbvar_ngesh), fgsGetVar(_bbvar_nstunden), 0);
 	par0[1] = cpy_var  (mv_names[_bbvar_ngesh].v, par0[0]);
 	_fgs_check_event(129,1,100);
-#line 129 "ZEIT.PRG"
+#line 129 "zeit.prg"
 	par1[0] = fgsGetIAliasField(_fsali_zeiten, _bbvar_datum);
 	par1[1] = _bb_year(1, &par1[0]);
 	par0[0] = par1[1];
@@ -5351,19 +5073,19 @@ lband22:;
 	par0[7] = u_add_u(par0[3], par0[6], 0);
 	par0[8] = cpy_var  (mv_names[_bbvar_cmonat].v, par0[7]);
 	_fgs_check_event(131,1,100);
-#line 131 "ZEIT.PRG"
+#line 131 "zeit.prg"
 	par0[0] = _fgslvar_amonate;
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_131_2, 0, (FSvar *)0);
 	par0[1] = mk_var_cp(par1[0]);
 	par0[2] = _bb_ascan(2, &par0[0]);
 	par0[3] = cpy_var  (mv_names[_bbvar_npos].v, par0[2]);
 	_fgs_check_event(132,1,100);
-#line 132 "ZEIT.PRG"
+#line 132 "zeit.prg"
 	par0[0] = ni_equ_u((int) 0, fgsGetVar(_bbvar_npos));
 	if(!if_u(par0[0])) 
 		goto lbelse24;
 	_fgs_check_event(133,1,100);
-#line 133 "ZEIT.PRG"
+#line 133 "zeit.prg"
 	par0[0] = _fgslvar_amonate;
 	par1[0] = fgsGetVar(_bbvar_cmonat);
 	par1[1] = set_Iv((int) 0);
@@ -5375,7 +5097,7 @@ lband22:;
 	par0[1] = par1[6];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(134,1,100);
-#line 134 "ZEIT.PRG"
+#line 134 "zeit.prg"
 	par0[0] = _fgslvar_amonate;
 	par0[1] = _bb_len(1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_npos].v, par0[1]);
@@ -5386,7 +5108,7 @@ lbelse24: ;
 
 lbendif24: ;
 	_fgs_check_event(136,1,100);
-#line 136 "ZEIT.PRG"
+#line 136 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, fgsGetVar(_bbvar_npos));
@@ -5398,7 +5120,7 @@ lbendif24: ;
 	par0[4] = u_add_u(par0[3], fgsGetVar(_bbvar_nstunden), 0);
 	par0[5] = cpy_var  (par0[1], par0[4]);
 	_fgs_check_event(137,1,100);
-#line 137 "ZEIT.PRG"
+#line 137 "zeit.prg"
 	par0[0] = _bb_dbskip(0, (FSvar**)0);
 
 	goto lbendif23;
@@ -5411,7 +5133,7 @@ lbendif23: ;
 	del_tmpvars(fn_stk.tmv_now);
 
 	_fgs_check_event(140,1,100);
-#line 140 "ZEIT.PRG"
+#line 140 "zeit.prg"
 	par0[0] = _fgslvar_amonate;
 	par0[1] = fgsGetVar(_bbvar_nil);
 	par0[2] = fgsGetVar(_bbvar_nil);
@@ -5419,20 +5141,20 @@ lbendif23: ;
 	par0[3] = par1[0];
 	par0[4] = _bb_asort(4, &par0[0]);
 	_fgs_check_event(141,1,100);
-#line 141 "ZEIT.PRG"
+#line 141 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_nkumist].v, (int) 0);
 	_fgs_check_event(142,1,100);
-#line 142 "ZEIT.PRG"
+#line 142 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_nkumsoll].v, (int) 0);
 	_fgs_check_event(143,1,100);
-#line 143 "ZEIT.PRG"
+#line 143 "zeit.prg"
 	par0[0] = set_Ivar (_fgslvar_i, (int) 1);
 	goto lbfor25;
 lbinfor25:
  while(1) {
 	par0[0] = u_autoinc(_fgslvar_i);
 	_fgs_check_event(143,1,100);
-#line 143 "ZEIT.PRG"
+#line 143 "zeit.prg"
 	del_tmpvars(fn_stk.tmv_now);
 lbfor25:
 	par0[0] = _fgslvar_amonate;
@@ -5440,7 +5162,7 @@ lbfor25:
 	par0[2] = u_leq_u(_fgslvar_i, par0[1]);
 	if(!if_u(par0[2])) break;
 	_fgs_check_event(144,1,100);
-#line 144 "ZEIT.PRG"
+#line 144 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
@@ -5448,14 +5170,14 @@ lbfor25:
 	par0[2] = u_add_u(fgsGetVar(_bbvar_nkumist), par0[1], 0);
 	par0[3] = cpy_var  (mv_names[_bbvar_nkumist].v, par0[2]);
 	_fgs_check_event(145,1,100);
-#line 145 "ZEIT.PRG"
+#line 145 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
 	par0[1] = dget_arr(par0[0], (int)5);
 	par0[2] = cpy_var  (par0[1], fgsGetVar(_bbvar_nkumist));
 	_fgs_check_event(146,1,100);
-#line 146 "ZEIT.PRG"
+#line 146 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
@@ -5463,14 +5185,14 @@ lbfor25:
 	par0[2] = u_add_u(fgsGetVar(_bbvar_nkumsoll), par0[1], 0);
 	par0[3] = cpy_var  (mv_names[_bbvar_nkumsoll].v, par0[2]);
 	_fgs_check_event(147,1,100);
-#line 147 "ZEIT.PRG"
+#line 147 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
 	par0[1] = dget_arr(par0[0], (int)6);
 	par0[2] = cpy_var  (par0[1], fgsGetVar(_bbvar_nkumsoll));
 	_fgs_check_event(148,1,100);
-#line 148 "ZEIT.PRG"
+#line 148 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
@@ -5495,7 +5217,7 @@ lbfor25:
 	par0[11] = u_add_u(par0[6], par0[10], 0);
 	par0[12] = cpy_var  (par0[1], par0[11]);
 	_fgs_check_event(150,1,100);
-#line 150 "ZEIT.PRG"
+#line 150 "zeit.prg"
 	if(fgs_subscarr)
 		cre_arr(mv_names[_bbvar___subscarr].v, 0, 0, 0);
 	par0[0] = dget_arrv(_fgslvar_amonate, _fgslvar_i);
@@ -5516,12 +5238,12 @@ lbfor25:
 	del_tmpvars(fn_stk.tmv_now);
 
 	_fgs_check_event(179,1,100);
-#line 179 "ZEIT.PRG"
+#line 179 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn26: ;
 	_fgs_check_event(185,1,100);
-#line 185 "ZEIT.PRG"
+#line 185 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -5542,32 +5264,14 @@ FSvar * parptr[];
 	FSvar *_fgslvar_bvar1 = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
 	FSvar *_fgslvar_bvar2 = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
 	FSvar *_fgslvar_ocb1 = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
-	struct f_deb_tab fgs_deb_tab[8];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Lgetlist";
-	fgs_deb_tab[0].idx  = &_fgslvar_getlist;
-	fgs_deb_tab[1].name = "Lxscreen";
-	fgs_deb_tab[1].idx  = &_fgslvar_xscreen;
-	fgs_deb_tab[2].name = "Lapersonen";
-	fgs_deb_tab[2].idx  = &_fgslvar_apersonen;
-	fgs_deb_tab[3].name = "Lnperson";
-	fgs_deb_tab[3].idx  = &_fgslvar_nperson;
-	fgs_deb_tab[4].name = "Lbvar1";
-	fgs_deb_tab[4].idx  = &_fgslvar_bvar1;
-	fgs_deb_tab[5].name = "Lbvar2";
-	fgs_deb_tab[5].idx  = &_fgslvar_bvar2;
-	fgs_deb_tab[6].name = "Locb1";
-	fgs_deb_tab[6].idx  = &_fgslvar_ocb1;
-	fgs_deb_tab[7].name = "";
-	fgs_deb_tab[7].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(187,1,100);
-#line 187 "ZEIT.PRG"
+#line 187 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_getlist, par0[1]);
 	_fgs_check_event(188,1,100);
-#line 188 "ZEIT.PRG"
+#line 188 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = _bb_maxrow(0, (FSvar**)0);
@@ -5577,70 +5281,70 @@ FSvar * parptr[];
 	par0[4] = _bb_savescreen(4, &par0[0]);
 	cpy_var(_fgslvar_xscreen, par0[4]);
 	_fgs_check_event(189,1,100);
-#line 189 "ZEIT.PRG"
+#line 189 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	cpy_var(_fgslvar_apersonen, par0[1]);
 	_fgs_check_event(190,1,100);
-#line 190 "ZEIT.PRG"
+#line 190 "zeit.prg"
 	cpy_var(_fgslvar_nperson, set_Iv((int) 1));
 	_fgs_check_event(191,1,100);
-#line 191 "ZEIT.PRG"
+#line 191 "zeit.prg"
 	cpy_var(_fgslvar_bvar1, FALSE_VAR);
 	_fgs_check_event(192,1,100);
-#line 192 "ZEIT.PRG"
+#line 192 "zeit.prg"
 	cpy_var(_fgslvar_bvar2, FALSE_VAR);
 	_fgs_check_event(194,1,100);
-#line 194 "ZEIT.PRG"
+#line 194 "zeit.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
 	_fgs_check_event(194,1,100);
-#line 194 "ZEIT.PRG"
+#line 194 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
 	_fgs_check_event(194,1,100);
-#line 194 "ZEIT.PRG"
+#line 194 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
 	_fgs_check_event(194,1,100);
-#line 194 "ZEIT.PRG"
+#line 194 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_194_2, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
 	_fgs_check_event(194,1,100);
-#line 194 "ZEIT.PRG"
+#line 194 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_getlist, par0[1]);
 	_fgs_check_event(195,1,100);
-#line 195 "ZEIT.PRG"
+#line 195 "zeit.prg"
 	par0[0] = _bb_aku_logo(0, (FSvar**)0);
 	_fgs_check_event(198,1,100);
-#line 198 "ZEIT.PRG"
+#line 198 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = set_cv("DBFNTX");
 	par0[2] = set_cv("aerzte");
 	par0[3] = _bb_dbusearea(3, &par0[0]);
 	_fgs_check_event(199,1,100);
-#line 199 "ZEIT.PRG"
+#line 199 "zeit.prg"
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_199_2, 0, _fgslvar_apersonen, (FSvar *)0);
 	par0[0] = par1[0];
 	par1[1] = set_bvar(cre_tmpvar(), _bb_cb_2_199_2, 0, (FSvar *)0);
 	par0[1] = par1[1];
 	par0[2] = _bb_dbeval(2, &par0[0]);
 	_fgs_check_event(201,1,100);
-#line 201 "ZEIT.PRG"
+#line 201 "zeit.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	_fgs_check_event(201,1,100);
-#line 201 "ZEIT.PRG"
+#line 201 "zeit.prg"
 	if(!if_u(TRUE_VAR)) break;
 	_fgs_check_event(203,1,100);
-#line 203 "ZEIT.PRG"
+#line 203 "zeit.prg"
 	par0[0] = _bb_rlock(0, (FSvar**)0);
 	_fgs_check_event(208,1,100);
-#line 208 "ZEIT.PRG"
+#line 208 "zeit.prg"
 	par0[0] = _fgslvar_nperson;
 	par0[1] = cre_tmpvar();
 	par0[2] = set_Iv((int) 0);
@@ -5648,7 +5352,7 @@ FSvar * parptr[];
 	par0[4] = _bb_default(4, &par0[0]);
 	par0[5] = cpy_var  (_fgslvar_nperson, par0[4]);
 	_fgs_check_event(208,1,100);
-#line 208 "ZEIT.PRG"
+#line 208 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 5);
 	par1[1] = set_Iv((int) 4);
@@ -5677,24 +5381,24 @@ FSvar * parptr[];
 	par0[1] = par1[18];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(208,1,100);
-#line 208 "ZEIT.PRG"
+#line 208 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = fgsNoIVar(par0[1], "dropdown", 0, (FSvar*)set_lv(1));
 	_fgs_check_event(208,1,100);
-#line 208 "ZEIT.PRG"
+#line 208 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_2_208_2, 0, _fgslvar_apersonen, _fgslvar_nperson, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "sblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(208,1,100);
-#line 208 "ZEIT.PRG"
+#line 208 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(210,1,100);
-#line 210 "ZEIT.PRG"
+#line 210 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 6);
 	par1[1] = set_Iv((int) 22);
@@ -5720,13 +5424,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(210,1,100);
-#line 210 "ZEIT.PRG"
+#line 210 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(213,1,100);
-#line 213 "ZEIT.PRG"
+#line 213 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 7);
 	par1[1] = set_Iv((int) 22);
@@ -5743,7 +5447,7 @@ par0[2] = par0[1];
 	par2[4] = mk_var_cp(FALSE_VAR);
 	par2[5] = _bb__stdunitpi(3, &par2[2]);
 	par1[8] = mk_var_cp(par2[5]);
-	par1[9] = set_cv("Datum letzte \216nderung");
+	par1[9] = set_cv("Datum letzte \357\277\275nderung");
 	par1[10] = set_Iv((int) 22);
 	par1[11] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par1[12] = mk_var_cp(fgsGetVar(_bbvar_nil));
@@ -5753,13 +5457,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(213,1,100);
-#line 213 "ZEIT.PRG"
+#line 213 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(215,1,100);
-#line 215 "ZEIT.PRG"
+#line 215 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 8);
 	par1[1] = set_Iv((int) 22);
@@ -5775,7 +5479,7 @@ par0[2] = par0[1];
 	par2[3] = mk_var_cp(FALSE_VAR);
 	par2[4] = _bb__stdunitpi(3, &par2[1]);
 	par1[8] = mk_var_cp(par2[4]);
-	par1[9] = set_cv("Passwort l\204uft ab am ");
+	par1[9] = set_cv("Passwort l\357\277\275uft ab am ");
 	par1[10] = set_Iv((int) 22);
 	par1[11] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par1[12] = mk_var_cp(fgsGetVar(_bbvar_nil));
@@ -5785,13 +5489,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(215,1,100);
-#line 215 "ZEIT.PRG"
+#line 215 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(217,1,100);
-#line 217 "ZEIT.PRG"
+#line 217 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 11);
 	par1[1] = set_Iv((int) 21);
@@ -5800,12 +5504,12 @@ par0[2] = par0[1];
 	par0[1] = par1[3];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(218,1,100);
-#line 218 "ZEIT.PRG"
+#line 218 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = cpy_var  (_fgslvar_ocb1, par0[1]);
 	_fgs_check_event(219,1,100);
-#line 219 "ZEIT.PRG"
+#line 219 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par1[0] = _fgslvar_getlist;
@@ -5815,30 +5519,30 @@ par0[2] = par0[1];
 	par0[4] = n_sub_u(21.0, 0, par0[3]);
 	par0[5] = fgsNoIVar(par0[1], "capcol", 0, (FSvar*)par0[4]);
 	_fgs_check_event(220,1,100);
-#line 220 "ZEIT.PRG"
+#line 220 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = fgsNoIVar(par0[1], "buffer", 0, (FSvar*)fgsGetIAliasField(_fsali_aerzte, _bbvar_zeitkonto));
 	_fgs_check_event(221,1,100);
-#line 221 "ZEIT.PRG"
+#line 221 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_1_221_2, 0, _fgslvar_ocb1, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "fblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(222,1,100);
-#line 222 "ZEIT.PRG"
+#line 222 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_1_222_2, 0, _fgslvar_ocb1, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "sblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(223,1,100);
-#line 223 "ZEIT.PRG"
+#line 223 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(232,1,100);
-#line 232 "ZEIT.PRG"
+#line 232 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 12);
 	par1[1] = set_Iv((int) 22);
@@ -5855,7 +5559,7 @@ par0[2] = par0[1];
 	par2[4] = mk_var_cp(FALSE_VAR);
 	par2[5] = _bb__stdunitpi(3, &par2[2]);
 	par1[8] = mk_var_cp(par2[5]);
-	par1[9] = set_cv("Er\224ffnung Zeitkonto  ");
+	par1[9] = set_cv("Er\357\277\275ffnung Zeitkonto  ");
 	par1[10] = set_Iv((int) 22);
 	par1[11] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par1[12] = mk_var_cp(fgsGetVar(_bbvar_nil));
@@ -5865,13 +5569,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(232,1,100);
-#line 232 "ZEIT.PRG"
+#line 232 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(235,1,100);
-#line 235 "ZEIT.PRG"
+#line 235 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 13);
 	par1[1] = set_Iv((int) 22);
@@ -5898,13 +5602,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(235,1,100);
-#line 235 "ZEIT.PRG"
+#line 235 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(238,1,100);
-#line 238 "ZEIT.PRG"
+#line 238 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 14);
 	par1[1] = set_Iv((int) 22);
@@ -5931,13 +5635,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(238,1,100);
-#line 238 "ZEIT.PRG"
+#line 238 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(247,1,100);
-#line 247 "ZEIT.PRG"
+#line 247 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 17);
 	par1[1] = set_Iv((int) 22);
@@ -5953,7 +5657,7 @@ par0[2] = par0[1];
 	par2[3] = mk_var_cp(FALSE_VAR);
 	par2[4] = _bb__stdunitpi(3, &par2[1]);
 	par1[8] = mk_var_cp(par2[4]);
-	par1[9] = set_cv("\232berstunden-Faktor   ");
+	par1[9] = set_cv("\357\277\275berstunden-Faktor   ");
 	par1[10] = set_Iv((int) 22);
 	par1[11] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par1[12] = mk_var_cp(fgsGetVar(_bbvar_nil));
@@ -5963,13 +5667,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(247,1,100);
-#line 247 "ZEIT.PRG"
+#line 247 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(250,1,100);
-#line 250 "ZEIT.PRG"
+#line 250 "zeit.prg"
 	par0[0] = _fgslvar_bvar2;
 	par0[1] = cre_tmpvar();
 	par0[2] = mk_var_cp(FALSE_VAR);
@@ -5977,7 +5681,7 @@ par0[2] = par0[1];
 	par0[4] = _bb_default(4, &par0[0]);
 	par0[5] = cpy_var  (_fgslvar_bvar2, par0[4]);
 	_fgs_check_event(250,1,100);
-#line 250 "ZEIT.PRG"
+#line 250 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 4);
 	par1[1] = set_Iv((int) 19);
@@ -6006,13 +5710,13 @@ par0[2] = par0[1];
 	par0[1] = par1[18];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(250,1,100);
-#line 250 "ZEIT.PRG"
+#line 250 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(256,1,100);
-#line 256 "ZEIT.PRG"
+#line 256 "zeit.prg"
 	par0[0] = set_Iv((int) 21);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = cre_tmpvar();
@@ -6022,7 +5726,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(256,1,100);
-#line 256 "ZEIT.PRG"
+#line 256 "zeit.prg"
 	par0[0] = set_cv("Gespeicherte KVK-Daten");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6030,7 +5734,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(257,1,100);
-#line 257 "ZEIT.PRG"
+#line 257 "zeit.prg"
 	par0[0] = set_Iv((int) 22);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = cre_tmpvar();
@@ -6040,7 +5744,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(257,1,100);
-#line 257 "ZEIT.PRG"
+#line 257 "zeit.prg"
 	par0[0] = set_cv("Patientenname");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6048,7 +5752,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(258,1,100);
-#line 258 "ZEIT.PRG"
+#line 258 "zeit.prg"
 	par0[0] = set_Iv((int) 23);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = cre_tmpvar();
@@ -6058,7 +5762,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(258,1,100);
-#line 258 "ZEIT.PRG"
+#line 258 "zeit.prg"
 	par0[0] = set_cv("Mitglieds-Nr.");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6066,7 +5770,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(259,1,100);
-#line 259 "ZEIT.PRG"
+#line 259 "zeit.prg"
 	par0[0] = set_Iv((int) 24);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = cre_tmpvar();
@@ -6076,15 +5780,15 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(259,1,100);
-#line 259 "ZEIT.PRG"
-	par0[0] = set_cv("Stra\341e");
+#line 259 "zeit.prg"
+	par0[0] = set_cv("Stra\357\277\275e");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(260,1,100);
-#line 260 "ZEIT.PRG"
+#line 260 "zeit.prg"
 	par0[0] = set_Iv((int) 25);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = cre_tmpvar();
@@ -6094,7 +5798,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(260,1,100);
-#line 260 "ZEIT.PRG"
+#line 260 "zeit.prg"
 	par0[0] = set_cv("PLZ, Ort");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6102,7 +5806,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(262,1,100);
-#line 262 "ZEIT.PRG"
+#line 262 "zeit.prg"
 	par0[0] = set_Iv((int) 22);
 	par0[1] = set_Iv((int) 22);
 	par1[0] = cre_tmpvar();
@@ -6112,7 +5816,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(262,1,100);
-#line 262 "ZEIT.PRG"
+#line 262 "zeit.prg"
 	par1[0] = fgsGetIAliasField(_fsali_aerzte, _bbvar_kvk_name);
 	par1[1] = _bb_trim(1, &par1[0]);
 	par1[2] = u_add_c(par1[1], ", ", 0);
@@ -6126,7 +5830,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(263,1,100);
-#line 263 "ZEIT.PRG"
+#line 263 "zeit.prg"
 	par0[0] = set_Iv((int) 23);
 	par0[1] = set_Iv((int) 22);
 	par1[0] = cre_tmpvar();
@@ -6136,7 +5840,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(263,1,100);
-#line 263 "ZEIT.PRG"
+#line 263 "zeit.prg"
 	par1[0] = fgsGetIAliasField(_fsali_aerzte, _bbvar_kvk_mgnr);
 	par1[1] = _bb_trim(1, &par1[0]);
 	par0[0] = par1[1];
@@ -6146,7 +5850,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(264,1,100);
-#line 264 "ZEIT.PRG"
+#line 264 "zeit.prg"
 	par0[0] = set_Iv((int) 24);
 	par0[1] = set_Iv((int) 22);
 	par1[0] = cre_tmpvar();
@@ -6156,7 +5860,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(264,1,100);
-#line 264 "ZEIT.PRG"
+#line 264 "zeit.prg"
 	par1[0] = fgsGetIAliasField(_fsali_aerzte, _bbvar_kvk_str);
 	par1[1] = _bb_trim(1, &par1[0]);
 	par0[0] = par1[1];
@@ -6166,7 +5870,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(265,1,100);
-#line 265 "ZEIT.PRG"
+#line 265 "zeit.prg"
 	par0[0] = set_Iv((int) 25);
 	par0[1] = set_Iv((int) 22);
 	par1[0] = cre_tmpvar();
@@ -6176,7 +5880,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(265,1,100);
-#line 265 "ZEIT.PRG"
+#line 265 "zeit.prg"
 	par1[0] = u_add_c(fgsGetIAliasField(_fsali_aerzte, _bbvar_kvk_plz), " ", 0);
 	par1[1] = fgsGetIAliasField(_fsali_aerzte, _bbvar_kvk_ort);
 	par1[2] = _bb_trim(1, &par1[1]);
@@ -6188,7 +5892,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(270,1,100);
-#line 270 "ZEIT.PRG"
+#line 270 "zeit.prg"
 	par0[0] = _fgslvar_bvar1;
 	par0[1] = cre_tmpvar();
 	par0[2] = mk_var_cp(FALSE_VAR);
@@ -6196,7 +5900,7 @@ par0[2] = par0[1];
 	par0[4] = _bb_default(4, &par0[0]);
 	par0[5] = cpy_var  (_fgslvar_bvar1, par0[4]);
 	_fgs_check_event(270,1,100);
-#line 270 "ZEIT.PRG"
+#line 270 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 4);
 	par1[1] = set_Iv((int) 29);
@@ -6225,24 +5929,24 @@ par0[2] = par0[1];
 	par0[1] = par1[18];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(270,1,100);
-#line 270 "ZEIT.PRG"
+#line 270 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = fgsNoIVar(par0[1], "style", 0, (FSvar*)set_cv("[]"));
 	_fgs_check_event(270,1,100);
-#line 270 "ZEIT.PRG"
+#line 270 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_2_270_2, 0, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "sblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(270,1,100);
-#line 270 "ZEIT.PRG"
+#line 270 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(274,1,100);
-#line 274 "ZEIT.PRG"
+#line 274 "zeit.prg"
 	par0[0] = _fgslvar_bvar1;
 	par0[1] = cre_tmpvar();
 	par0[2] = mk_var_cp(FALSE_VAR);
@@ -6250,7 +5954,7 @@ par0[2] = par0[1];
 	par0[4] = _bb_default(4, &par0[0]);
 	par0[5] = cpy_var  (_fgslvar_bvar1, par0[4]);
 	_fgs_check_event(274,1,100);
-#line 274 "ZEIT.PRG"
+#line 274 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 4);
 	par1[1] = set_Iv((int) 29);
@@ -6279,24 +5983,24 @@ par0[2] = par0[1];
 	par0[1] = par1[18];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(274,1,100);
-#line 274 "ZEIT.PRG"
+#line 274 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = fgsNoIVar(par0[1], "style", 0, (FSvar*)set_cv("[]"));
 	_fgs_check_event(274,1,100);
-#line 274 "ZEIT.PRG"
+#line 274 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_2_274_2, 0, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "sblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(274,1,100);
-#line 274 "ZEIT.PRG"
+#line 274 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(278,1,100);
-#line 278 "ZEIT.PRG"
+#line 278 "zeit.prg"
 	par0[0] = _fgslvar_bvar1;
 	par0[1] = cre_tmpvar();
 	par0[2] = mk_var_cp(FALSE_VAR);
@@ -6304,7 +6008,7 @@ par0[2] = par0[1];
 	par0[4] = _bb_default(4, &par0[0]);
 	par0[5] = cpy_var  (_fgslvar_bvar1, par0[4]);
 	_fgs_check_event(278,1,100);
-#line 278 "ZEIT.PRG"
+#line 278 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par1[0] = set_Iv((int) 4);
 	par1[1] = set_Iv((int) 29);
@@ -6333,24 +6037,24 @@ par0[2] = par0[1];
 	par0[1] = par1[18];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(278,1,100);
-#line 278 "ZEIT.PRG"
+#line 278 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = fgsNoIVar(par0[1], "style", 0, (FSvar*)set_cv("[]"));
 	_fgs_check_event(278,1,100);
-#line 278 "ZEIT.PRG"
+#line 278 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 	par0[2] = set_bvar(cre_tmpvar(), _bb_cb_2_278_2, 0, (FSvar *)0);
 	par0[3] = fgsNoIVar(par0[1], "sblock", 0, (FSvar*)par0[2]);
 	_fgs_check_event(278,1,100);
-#line 278 "ZEIT.PRG"
+#line 278 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(279,1,100);
-#line 279 "ZEIT.PRG"
+#line 279 "zeit.prg"
 	par0[0] = _fgslvar_getlist;
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = cre_tmpvar();
@@ -6361,12 +6065,12 @@ par0[2] = par0[1];
 	par0[7] = cre_tmpvar();
 	par0[8] = _bb_readmodal(8, &par0[0]);
 	_fgs_check_event(279,1,100);
-#line 279 "ZEIT.PRG"
+#line 279 "zeit.prg"
 	par0[0] = mk_var_cp(_fgslvar_getlist);
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb_readclearg(2, &par0[0]);
 	_fgs_check_event(279,1,100);
-#line 279 "ZEIT.PRG"
+#line 279 "zeit.prg"
 	par1[0] = _bb_readsave(0, (FSvar**)0);
 	par1[1] = par1[0];
 	if(!if_u(par1[1])) goto lband28;
@@ -6382,13 +6086,13 @@ lband28:;
 	par0[0] = par0[2];
  }
 	_fgs_check_event(280,1,100);
-#line 280 "ZEIT.PRG"
+#line 280 "zeit.prg"
 	par0[0] = _bb_lastkey(0, (FSvar**)0);
 	par0[1] = ni_equ_u((int) 27, par0[0]);
 	if(!if_u(par0[1])) 
 		goto lbelse29;
 	_fgs_check_event(281,1,100);
-#line 281 "ZEIT.PRG"
+#line 281 "zeit.prg"
 break;
 lbbreak30: ;
 
@@ -6402,7 +6106,7 @@ lbendif29: ;
 	del_tmpvars(fn_stk.tmv_now);
 
 	_fgs_check_event(285,1,100);
-#line 285 "ZEIT.PRG"
+#line 285 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par1[0] = _bb_maxrow(0, (FSvar**)0);
@@ -6412,12 +6116,12 @@ lbendif29: ;
 	par0[4] = _fgslvar_xscreen;
 	par0[5] = _bb_restscreen(5, &par0[0]);
 	_fgs_check_event(286,1,100);
-#line 286 "ZEIT.PRG"
+#line 286 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn31: ;
 	_fgs_check_event(290,1,100);
-#line 290 "ZEIT.PRG"
+#line 290 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -6432,19 +6136,13 @@ FSvar * parptr[];
 
 	FSvar *par0[9], *par1[16], *par2[9], *par3[1];
 	FSvar *_fgspvar__anab = 0;
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "P_anab";
-	fgs_deb_tab[0].idx  = &_fgspvar__anab;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgspvar__anab = fgs_local_param(parno, 0, parptr, 'U', "");
 	_fgs_check_event(296,1,100);
-#line 296 "ZEIT.PRG"
+#line 296 "zeit.prg"
 	par0[0] = set_cvar (mv_names[_bbvar_m_buch].v, " ");
 	_fgs_check_event(297,1,100);
-#line 297 "ZEIT.PRG"
+#line 297 "zeit.prg"
 	par2[0] = set_cv("ON");
 	par2[1] = _bb_upper(1, &par2[0]);
 	par2[2] = c_eequ_u("ON", par2[1]);
@@ -6458,7 +6156,7 @@ FSvar * parptr[];
 	par0[0] = par1[0];
 	par0[1] = _bb_setcursor(1, &par0[0]);
 	_fgs_check_event(298,1,100);
-#line 298 "ZEIT.PRG"
+#line 298 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 12);
@@ -6466,7 +6164,7 @@ FSvar * parptr[];
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(299,1,100);
-#line 299 "ZEIT.PRG"
+#line 299 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6476,7 +6174,7 @@ FSvar * parptr[];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(299,1,100);
-#line 299 "ZEIT.PRG"
+#line 299 "zeit.prg"
 	par0[0] = set_cv("Geben Sie Ihr Zeichen ein: ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6484,7 +6182,7 @@ FSvar * parptr[];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(299,1,100);
-#line 299 "ZEIT.PRG"
+#line 299 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par2[0] = _bb_row(0, (FSvar**)0);
 	par1[0] = par2[0];
@@ -6514,13 +6212,13 @@ FSvar * parptr[];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(299,1,100);
-#line 299 "ZEIT.PRG"
+#line 299 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(300,1,100);
-#line 300 "ZEIT.PRG"
+#line 300 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = cre_tmpvar();
@@ -6531,12 +6229,12 @@ par0[2] = par0[1];
 	par0[7] = cre_tmpvar();
 	par0[8] = _bb_readmodal(8, &par0[0]);
 	_fgs_check_event(300,1,100);
-#line 300 "ZEIT.PRG"
+#line 300 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_getlist));
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb_readclearg(2, &par0[0]);
 	_fgs_check_event(300,1,100);
-#line 300 "ZEIT.PRG"
+#line 300 "zeit.prg"
 	par1[0] = _bb_readsave(0, (FSvar**)0);
 	par1[1] = par1[0];
 	if(!if_u(par1[1])) goto lband32;
@@ -6552,10 +6250,10 @@ lband32:;
 	par0[0] = par0[2];
  }
 	_fgs_check_event(301,1,100);
-#line 301 "ZEIT.PRG"
+#line 301 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 	_fgs_check_event(302,1,100);
-#line 302 "ZEIT.PRG"
+#line 302 "zeit.prg"
 	par0[0] = _bb_lastkey(0, (FSvar**)0);
 	par0[1] = ni_equ_u((int) 27, par0[0]);
 	par0[2] = par0[1];
@@ -6567,7 +6265,7 @@ lbor33:;
 	if(!if_u(par0[2])) 
 		goto lbelse34;
 	_fgs_check_event(303,1,100);
-#line 303 "ZEIT.PRG"
+#line 303 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn35: ;
@@ -6578,14 +6276,14 @@ lbelse34: ;
 
 lbendif34: ;
 	_fgs_check_event(306,1,100);
-#line 306 "ZEIT.PRG"
+#line 306 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = mk_var_cp(fgsGetVar(_bbvar_nil));
 	par0[2] = set_cv("aerzte");
 	par0[3] = cre_tmpvar();
 	par0[4] = _bb_dbusearea(4, &par0[0]);
 	_fgs_check_event(306,1,100);
-#line 306 "ZEIT.PRG"
+#line 306 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband36;
@@ -6596,7 +6294,7 @@ lband36:;
 	if(!if_u(par0[1])) 
 		goto lbelse37;
 	_fgs_check_event(306,1,100);
-#line 306 "ZEIT.PRG"
+#line 306 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif37;
@@ -6605,10 +6303,10 @@ lbelse37: ;
 
 lbendif37: ;
 	_fgs_check_event(306,1,100);
-#line 306 "ZEIT.PRG"
+#line 306 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	_fgs_check_event(307,1,100);
-#line 307 "ZEIT.PRG"
+#line 307 "zeit.prg"
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_307_2, 0, (FSvar *)0);
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -6617,43 +6315,43 @@ lbendif37: ;
 	par0[4] = mk_var_cp(FALSE_VAR);
 	par0[5] = _bb___dblocate(5, &par0[0]);
 	_fgs_check_event(308,1,100);
-#line 308 "ZEIT.PRG"
+#line 308 "zeit.prg"
 	par0[0] = _bb_found(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
 	if(!if_u(par0[1])) 
 		goto lbelse38;
 	_fgs_check_event(309,1,100);
-#line 309 "ZEIT.PRG"
+#line 309 "zeit.prg"
 	par0[0] = set_cv("Zeichen existiert nicht!");
 	par0[1] = _bb_alert(1, &par0[0]);
 	_fgs_check_event(310,1,100);
-#line 310 "ZEIT.PRG"
+#line 310 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(311,1,100);
-#line 311 "ZEIT.PRG"
+#line 311 "zeit.prg"
 	goto _adios;
 lbreturn39: ;
 
 	goto lbendif38;
 lbelse38: ;
 	_fgs_check_event(313,1,100);
-#line 313 "ZEIT.PRG"
+#line 313 "zeit.prg"
 	par0[0] = cpy_var  (mv_names[_bbvar_muser].v, fgsGetVar(_bbvar_username));
 
 lbendif38: ;
 	_fgs_check_event(315,1,100);
-#line 315 "ZEIT.PRG"
+#line 315 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(316,1,100);
-#line 316 "ZEIT.PRG"
+#line 316 "zeit.prg"
 	par0[0] = u_equ_c(_fgspvar__anab, "2");
 	if(!if_u(par0[0])) 
 		goto lbelse40;
 	_fgs_check_event(317,1,100);
-#line 317 "ZEIT.PRG"
+#line 317 "zeit.prg"
 	par0[0] = _bb_zeit_list(0, (FSvar**)0);
 	_fgs_check_event(318,1,100);
-#line 318 "ZEIT.PRG"
+#line 318 "zeit.prg"
 	goto _adios;
 lbreturn41: ;
 
@@ -6663,22 +6361,22 @@ lbelse40: ;
 
 lbendif40: ;
 	_fgs_check_event(320,1,100);
-#line 320 "ZEIT.PRG"
+#line 320 "zeit.prg"
 	par0[0] = _bb_time(0, (FSvar**)0);
 	par0[1] = cpy_var  (mv_names[_bbvar_mtime].v, par0[0]);
 	_fgs_check_event(321,1,100);
-#line 321 "ZEIT.PRG"
+#line 321 "zeit.prg"
 	par0[0] = _bb_seconds(0, (FSvar**)0);
 	par0[1] = cpy_var  (mv_names[_bbvar_nsec].v, par0[0]);
 	_fgs_check_event(322,1,100);
-#line 322 "ZEIT.PRG"
+#line 322 "zeit.prg"
 	par0[0] = _bb_open_zeite(0, (FSvar**)0);
 	_fgs_check_event(323,1,100);
-#line 323 "ZEIT.PRG"
+#line 323 "zeit.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = _bb_ordsetfocu(1, &par0[0]);
 	_fgs_check_event(324,1,100);
-#line 324 "ZEIT.PRG"
+#line 324 "zeit.prg"
 	par3[0] = _bb_date(0, (FSvar**)0);
 	par2[0] = par3[0];
 	par2[1] = _bb_dtos(1, &par2[0]);
@@ -6688,12 +6386,12 @@ lbendif40: ;
 	par0[0] = mk_var_cp(par1[2]);
 	par0[1] = _bb_dbseek(1, &par0[0]);
 	_fgs_check_event(325,1,100);
-#line 325 "ZEIT.PRG"
+#line 325 "zeit.prg"
 	par0[0] = u_equ_u(fgsGetVar(_bbvar_anab), _fgspvar__anab);
 	if(!if_u(par0[0])) 
 		goto lbelse42;
 	_fgs_check_event(326,1,100);
-#line 326 "ZEIT.PRG"
+#line 326 "zeit.prg"
 	par2[0] = u_equ_c(fgsGetVar(_bbvar_anab), "1");
  if(if_u(par2[0])) {
 	par1[1] = set_cv("AN");
@@ -6707,10 +6405,10 @@ lbendif40: ;
 	par0[0] = mk_var_cp(par1[4]);
 	par0[1] = _bb_alert(1, &par0[0]);
 	_fgs_check_event(327,1,100);
-#line 327 "ZEIT.PRG"
+#line 327 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(328,1,100);
-#line 328 "ZEIT.PRG"
+#line 328 "zeit.prg"
 	goto _adios;
 lbreturn43: ;
 
@@ -6720,7 +6418,7 @@ lbelse42: ;
 
 lbendif42: ;
 	_fgs_check_event(330,1,100);
-#line 330 "ZEIT.PRG"
+#line 330 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 14);
@@ -6728,7 +6426,7 @@ lbendif42: ;
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(331,1,100);
-#line 331 "ZEIT.PRG"
+#line 331 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6738,7 +6436,7 @@ lbendif42: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(331,1,100);
-#line 331 "ZEIT.PRG"
+#line 331 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_muser);
 	par1[1] = _bb_trim(1, &par1[0]);
 	par1[2] = c_add_u("Sie sind USER ", par1[1]);
@@ -6750,12 +6448,12 @@ lbendif42: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(332,1,100);
-#line 332 "ZEIT.PRG"
+#line 332 "zeit.prg"
 	par0[0] = u_equ_c(_fgspvar__anab, "1");
 	if(!if_u(par0[0])) 
 		goto lbelse44;
 	_fgs_check_event(333,1,100);
-#line 333 "ZEIT.PRG"
+#line 333 "zeit.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6765,7 +6463,7 @@ lbendif42: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(333,1,100);
-#line 333 "ZEIT.PRG"
+#line 333 "zeit.prg"
 	par1[0] = c_add_u("Angemeldet um: ", fgsGetVar(_bbvar_mtime));
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -6777,7 +6475,7 @@ lbendif42: ;
 	goto lbendif44;
 lbelse44: ;
 	_fgs_check_event(335,1,100);
-#line 335 "ZEIT.PRG"
+#line 335 "zeit.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6787,7 +6485,7 @@ lbelse44: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(335,1,100);
-#line 335 "ZEIT.PRG"
+#line 335 "zeit.prg"
 	par1[0] = c_add_u("Abgemeldet um: ", fgsGetVar(_bbvar_mtime));
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
@@ -6798,7 +6496,7 @@ lbelse44: ;
 
 lbendif44: ;
 	_fgs_check_event(337,1,100);
-#line 337 "ZEIT.PRG"
+#line 337 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6808,51 +6506,51 @@ lbendif44: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(337,1,100);
-#line 337 "ZEIT.PRG"
-	par0[0] = set_cv("Best\204tigen mit RETURN, Abbruch mit ESC!");
+#line 337 "zeit.prg"
+	par0[0] = set_cv("Best\357\277\275tigen mit RETURN, Abbruch mit ESC!");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
 	par0[3] = cre_tmpvar();
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(338,1,100);
-#line 338 "ZEIT.PRG"
+#line 338 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = _bb_inkey(1, &par0[0]);
 	_fgs_check_event(339,1,100);
-#line 339 "ZEIT.PRG"
+#line 339 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 	_fgs_check_event(340,1,100);
-#line 340 "ZEIT.PRG"
+#line 340 "zeit.prg"
 	par0[0] = _bb_lastkey(0, (FSvar**)0);
 	par0[1] = ni_equ_u((int) 13, par0[0]);
 	if(!if_u(par0[1])) 
 		goto lbelse45;
 	_fgs_check_event(341,1,100);
-#line 341 "ZEIT.PRG"
+#line 341 "zeit.prg"
 	par0[0] = _bb_dbappend(0, (FSvar**)0);
 	_fgs_check_event(343,1,100);
-#line 343 "ZEIT.PRG"
+#line 343 "zeit.prg"
 	par0[0] = cpy_var  (fgsGetField(_bbvar_buchstabe), fgsGetVar(_bbvar_m_buch));
 	_fgs_check_event(343,1,100);
-#line 343 "ZEIT.PRG"
+#line 343 "zeit.prg"
 	par0[0] = _bb_date(0, (FSvar**)0);
 	par0[1] = cpy_var  (fgsGetField(_bbvar_datum), par0[0]);
 	_fgs_check_event(343,1,100);
-#line 343 "ZEIT.PRG"
+#line 343 "zeit.prg"
 	par0[0] = cpy_var  (fgsGetField(_bbvar_anab), _fgspvar__anab);
 	_fgs_check_event(343,1,100);
-#line 343 "ZEIT.PRG"
+#line 343 "zeit.prg"
 	par0[0] = cpy_var  (fgsGetField(_bbvar_zeit), fgsGetVar(_bbvar_mtime));
 	_fgs_check_event(344,1,100);
-#line 344 "ZEIT.PRG"
+#line 344 "zeit.prg"
 	par0[0] = set_cv("zeiten->sekunden");
 	par0[1] = _bb_type(1, &par0[0]);
 	par0[2] = u_equ_c(par0[1], "N");
 	if(!if_u(par0[2])) 
 		goto lbelse46;
 	_fgs_check_event(345,1,100);
-#line 345 "ZEIT.PRG"
+#line 345 "zeit.prg"
 	par0[0] = cpy_var  (fgsGetIAliasField(_fsali_zeiten, _bbvar_sekunden), fgsGetVar(_bbvar_nsec));
 
 	goto lbendif46;
@@ -6861,10 +6559,10 @@ lbelse46: ;
 
 lbendif46: ;
 	_fgs_check_event(347,1,100);
-#line 347 "ZEIT.PRG"
+#line 347 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(348,1,100);
-#line 348 "ZEIT.PRG"
+#line 348 "zeit.prg"
 	par0[0] = set_cv("Ist registriert!");
 	par0[1] = _bb_alert(1, &par0[0]);
 
@@ -6874,15 +6572,15 @@ lbelse45: ;
 
 lbendif45: ;
 	_fgs_check_event(350,1,100);
-#line 350 "ZEIT.PRG"
+#line 350 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(351,1,100);
-#line 351 "ZEIT.PRG"
+#line 351 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn47: ;
 	_fgs_check_event(356,1,100);
-#line 356 "ZEIT.PRG"
+#line 356 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -6896,24 +6594,20 @@ FSvar * parptr[];
 	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"zeit_list",356,parno,parptr);
 
 	FSvar *par0[9], *par1[16], *par2[9];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(361,1,100);
-#line 361 "ZEIT.PRG"
+#line 361 "zeit.prg"
 	par0[0] = _bb_date(0, (FSvar**)0);
 	par0[1] = cpy_var  (mv_names[_bbvar_mdatum].v, par0[0]);
 	_fgs_check_event(362,1,100);
-#line 362 "ZEIT.PRG"
+#line 362 "zeit.prg"
 	par0[0] = _bb_date(0, (FSvar**)0);
 	par0[1] = cpy_varv (_bbvar_mdatum2, par0[0]);
 	_fgs_check_event(363,1,100);
-#line 363 "ZEIT.PRG"
+#line 363 "zeit.prg"
 	par0[0] = set_cvar (mv_names[_bbvar_m_bs].v, "B");
 	_fgs_check_event(364,1,100);
-#line 364 "ZEIT.PRG"
+#line 364 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 14);
@@ -6921,7 +6615,7 @@ FSvar * parptr[];
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(365,1,100);
-#line 365 "ZEIT.PRG"
+#line 365 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6931,7 +6625,7 @@ FSvar * parptr[];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(365,1,100);
-#line 365 "ZEIT.PRG"
+#line 365 "zeit.prg"
 	par0[0] = set_cv("Zeiten vom: ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6939,7 +6633,7 @@ FSvar * parptr[];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(365,1,100);
-#line 365 "ZEIT.PRG"
+#line 365 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par2[0] = _bb_row(0, (FSvar**)0);
 	par1[0] = par2[0];
@@ -6969,13 +6663,13 @@ FSvar * parptr[];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(365,1,100);
-#line 365 "ZEIT.PRG"
+#line 365 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(366,1,100);
-#line 366 "ZEIT.PRG"
+#line 366 "zeit.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -6985,7 +6679,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(366,1,100);
-#line 366 "ZEIT.PRG"
+#line 366 "zeit.prg"
 	par0[0] = set_cv("bis zum   : ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -6993,7 +6687,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(366,1,100);
-#line 366 "ZEIT.PRG"
+#line 366 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par2[0] = _bb_row(0, (FSvar**)0);
 	par1[0] = par2[0];
@@ -7023,13 +6717,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(366,1,100);
-#line 366 "ZEIT.PRG"
+#line 366 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(367,1,100);
-#line 367 "ZEIT.PRG"
+#line 367 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -7039,7 +6733,7 @@ par0[2] = par0[1];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(367,1,100);
-#line 367 "ZEIT.PRG"
+#line 367 "zeit.prg"
 	par0[0] = set_cv("Bild/Druck: ");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7047,7 +6741,7 @@ par0[2] = par0[1];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(367,1,100);
-#line 367 "ZEIT.PRG"
+#line 367 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par2[0] = _bb_row(0, (FSvar**)0);
 	par1[0] = par2[0];
@@ -7077,13 +6771,13 @@ par0[2] = par0[1];
 	par0[1] = par1[15];
 	par0[2] = _bb_aadd(2, &par0[0]);
 	_fgs_check_event(367,1,100);
-#line 367 "ZEIT.PRG"
+#line 367 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = _bb_atail(1, &par0[0]);
 par0[2] = par0[1];
 	par0[3] = fgsNoDoMethod("display", 0, 1, &par0[2]);
 	_fgs_check_event(368,1,100);
-#line 368 "ZEIT.PRG"
+#line 368 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = cre_tmpvar();
@@ -7094,12 +6788,12 @@ par0[2] = par0[1];
 	par0[7] = cre_tmpvar();
 	par0[8] = _bb_readmodal(8, &par0[0]);
 	_fgs_check_event(368,1,100);
-#line 368 "ZEIT.PRG"
+#line 368 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_getlist));
 	par0[1] = mk_var_cp(FALSE_VAR);
 	par0[2] = _bb_readclearg(2, &par0[0]);
 	_fgs_check_event(368,1,100);
-#line 368 "ZEIT.PRG"
+#line 368 "zeit.prg"
 	par1[0] = _bb_readsave(0, (FSvar**)0);
 	par1[1] = par1[0];
 	if(!if_u(par1[1])) goto lband49;
@@ -7115,10 +6809,10 @@ lband49:;
 	par0[0] = par0[2];
  }
 	_fgs_check_event(369,1,100);
-#line 369 "ZEIT.PRG"
+#line 369 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 	_fgs_check_event(370,1,100);
-#line 370 "ZEIT.PRG"
+#line 370 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_mdatum);
 	par0[1] = _bb_empty(1, &par0[0]);
 	par0[2] = par0[1];
@@ -7130,7 +6824,7 @@ lbor50:;
 	if(!if_u(par0[2])) 
 		goto lbelse51;
 	_fgs_check_event(371,1,100);
-#line 371 "ZEIT.PRG"
+#line 371 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(TRUE_VAR);
 	goto _adios;
 lbreturn52: ;
@@ -7141,16 +6835,16 @@ lbelse51: ;
 
 lbendif51: ;
 	_fgs_check_event(373,1,100);
-#line 373 "ZEIT.PRG"
+#line 373 "zeit.prg"
 	par0[0] = u_lt_u(fgsGetVar(_bbvar_mdatum2), fgsGetVar(_bbvar_mdatum));
 	if(!if_u(par0[0])) 
 		goto lbelse53;
 	_fgs_check_event(374,1,100);
-#line 374 "ZEIT.PRG"
-	par0[0] = set_cv("Datum 1 mu\341 <= Datum 2!");
+#line 374 "zeit.prg"
+	par0[0] = set_cv("Datum 1 mu\357\277\275 <= Datum 2!");
 	par0[1] = _bb_alert(1, &par0[0]);
 	_fgs_check_event(375,1,100);
-#line 375 "ZEIT.PRG"
+#line 375 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(TRUE_VAR);
 	goto _adios;
 lbreturn54: ;
@@ -7161,32 +6855,32 @@ lbelse53: ;
 
 lbendif53: ;
 	_fgs_check_event(378,1,100);
-#line 378 "ZEIT.PRG"
+#line 378 "zeit.prg"
 	par0[0] = _bb_open_zeite(0, (FSvar**)0);
 	_fgs_check_event(379,1,100);
-#line 379 "ZEIT.PRG"
+#line 379 "zeit.prg"
 	par0[0] = set_Iv((int) 9);
 	par0[1] = set_cv("ON");
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(380,1,100);
-#line 380 "ZEIT.PRG"
+#line 380 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_mdatum);
 	par1[1] = _bb_dtos(1, &par1[0]);
 	par1[2] = u_add_u(fgsGetVar(_bbvar_m_buch), par1[1], 0);
 	par0[0] = mk_var_cp(par1[2]);
 	par0[1] = _bb_dbseek(1, &par0[0]);
 	_fgs_check_event(381,1,100);
-#line 381 "ZEIT.PRG"
+#line 381 "zeit.prg"
 	par0[0] = set_Iv((int) 9);
 	par0[1] = set_cv("OFF");
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(382,1,100);
-#line 382 "ZEIT.PRG"
+#line 382 "zeit.prg"
 	par0[0] = u_equ_c(fgsGetVar(_bbvar_m_bs), "D");
 	if(!if_u(par0[0])) 
 		goto lbelse55;
 	_fgs_check_event(383,1,100);
-#line 383 "ZEIT.PRG"
+#line 383 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 12);
@@ -7194,7 +6888,7 @@ lbendif53: ;
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(384,1,100);
-#line 384 "ZEIT.PRG"
+#line 384 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -7204,7 +6898,7 @@ lbendif53: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(384,1,100);
-#line 384 "ZEIT.PRG"
+#line 384 "zeit.prg"
 	par0[0] = set_cv("Bitte warten, drucke Liste ...");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7212,44 +6906,44 @@ lbendif53: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(385,1,100);
-#line 385 "ZEIT.PRG"
+#line 385 "zeit.prg"
 	par0[0] = set_Iv((int) 20);
 	par0[1] = set_cv("PRINTER");
 	par0[2] = mk_var_cp(FALSE_VAR);
 	par0[3] = _bb_set(3, &par0[0]);
 	_fgs_check_event(386,1,100);
-#line 386 "ZEIT.PRG"
+#line 386 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_max_line].v, (int) 58);
 
 	goto lbendif55;
 lbelse55: ;
 	_fgs_check_event(388,1,100);
-#line 388 "ZEIT.PRG"
+#line 388 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_max_line].v, (int) 19);
 
 lbendif55: ;
 	_fgs_check_event(390,1,100);
-#line 390 "ZEIT.PRG"
+#line 390 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_zeile].v, (int) 1);
 	_fgs_check_event(391,1,100);
-#line 391 "ZEIT.PRG"
+#line 391 "zeit.prg"
 	par0[0] = _bb_kopf(0, (FSvar**)0);
 	_fgs_check_event(392,1,100);
-#line 392 "ZEIT.PRG"
+#line 392 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_gzeit].v, (int) 0);
 	_fgs_check_event(393,1,100);
-#line 393 "ZEIT.PRG"
+#line 393 "zeit.prg"
 	par0[0] = set_Ivarv(_bbvar_gzeit2, (int) 0);
 	_fgs_check_event(394,1,100);
-#line 394 "ZEIT.PRG"
+#line 394 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_gtag].v, (int) 0);
 	_fgs_check_event(395,1,100);
-#line 395 "ZEIT.PRG"
+#line 395 "zeit.prg"
 	par0[0] = set_cv("  .  .  ");
 	par0[1] = _bb_ctod(1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_altdatum].v, par0[1]);
 	_fgs_check_event(397,1,100);
-#line 397 "ZEIT.PRG"
+#line 397 "zeit.prg"
  while(1) {
 	del_tmpvars(fn_stk.tmv_now);
 	par0[0] = u_equ_u(fgsGetVar(_bbvar_buchstabe), fgsGetVar(_bbvar_m_buch));
@@ -7263,10 +6957,10 @@ lbendif55: ;
 	par0[1] = par0[6];
 lband56:;
 	_fgs_check_event(397,1,100);
-#line 397 "ZEIT.PRG"
+#line 397 "zeit.prg"
 	if(!if_u(par0[1])) break;
 	_fgs_check_event(399,1,100);
-#line 399 "ZEIT.PRG"
+#line 399 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7276,7 +6970,7 @@ lband56:;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(399,1,100);
-#line 399 "ZEIT.PRG"
+#line 399 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_datum);
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7284,7 +6978,7 @@ lband56:;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(400,1,100);
-#line 400 "ZEIT.PRG"
+#line 400 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 20);
 	par1[0] = cre_tmpvar();
@@ -7294,7 +6988,7 @@ lband56:;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(400,1,100);
-#line 400 "ZEIT.PRG"
+#line 400 "zeit.prg"
 	par2[0] = u_equ_c(fgsGetVar(_bbvar_anab), "1");
  if(if_u(par2[0])) {
 	par1[1] = set_cv("an");
@@ -7310,12 +7004,12 @@ lband56:;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(401,1,100);
-#line 401 "ZEIT.PRG"
+#line 401 "zeit.prg"
 	par0[0] = u_equ_c(fgsGetVar(_bbvar_anab), "1");
 	if(!if_u(par0[0])) 
 		goto lbelse57;
 	_fgs_check_event(402,1,100);
-#line 402 "ZEIT.PRG"
+#line 402 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 30);
 	par1[0] = cre_tmpvar();
@@ -7325,7 +7019,7 @@ lband56:;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(402,1,100);
-#line 402 "ZEIT.PRG"
+#line 402 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeit);
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7333,7 +7027,7 @@ lband56:;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(403,1,100);
-#line 403 "ZEIT.PRG"
+#line 403 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_zeit));
 	par0[1] = _bb_timetosec(1, &par0[0]);
 	par0[2] = cpy_varv (_bbvar_gzeit2, par0[1]);
@@ -7341,7 +7035,7 @@ lband56:;
 	goto lbendif57;
 lbelse57: ;
 	_fgs_check_event(405,1,100);
-#line 405 "ZEIT.PRG"
+#line 405 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 40);
 	par1[0] = cre_tmpvar();
@@ -7351,7 +7045,7 @@ lbelse57: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(405,1,100);
-#line 405 "ZEIT.PRG"
+#line 405 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeit);
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7359,7 +7053,7 @@ lbelse57: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(406,1,100);
-#line 406 "ZEIT.PRG"
+#line 406 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 60);
 	par1[0] = cre_tmpvar();
@@ -7369,7 +7063,7 @@ lbelse57: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(406,1,100);
-#line 406 "ZEIT.PRG"
+#line 406 "zeit.prg"
 	par2[0] = mk_var_cp(fgsGetVar(_bbvar_zeit));
 	par2[1] = _bb_timetosec(1, &par2[0]);
 	par2[2] = u_sub_u(par2[1], fgsGetVar(_bbvar_gzeit2), 0);
@@ -7382,19 +7076,19 @@ lbelse57: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(407,1,100);
-#line 407 "ZEIT.PRG"
+#line 407 "zeit.prg"
 	par0[0] = n_add_u(1.0, 0, fgsGetVar(_bbvar_zeile), 0);
 	par0[1] = cpy_var  (mv_names[_bbvar_zeile].v, par0[0]);
 	_fgs_check_event(408,1,100);
-#line 408 "ZEIT.PRG"
+#line 408 "zeit.prg"
 	par0[0] = u_neq_u(fgsGetVar(_bbvar_datum), fgsGetVar(_bbvar_altdatum));
 	if(!if_u(par0[0])) 
 		goto lbelse58;
 	_fgs_check_event(409,1,100);
-#line 409 "ZEIT.PRG"
+#line 409 "zeit.prg"
 	par0[0] = cpy_var  (mv_names[_bbvar_altdatum].v, fgsGetVar(_bbvar_datum));
 	_fgs_check_event(410,1,100);
-#line 410 "ZEIT.PRG"
+#line 410 "zeit.prg"
 	par0[0] = n_add_u(1.0, 0, fgsGetVar(_bbvar_gtag), 0);
 	par0[1] = cpy_var  (mv_names[_bbvar_gtag].v, par0[0]);
 
@@ -7406,12 +7100,12 @@ lbendif58: ;
 
 lbendif57: ;
 	_fgs_check_event(414,1,100);
-#line 414 "ZEIT.PRG"
+#line 414 "zeit.prg"
 	par0[0] = u_equ_c(fgsGetVar(_bbvar_anab), "1");
 	if(!if_u(par0[0])) 
 		goto lbelse59;
 	_fgs_check_event(415,1,100);
-#line 415 "ZEIT.PRG"
+#line 415 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_zeit));
 	par0[1] = _bb_timetosec(1, &par0[0]);
 	par0[2] = u_sub_u(fgsGetVar(_bbvar_gzeit), par0[1], 0);
@@ -7420,7 +7114,7 @@ lbendif57: ;
 	goto lbendif59;
 lbelse59: ;
 	_fgs_check_event(417,1,100);
-#line 417 "ZEIT.PRG"
+#line 417 "zeit.prg"
 	par0[0] = mk_var_cp(fgsGetVar(_bbvar_zeit));
 	par0[1] = _bb_timetosec(1, &par0[0]);
 	par0[2] = u_add_u(fgsGetVar(_bbvar_gzeit), par0[1], 0);
@@ -7428,19 +7122,19 @@ lbelse59: ;
 
 lbendif59: ;
 	_fgs_check_event(420,1,100);
-#line 420 "ZEIT.PRG"
+#line 420 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = _bb_dbskip(1, &par0[0]);
 	_fgs_check_event(421,1,100);
-#line 421 "ZEIT.PRG"
+#line 421 "zeit.prg"
 	par0[0] = u_gt_u(fgsGetVar(_bbvar_zeile), fgsGetVar(_bbvar_max_line));
 	if(!if_u(par0[0])) 
 		goto lbelse60;
 	_fgs_check_event(422,1,100);
-#line 422 "ZEIT.PRG"
+#line 422 "zeit.prg"
 	par0[0] = _bb_wmr(0, (FSvar**)0);
 	_fgs_check_event(423,1,100);
-#line 423 "ZEIT.PRG"
+#line 423 "zeit.prg"
 	par0[0] = _bb_kopf(0, (FSvar**)0);
 
 	goto lbendif60;
@@ -7453,33 +7147,33 @@ lbendif60: ;
 	del_tmpvars(fn_stk.tmv_now);
 
 	_fgs_check_event(427,1,100);
-#line 427 "ZEIT.PRG"
+#line 427 "zeit.prg"
 	par0[0] = cpy_var  (mv_names[_bbvar_gesamtseku].v, fgsGetVar(_bbvar_gzeit));
 	_fgs_check_event(428,1,100);
-#line 428 "ZEIT.PRG"
+#line 428 "zeit.prg"
 	par1[0] = u_div_n(fgsGetVar(_bbvar_gesamtseku), 3600.0, 0);
 	par0[0] = mk_var_cp(par1[0]);
 	par0[1] = _bb_floor(1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_gesamtstun].v, par0[1]);
 	_fgs_check_event(430,1,100);
-#line 430 "ZEIT.PRG"
+#line 430 "zeit.prg"
 	par0[0] = n_mul_u(60.0, 0, fgsGetVar(_bbvar_gesamtstun), 0);
 	par0[1] = n_mul_u(60.0, 0, par0[0], 0);
 	par0[2] = u_sub_u(fgsGetVar(_bbvar_gesamtseku), par0[1], 0);
 	par0[3] = cpy_var  (mv_names[_bbvar_gesamtseku].v, par0[2]);
 	_fgs_check_event(431,1,100);
-#line 431 "ZEIT.PRG"
+#line 431 "zeit.prg"
 	par1[0] = u_div_n(fgsGetVar(_bbvar_gesamtseku), 60.0, 0);
 	par0[0] = mk_var_cp(par1[0]);
 	par0[1] = _bb_floor(1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_gesamtminu].v, par0[1]);
 	_fgs_check_event(432,1,100);
-#line 432 "ZEIT.PRG"
+#line 432 "zeit.prg"
 	par0[0] = n_mul_u(60.0, 0, fgsGetVar(_bbvar_gesamtminu), 0);
 	par0[1] = u_sub_u(fgsGetVar(_bbvar_gesamtseku), par0[0], 0);
 	par0[2] = cpy_var  (mv_names[_bbvar_gesamtseku].v, par0[1]);
 	_fgs_check_event(434,1,100);
-#line 434 "ZEIT.PRG"
+#line 434 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_zeile);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7489,7 +7183,7 @@ lbendif60: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(434,1,100);
-#line 434 "ZEIT.PRG"
+#line 434 "zeit.prg"
 	par1[0] = set_cv("_");
 	par1[1] = set_Iv((int) 60);
 	par1[2] = _bb_replicate(2, &par1[0]);
@@ -7500,7 +7194,7 @@ lbendif60: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(435,1,100);
-#line 435 "ZEIT.PRG"
+#line 435 "zeit.prg"
 	par1[0] = n_add_u(1.0, 0, fgsGetVar(_bbvar_zeile), 0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 10);
@@ -7511,7 +7205,7 @@ lbendif60: ;
 	par0[2] = mk_var_cp(par1[4]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(435,1,100);
-#line 435 "ZEIT.PRG"
+#line 435 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_gtag);
 	par1[1] = set_Iv((int) 5);
 	par1[2] = set_Iv((int) 0);
@@ -7524,7 +7218,7 @@ lbendif60: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(436,1,100);
-#line 436 "ZEIT.PRG"
+#line 436 "zeit.prg"
 	par1[0] = n_add_u(2.0, 0, fgsGetVar(_bbvar_zeile), 0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 10);
@@ -7535,7 +7229,7 @@ lbendif60: ;
 	par0[2] = mk_var_cp(par1[4]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(436,1,100);
-#line 436 "ZEIT.PRG"
+#line 436 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_gesamtstun);
 	par1[1] = set_Iv((int) 5);
 	par1[2] = set_Iv((int) 0);
@@ -7548,7 +7242,7 @@ lbendif60: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(437,1,100);
-#line 437 "ZEIT.PRG"
+#line 437 "zeit.prg"
 	par1[0] = n_add_u(3.0, 0, fgsGetVar(_bbvar_zeile), 0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 10);
@@ -7559,7 +7253,7 @@ lbendif60: ;
 	par0[2] = mk_var_cp(par1[4]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(437,1,100);
-#line 437 "ZEIT.PRG"
+#line 437 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_gesamtminu);
 	par1[1] = set_Iv((int) 5);
 	par1[2] = set_Iv((int) 0);
@@ -7572,7 +7266,7 @@ lbendif60: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(438,1,100);
-#line 438 "ZEIT.PRG"
+#line 438 "zeit.prg"
 	par1[0] = n_add_u(4.0, 0, fgsGetVar(_bbvar_zeile), 0);
 	par0[0] = par1[0];
 	par0[1] = set_Iv((int) 10);
@@ -7583,7 +7277,7 @@ lbendif60: ;
 	par0[2] = mk_var_cp(par1[4]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(438,1,100);
-#line 438 "ZEIT.PRG"
+#line 438 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_gesamtseku);
 	par1[1] = set_Iv((int) 5);
 	par1[2] = set_Iv((int) 0);
@@ -7596,44 +7290,44 @@ lbendif60: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(439,1,100);
-#line 439 "ZEIT.PRG"
+#line 439 "zeit.prg"
 	par0[0] = _bb_wmr(0, (FSvar**)0);
 	_fgs_check_event(440,1,100);
-#line 440 "ZEIT.PRG"
+#line 440 "zeit.prg"
 	par0[0] = set_Iv((int) 20);
 	par0[1] = set_cv("SCREEN");
 	par0[2] = _bb_set(2, &par0[0]);
 	_fgs_check_event(441,1,100);
-#line 441 "ZEIT.PRG"
+#line 441 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 	_fgs_check_event(442,1,100);
-#line 442 "ZEIT.PRG"
+#line 442 "zeit.prg"
 	par0[0] = _bb_dbcloseare(0, (FSvar**)0);
 	_fgs_check_event(443,1,100);
-#line 443 "ZEIT.PRG"
+#line 443 "zeit.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
 	_fgs_check_event(443,1,100);
-#line 443 "ZEIT.PRG"
+#line 443 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
 	_fgs_check_event(443,1,100);
-#line 443 "ZEIT.PRG"
+#line 443 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
 	_fgs_check_event(443,1,100);
-#line 443 "ZEIT.PRG"
+#line 443 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_443_2, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
 	_fgs_check_event(443,1,100);
-#line 443 "ZEIT.PRG"
+#line 443 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
 	_fgs_check_event(447,1,100);
-#line 447 "ZEIT.PRG"
+#line 447 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -7647,18 +7341,14 @@ FSvar * parptr[];
 	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"wmr",447,parno,parptr);
 
 	FSvar *par0[9], *par1[8];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(449,1,100);
-#line 449 "ZEIT.PRG"
+#line 449 "zeit.prg"
 	par0[0] = u_equ_c(fgsGetVar(_bbvar_m_bs), "B");
 	if(!if_u(par0[0])) 
 		goto lbelse61;
 	_fgs_check_event(450,1,100);
-#line 450 "ZEIT.PRG"
+#line 450 "zeit.prg"
 	par1[0] = set_Iv((int) 10);
 	par1[1] = _bb_chr(1, &par1[0]);
 	par1[2] = set_Iv((int) 13);
@@ -7687,12 +7377,12 @@ lbelse61: ;
 
 lbendif61: ;
 	_fgs_check_event(452,1,100);
-#line 452 "ZEIT.PRG"
+#line 452 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn62: ;
 	_fgs_check_event(456,1,100);
-#line 456 "ZEIT.PRG"
+#line 456 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -7706,36 +7396,32 @@ FSvar * parptr[];
 	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"kopf",456,parno,parptr);
 
 	FSvar *par0[6], *par1[7];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(458,1,100);
-#line 458 "ZEIT.PRG"
+#line 458 "zeit.prg"
 	par0[0] = u_equ_c(fgsGetVar(_bbvar_m_bs), "B");
 	if(!if_u(par0[0])) 
 		goto lbelse63;
 	_fgs_check_event(459,1,100);
-#line 459 "ZEIT.PRG"
+#line 459 "zeit.prg"
 	par0[0] = _bb_scroll(0, (FSvar**)0);
 	_fgs_check_event(459,1,100);
-#line 459 "ZEIT.PRG"
+#line 459 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = _bb_setpos(2, &par0[0]);
 	_fgs_check_event(459,1,100);
-#line 459 "ZEIT.PRG"
+#line 459 "zeit.prg"
 	par0[0] = mk_var_cp(TRUE_VAR);
 	par0[1] = _bb_readkill(1, &par0[0]);
 	_fgs_check_event(459,1,100);
-#line 459 "ZEIT.PRG"
+#line 459 "zeit.prg"
 	par0[0] = fgsGetVar(_bbvar_getlist);
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_459_2, 0, (FSvar *)0);
 	par0[1] = par1[0];
 	par0[2] = _bb_aeval(2, &par0[0]);
 	_fgs_check_event(459,1,100);
-#line 459 "ZEIT.PRG"
+#line 459 "zeit.prg"
 	par0[0] = cre_tmpvar();
 	par0[1] = cre_arra(cre_tmpvar(), 0, 1, &par0[0]);
 	par0[2] = cpy_var  (mv_names[_bbvar_getlist].v, par0[1]);
@@ -7746,7 +7432,7 @@ lbelse63: ;
 
 lbendif63: ;
 	_fgs_check_event(461,1,100);
-#line 461 "ZEIT.PRG"
+#line 461 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7756,8 +7442,8 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(461,1,100);
-#line 461 "ZEIT.PRG"
-	par1[0] = c_add_u("Zeiten f\201r USER: ", fgsGetVar(_bbvar_muser));
+#line 461 "zeit.prg"
+	par1[0] = c_add_u("Zeiten f\357\277\275r USER: ", fgsGetVar(_bbvar_muser));
 	par0[0] = par1[0];
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7765,7 +7451,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(462,1,100);
-#line 462 "ZEIT.PRG"
+#line 462 "zeit.prg"
 	par0[0] = set_Iv((int) 2);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7775,7 +7461,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(462,1,100);
-#line 462 "ZEIT.PRG"
+#line 462 "zeit.prg"
 	par1[0] = fgsGetVar(_bbvar_mdatum);
 	par1[1] = _bb_dtoc(1, &par1[0]);
 	par1[2] = c_add_u("Zeitraum vom: ", par1[1]);
@@ -7790,7 +7476,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(463,1,100);
-#line 463 "ZEIT.PRG"
+#line 463 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7800,7 +7486,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(463,1,100);
-#line 463 "ZEIT.PRG"
+#line 463 "zeit.prg"
 	par0[0] = set_cv("Datum");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7808,7 +7494,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(464,1,100);
-#line 464 "ZEIT.PRG"
+#line 464 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 30);
 	par1[0] = cre_tmpvar();
@@ -7818,7 +7504,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(464,1,100);
-#line 464 "ZEIT.PRG"
+#line 464 "zeit.prg"
 	par0[0] = set_cv("Zeit AN");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7826,7 +7512,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(465,1,100);
-#line 465 "ZEIT.PRG"
+#line 465 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 40);
 	par1[0] = cre_tmpvar();
@@ -7836,7 +7522,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(465,1,100);
-#line 465 "ZEIT.PRG"
+#line 465 "zeit.prg"
 	par0[0] = set_cv("Zeit AB");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7844,7 +7530,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(466,1,100);
-#line 466 "ZEIT.PRG"
+#line 466 "zeit.prg"
 	par0[0] = set_Iv((int) 3);
 	par0[1] = set_Iv((int) 60);
 	par1[0] = cre_tmpvar();
@@ -7854,7 +7540,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(466,1,100);
-#line 466 "ZEIT.PRG"
+#line 466 "zeit.prg"
 	par0[0] = set_cv("Zeit Summe");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -7862,7 +7548,7 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(467,1,100);
-#line 467 "ZEIT.PRG"
+#line 467 "zeit.prg"
 	par0[0] = set_Iv((int) 4);
 	par0[1] = set_Iv((int) 10);
 	par1[0] = cre_tmpvar();
@@ -7872,7 +7558,7 @@ lbendif63: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(467,1,100);
-#line 467 "ZEIT.PRG"
+#line 467 "zeit.prg"
 	par1[0] = set_cv("_");
 	par1[1] = set_Iv((int) 60);
 	par1[2] = _bb_replicate(2, &par1[0]);
@@ -7883,15 +7569,15 @@ lbendif63: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(468,1,100);
-#line 468 "ZEIT.PRG"
+#line 468 "zeit.prg"
 	par0[0] = set_Ivar (mv_names[_bbvar_zeile].v, (int) 5);
 	_fgs_check_event(469,1,100);
-#line 469 "ZEIT.PRG"
+#line 469 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn64: ;
 	_fgs_check_event(474,1,100);
-#line 474 "ZEIT.PRG"
+#line 474 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -7905,13 +7591,9 @@ FSvar * parptr[];
 	FSchar *__who_me=fgs_fn_start(&fn_stk,fgs_file_name,"open_zeite",474,parno,parptr);
 
 	FSvar *par0[7], *par1[4], *par2[1];
-	struct f_deb_tab fgs_deb_tab[1];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "";
-	fgs_deb_tab[0].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(476,1,100);
-#line 476 "ZEIT.PRG"
+#line 476 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = cre_tmpvar();
 	par0[2] = set_cv("zeiten");
@@ -7928,12 +7610,12 @@ lbor65:;
 	par0[5] = mk_var_cp(FALSE_VAR);
 	par0[6] = _bb_dbusearea(6, &par0[0]);
 	_fgs_check_event(476,1,100);
-#line 476 "ZEIT.PRG"
+#line 476 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = cre_tmpvar();
 	par0[2] = _bb_dbsetindex(2, &par0[0]);
 	_fgs_check_event(476,1,100);
-#line 476 "ZEIT.PRG"
+#line 476 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband66;
@@ -7944,7 +7626,7 @@ lband66:;
 	if(!if_u(par0[1])) 
 		goto lbelse67;
 	_fgs_check_event(476,1,100);
-#line 476 "ZEIT.PRG"
+#line 476 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif67;
@@ -7953,20 +7635,20 @@ lbelse67: ;
 
 lbendif67: ;
 	_fgs_check_event(476,1,100);
-#line 476 "ZEIT.PRG"
+#line 476 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	_fgs_check_event(477,1,100);
-#line 477 "ZEIT.PRG"
+#line 477 "zeit.prg"
 	par0[0] = set_cv("zeiten.ntx");
 	par0[1] = _bb_file(1, &par0[0]);
 	if(!if_u(par0[1])) 
 		goto lbelse68;
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	if(!1) 
 		goto lbelse69;
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = _bb_ordlistcle(0, (FSvar**)0);
 
 	goto lbendif69;
@@ -7975,15 +7657,15 @@ lbelse69: ;
 
 lbendif69: ;
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = _bb_neterr(1, &par0[0]);
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = set_cv("zeiten");
 	par0[1] = _bb_dbsetindex(1, &par0[0]);
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband70;
@@ -8000,7 +7682,7 @@ lband71:;
 	if(!if_u(par0[4])) 
 		goto lbelse72;
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif72;
@@ -8009,14 +7691,14 @@ lbelse72: ;
 
 lbendif72: ;
 	_fgs_check_event(478,1,100);
-#line 478 "ZEIT.PRG"
+#line 478 "zeit.prg"
 	par0[0] = _bb_neterr(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
 
 	goto lbendif68;
 lbelse68: ;
 	_fgs_check_event(480,1,100);
-#line 480 "ZEIT.PRG"
+#line 480 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 12);
@@ -8024,7 +7706,7 @@ lbelse68: ;
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(481,1,100);
-#line 481 "ZEIT.PRG"
+#line 481 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -8034,7 +7716,7 @@ lbelse68: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(481,1,100);
-#line 481 "ZEIT.PRG"
+#line 481 "zeit.prg"
 	par0[0] = set_cv("Bitte einen Moment, reorganisiere Datei ...");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -8042,7 +7724,7 @@ lbelse68: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(482,1,100);
-#line 482 "ZEIT.PRG"
+#line 482 "zeit.prg"
 	par0[0] = set_cv("zeiten");
 	par0[1] = set_cv("BUCHSTABE +DTOS(datum)");
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_482_2, 0, (FSvar *)0);
@@ -8051,22 +7733,22 @@ lbelse68: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_dbcreatein(5, &par0[0]);
 	_fgs_check_event(483,1,100);
-#line 483 "ZEIT.PRG"
+#line 483 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 
 lbendif68: ;
 	_fgs_check_event(485,1,100);
-#line 485 "ZEIT.PRG"
+#line 485 "zeit.prg"
 	par0[0] = set_cv("zeitend.ntx");
 	par0[1] = _bb_file(1, &par0[0]);
 	if(!if_u(par0[1])) 
 		goto lbelse73;
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	if(!1) 
 		goto lbelse74;
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = _bb_ordlistcle(0, (FSvar**)0);
 
 	goto lbendif74;
@@ -8075,15 +7757,15 @@ lbelse74: ;
 
 lbendif74: ;
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = _bb_neterr(1, &par0[0]);
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = set_cv("zeitenD");
 	par0[1] = _bb_dbsetindex(1, &par0[0]);
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband75;
@@ -8100,7 +7782,7 @@ lband76:;
 	if(!if_u(par0[4])) 
 		goto lbelse77;
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif77;
@@ -8109,14 +7791,14 @@ lbelse77: ;
 
 lbendif77: ;
 	_fgs_check_event(486,1,100);
-#line 486 "ZEIT.PRG"
+#line 486 "zeit.prg"
 	par0[0] = _bb_neterr(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
 
 	goto lbendif73;
 lbelse73: ;
 	_fgs_check_event(488,1,100);
-#line 488 "ZEIT.PRG"
+#line 488 "zeit.prg"
 	par0[0] = set_Iv((int) 10);
 	par0[1] = set_Iv((int) 10);
 	par0[2] = set_Iv((int) 12);
@@ -8124,7 +7806,7 @@ lbelse73: ;
 	par0[4] = mk_var_cp(TRUE_VAR);
 	par0[5] = _bb_wopen(5, &par0[0]);
 	_fgs_check_event(489,1,100);
-#line 489 "ZEIT.PRG"
+#line 489 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -8134,7 +7816,7 @@ lbelse73: ;
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(489,1,100);
-#line 489 "ZEIT.PRG"
+#line 489 "zeit.prg"
 	par0[0] = set_cv("Bitte einen Moment, reorganisiere Datei ...");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -8142,7 +7824,7 @@ lbelse73: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(490,1,100);
-#line 490 "ZEIT.PRG"
+#line 490 "zeit.prg"
 	par0[0] = set_cv("zeitenD");
 	par0[1] = set_cv("buchstabe +DESCEND(DTOS(datum) +zeit)");
 	par1[0] = set_bvar(cre_tmpvar(), _bb_cb_1_490_2, 0, (FSvar *)0);
@@ -8151,16 +7833,16 @@ lbelse73: ;
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_dbcreatein(5, &par0[0]);
 	_fgs_check_event(491,1,100);
-#line 491 "ZEIT.PRG"
+#line 491 "zeit.prg"
 	par0[0] = _bb_wclose(0, (FSvar**)0);
 
 lbendif73: ;
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	if(!1) 
 		goto lbelse78;
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = _bb_ordlistcle(0, (FSvar**)0);
 
 	goto lbendif78;
@@ -8169,16 +7851,16 @@ lbelse78: ;
 
 lbendif78: ;
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = mk_var_cp(FALSE_VAR);
 	par0[1] = _bb_neterr(1, &par0[0]);
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = set_cv("zeiten");
 	par0[1] = set_cv("zeitend");
 	par0[2] = _bb_dbsetindex(2, &par0[0]);
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = _bb_used(0, (FSvar**)0);
 	par0[1] = par0[0];
 	if(!if_u(par0[1])) goto lband79;
@@ -8195,7 +7877,7 @@ lband80:;
 	if(!if_u(par0[4])) 
 		goto lbelse81;
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = _bb_dbgotop(0, (FSvar**)0);
 
 	goto lbendif81;
@@ -8204,11 +7886,11 @@ lbelse81: ;
 
 lbendif81: ;
 	_fgs_check_event(493,1,100);
-#line 493 "ZEIT.PRG"
+#line 493 "zeit.prg"
 	par0[0] = _bb_neterr(0, (FSvar**)0);
 	par0[1] = not_u(par0[0]);
 	_fgs_check_event(497,1,100);
-#line 497 "ZEIT.PRG"
+#line 497 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
@@ -8223,15 +7905,9 @@ FSvar * parptr[];
 
 	FSvar *par0[6], *par1[4];
 	FSvar *_fgslvar_ngrafbox = fgs_local_param(0, 0, (FSvar**)0, 'U', "");
-	struct f_deb_tab fgs_deb_tab[2];
-	fn_stk.deb_info1 = fgs_deb_tab;
-	fgs_deb_tab[0].name = "Lngrafbox";
-	fgs_deb_tab[0].idx  = &_fgslvar_ngrafbox;
-	fgs_deb_tab[1].name = "";
-	fgs_deb_tab[1].idx  = 0;
 	if(fgsDonotenter) init_ref_data();
 	_fgs_check_event(502,1,100);
-#line 502 "ZEIT.PRG"
+#line 502 "zeit.prg"
 	par0[0] = set_Iv((int) 0);
 	par0[1] = set_Iv((int) 0);
 	par0[2] = set_Iv((int) 2);
@@ -8239,7 +7915,7 @@ FSvar * parptr[];
 	par0[4] = _fgslvar_ngrafbox;
 	par0[5] = _bb_dispbox(5, &par0[0]);
 	_fgs_check_event(503,1,100);
-#line 503 "ZEIT.PRG"
+#line 503 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 1);
 	par1[0] = cre_tmpvar();
@@ -8249,7 +7925,7 @@ FSvar * parptr[];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(503,1,100);
-#line 503 "ZEIT.PRG"
+#line 503 "zeit.prg"
 	par0[0] = set_cv("Zeit-Management");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -8257,7 +7933,7 @@ FSvar * parptr[];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(504,1,100);
-#line 504 "ZEIT.PRG"
+#line 504 "zeit.prg"
 	par0[0] = set_Iv((int) 1);
 	par0[1] = set_Iv((int) 56);
 	par1[0] = cre_tmpvar();
@@ -8267,7 +7943,7 @@ FSvar * parptr[];
 	par0[2] = mk_var_cp(par1[3]);
 	par0[3] = _bb_devpos(3, &par0[0]);
 	_fgs_check_event(504,1,100);
-#line 504 "ZEIT.PRG"
+#line 504 "zeit.prg"
 	par0[0] = set_cv("by AKU Informatik GmbH");
 	par0[1] = cre_tmpvar();
 	par0[2] = cre_tmpvar();
@@ -8275,12 +7951,12 @@ FSvar * parptr[];
 	par0[4] = cre_tmpvar();
 	par0[5] = _bb_devout(5, &par0[0]);
 	_fgs_check_event(506,1,100);
-#line 506 "ZEIT.PRG"
+#line 506 "zeit.prg"
 	fn_stk.rvalptr = mk_var_cp(fgsGetVar(_bbvar_nil));
 	goto _adios;
 lbreturn82: ;
 	_fgs_check_event(519,1,100);
-#line 519 "ZEIT.PRG"
+#line 519 "zeit.prg"
 _adios:
 	return fgs_fn_end(&fn_stk, 'U', "");
 }
